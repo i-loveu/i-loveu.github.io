@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-baseURL = "http://blog.iloveu.design/"
-=======
 baseURL = "http://blog.iloveu.design"
->>>>>>> 2c024b5... first commit
 # [en, zh-cn, fr, ...] determines default content language
 defaultContentLanguage = "en"
-# language code
 languageCode = "en"
 title = "사랑합니다 기술 블로그"
 
