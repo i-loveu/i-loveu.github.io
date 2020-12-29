@@ -1,7 +1,7 @@
 ---
 title: "레일즈 메일, 로컬 테스트를 위한 Gem : Letter_opener_web"
 date: 2020-12-22T12:06:26+09:00
-draft: true
+draft: false
 ---
 
 ## Gem file 추가

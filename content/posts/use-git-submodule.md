@@ -1,7 +1,7 @@
 ---
 title: "Use Git Submodule"
 date: 2020-12-29T20:41:59+09:00
-draft: true
+draft: false
 ---
 
 ## git submodule

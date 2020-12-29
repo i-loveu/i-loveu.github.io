@@ -1,9 +1,8 @@
 ---
 title: "Rails Ruby 2 4 0 Openssl Bundle Error"
 date: 2020-12-29T20:05:14+09:00
-draft: true
+draft: false
 ---
-
 
 ## 새로 오픈한 유투브 채널 코딩병원
 
