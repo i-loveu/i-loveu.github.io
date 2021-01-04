@@ -1,12 +1,14 @@
 ---
-title: "Block Chain Defi 탈중앙화 금융"
+title: "Decentralized Finance 탈중앙화 금융"
 date: 2021-01-03T20:06:25+09:00
 draft: false
 ---
 
-## 탈중앙화 금융(DeFi)
+## Decentralized Finance
 
-탈중앙화라는 것은 통제하는 중앙기관 없이 오픈소스로 움직이는 생태계입니다.
+탈중앙화 금융: 통제하는 중앙기관 없이 오픈소스로 움직이는 금융 생태계.
+
+- 블록체인이 탄생하며 탈중앙화 금융이
 
 ## DeFi 이점
 
