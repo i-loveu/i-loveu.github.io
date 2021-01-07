@@ -1,4 +1,14 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>사랑합니다 기술 블로그</title><link>http://blog.iloveu.design/</link><description>사랑합니다 기술 블로그</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 04 Jan 2021 17:40:19 +0900</lastBuildDate><atom:link href="http://blog.iloveu.design/index.xml" rel="self" type="application/rss+xml"/><item><title>ssh-add 란?</title><link>http://blog.iloveu.design/ssh-add/</link><pubDate>Mon, 04 Jan 2021 17:40:19 +0900</pubDate><author>Author</author><guid>http://blog.iloveu.design/ssh-add/</guid><description>ssh-add 란? ssh-agent에 개인키를 등록하는 명령어
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>사랑합니다 기술 블로그</title><link>http://blog.iloveu.design/</link><description>사랑합니다 기술 블로그</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 07 Jan 2021 10:30:55 +0900</lastBuildDate><atom:link href="http://blog.iloveu.design/index.xml" rel="self" type="application/rss+xml"/><item><title>TCP/IP 프로토콜이란?</title><link>http://blog.iloveu.design/whatisprotocol/</link><pubDate>Thu, 07 Jan 2021 10:30:55 +0900</pubDate><author>Author</author><guid>http://blog.iloveu.design/whatisprotocol/</guid><description>TCP/IP 프로토콜이란? TCP(Transmission Control Protocol): 신뢰있는 데이타 전송방법.
+IP(internet protocol): 각각의 컴퓨터에 부여되는 고유주소.
+전 세계에 총42억개의 IP가 가능하다.
+프로토콜(protocol)은 정보를 주고 받기 위한 규칙
+TCP/IP 프로토콜의 5계층 물리층 link층에서 받은 frame을 signal로 바꾼다.
+데이터 링크층 network츠에서 받은 datagram을 frame으로 캡슐하한다.
+네트워크층 transport층에서 받은 TCP를 받아서 datagram으로 캡슐화 한다. ip주소를 써서 목적지를 찾아간다.
+주요기능은 라우팅, 포워딩.
+전송층 application층에서 받은 메세지를 segment(by TCP)와 같은 것들로 캡슐화 한다.
+응용층 프로세스간 통신을 하는 층이다.</description></item><item><title>localhost 와 127.0.0.1 이란?</title><link>http://blog.iloveu.design/localhost-127-0-0-1/</link><pubDate>Wed, 06 Jan 2021 12:04:16 +0900</pubDate><author>Author</author><guid>http://blog.iloveu.design/localhost-127-0-0-1/</guid><description>localhost localhost는 자기 컴퓨터의 호스트명이다
+127.0.0.1 localhost의 ip주소</description></item><item><title>ssh-add 란?</title><link>http://blog.iloveu.design/ssh-add/</link><pubDate>Mon, 04 Jan 2021 17:40:19 +0900</pubDate><author>Author</author><guid>http://blog.iloveu.design/ssh-add/</guid><description>ssh-add 란? ssh-agent에 개인키를 등록하는 명령어
 1 ssh-add ./ssh/private_key ssh-agent란? SSH key를 관리하는 도구
 키 리스트를 보는 명령
 1 ssh-add -l ssh-agent에서 전체 삭제 명령
