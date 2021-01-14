@@ -22,7 +22,7 @@ theme/css/admin-editor-styles.css 위치에 파일 생성
 // add custom css to editor
 function wpdocs_theme_add_editor_styles()
 {
-  add_editor_style('admin-editor-styles.css');
+  add_editor_style('css/admin-editor-styles.css');
 }
 add_action('admin_init', 'wpdocs_theme_add_editor_styles');
 
