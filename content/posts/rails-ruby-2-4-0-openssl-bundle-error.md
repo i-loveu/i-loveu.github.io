@@ -1,6 +1,8 @@
 ---
 title: "Rails Ruby 2 4 0 Openssl Bundle Error"
 date: 2020-12-29T20:05:14+09:00
+categories: ["rubyonrails"]
+tags: ["rubyonrails", "ruby", "openssl.bundle"]
 draft: false
 ---
 

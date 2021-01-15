@@ -87,3 +87,5 @@ yarn add morgan
 > logger 설치
 
 src/schema.js 파일 추가
+
+프리즈마 가입 - [app.prisma.io](https://app.prisma.io)

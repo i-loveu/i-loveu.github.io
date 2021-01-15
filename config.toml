@@ -101,3 +101,7 @@ theme = "LoveIt"
   name = "사랑합니다"
   email = ""
   link = ""
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"

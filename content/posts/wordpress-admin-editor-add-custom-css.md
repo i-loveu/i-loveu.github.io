@@ -1,6 +1,8 @@
 ---
 title: "워드프레스 관리자 에디터 커스텀 css 추가하기"
 slug: "Wordpress Admin Editor Add Custom Css"
+categories: ["wordpress"]
+tags: ["wordpress", "php"]
 date: 2021-01-14T14:08:18+09:00
 draft: false
 ---

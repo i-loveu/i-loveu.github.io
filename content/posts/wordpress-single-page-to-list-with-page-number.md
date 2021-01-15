@@ -9,14 +9,19 @@ draft: false
 
 ```php
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-echo '<a href="' . get_permalink() . '&paged=' . $paged . '">';
+echo '<a href="' . get_permalink() . '&paging=' . $paged . '">';
 ```
+
+리스트에서 &page= 나 &paged= 로 넘길경우 예약된 파라메터로 삭제될 수 있는데, 임시 paging 파라메터로 넘긴다
 
 ## single page
 
 ```php
-global $paged;
-echo '<a href="' . home_url('/') . $post_type . '?page=' . $paged . '" class="btn_01 btn_list">목록으로</a>';
+$paged = 1;
+if ($_GET['paging']) {
+  $paged = $_GET['paging'];
+}
+echo '<a href="' . home_url('/') . $post_type . '?paged=' . $paged . '" >목록으로</a>';
 ```
 
-리스트페이지에서는 /page/2 이런 식으로 되어 있지만, parameter를 넘길 때에는 ?page 로 넘겨야 한다.
+리스트페이지에서는 /page/2 이런 식으로 되어 있지만, parameter를 넘길 때에는 &paged= 로 넘겨야 한다.
