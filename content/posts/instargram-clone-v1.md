@@ -1,6 +1,8 @@
 ---
 title: "인스타그램 클론 V1"
 slug: "Instargram Clone V1"
+categories: ["clonecoding"]
+tags: ["clonecoding", "prisma"]
 date: 2021-01-05T16:00:37+09:00
 draft: true
 ---
@@ -89,3 +91,15 @@ yarn add morgan
 src/schema.js 파일 추가
 
 프리즈마 가입 - [app.prisma.io](https://app.prisma.io)
+
+```
+npm install -g prisma1
+
+```
+
+> prisma 에서 prisma1 로 변경 되었다.
+
+Log into Prisma CLI 에 있는 코드를 터미널로 복사해서 로그인을 한다.
+
+다음 CREATE A NEW SERVICE 클릭
+{{< figure src="/images/prisma-create-server.png" alt="Steve Francia" >}}
