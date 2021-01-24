@@ -10,3 +10,9 @@ draft: true
 ## React Native 란?
 
 ios, android 양쪽 앱을 만들 수 있는 프레임워크. React.js 기반한다.
+
+```
+expo install expo-location
+```
+
+> expo location plugin 설치
