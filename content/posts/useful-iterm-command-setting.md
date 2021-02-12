@@ -4,7 +4,7 @@ slug: "Useful Iterm Command Setting"
 categories: ["iterm"]
 tags: ["iterm"]
 date: 2021-02-12T16:38:34+09:00
-draft: true
+draft: false
 ---
 
 ## 현재 위치에서 새 탭 열기 
