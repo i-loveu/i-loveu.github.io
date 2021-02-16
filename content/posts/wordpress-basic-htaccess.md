@@ -2,8 +2,8 @@
 title: "Wordpress 고유주소 수정 후 링크가 먹지 않을때 .htaccess"
 slug: "Wordpress Basic Htaccess"
 date: 2021-01-18T16:15:15+09:00
-categories: ["clonecoding"]
-tags: ["clonecoding", "prisma"]
+categories: ["wordpress"]
+tags: ["htaccess"]
 draft: false
 ---
 
