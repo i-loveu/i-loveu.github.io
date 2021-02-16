@@ -12,3 +12,23 @@ draft: false
 ```
 brew install wp-cli
 ```
+wp cli 설치 
+```
+wp core download
+```
+wordpress 다운로드 
+## db 세팅
+```
+mysql -uroot
+create database db_name charset=utf8mb4;
+
+```
+
+## wp 서버 띄우기
+
+```
+wp server
+```
+
+
+
