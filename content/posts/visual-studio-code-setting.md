@@ -19,3 +19,9 @@ draft: true
 
 2. settings 에서 'font family termi' 검색 하고 Terminal > Integrated:Font Family 에
    'Meslo LG M for Powerline' 작성
+
+## live server
+
+EXTENSIONS: Live Server
+
+특히 로컬에서 빠르게 프론트 작업을 할 때 바로 브라우져에 반영되어 좋다
