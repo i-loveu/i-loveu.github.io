@@ -1,0 +1,6 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>bolierplate - Tag - 사랑합니다 기술 블로그</title><link>http://blog.iloveu.design/tags/bolierplate/</link><description>bolierplate - Tag - 사랑합니다 기술 블로그</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 19 Feb 2021 16:31:47 +0900</lastBuildDate><atom:link href="http://blog.iloveu.design/tags/bolierplate/" rel="self" type="application/rss+xml"/><item><title>기본 html에 대한 설명</title><link>http://blog.iloveu.design/bolierplate-html-base/</link><pubDate>Fri, 19 Feb 2021 16:31:47 +0900</pubDate><author>Author</author><guid>http://blog.iloveu.design/bolierplate-html-base/</guid><description><![CDATA[!DOCTYPE html html 문서 버전중 html5에 해당한다는 정의입니다.
+html lang=&ldquo;ko&rdquo; 컨텐츠에 포함되는 주 언어가 한국어라는 뜻입니다.
+meta charset=&ldquo;utf-8 기본문자 인코딩 형식인 유니코드(UTF-8)
+meta name=&ldquo;viewport&rdquo; content=&ldquo;width=device-width&rdquo; viewport: 화면 표시 영역(브라우져 크기)
+width=device-width: 화면 크기를 장치의 크기로 설정
+1 2 3 4 5 6 7 8 9 10 11  &lt;!DOCTYPE html&gt; &lt;html lang=&#34;ko&#34;&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width&#34;&gt; &lt;title&gt;문서 제목&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;이 문서는 HTML 문서입니다.&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;   ]]></description></item></channel></rss>
