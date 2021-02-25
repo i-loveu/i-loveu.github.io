@@ -15,7 +15,7 @@ brew install nvm
 
 .zshrc에 환경변수 등록 
 ```
-export NVM_DIR="$HOME/.nvm"
+export NVM_DIR="$HOME/.nvm"ㅁ
 source $(brew --prefix nvm)/nvm.sh
 ```
 
