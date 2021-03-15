@@ -1,5 +1,8 @@
 ---
 title: "레일즈 메일, 로컬 테스트를 위한 Gem : Letter_opener_web"
+slug: "Rails Mail Test Gem : Letter_opener_web"
+categories: ["rubyonrails"]
+tags: ["mail", ]
 date: 2020-12-22T12:06:26+09:00
 draft: false
 ---
