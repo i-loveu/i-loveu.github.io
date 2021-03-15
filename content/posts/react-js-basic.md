@@ -1,99 +1,63 @@
 ---
 title: "Javascript Basic"
 slug: "Javascript Basic"
-categories: ["javascript"]
-tags: ["es6"]
+categories: ["ReactJS"]
+tags: ["router"]
 date: 2021-03-07T16:21:32+09:00
 draft: false
 ---
 
-## Arrow Functions 
 
-Arrow Function(=>)은 return이 기본적으로 정의되어 있다. 
 
-```javascript
-const arrowFunction = name => "hello" + name;
-console.log(arrowFunction) -> "hello name"
+## React Router
+
+간단한 컴포넌트 묶음 `Router`를 만들고 `Route`를 만든다
+
+### ReactJs 규칙
+
+return 두개는 할 수 없다. Fragments를 사용하여 다수의 컴포넌트를 return한다
+
+```
+return <><Router /></>
+
 ```
 
+### Redirect 
 
-## Object Destructuring 
+Route에 매치되는 것이 없으면 어디로 가세요. 
 
 ```javascript
-
-const human {
-    firstName: "taeseong",
-    lastName: "ahn",
-    nationality: "korea"
-}
-
-const { firstName, lastName, nationality: national} = human;
-
-console.log(firstName, lastName, national);
+<Router>
+    <>
+        <Route path="/" exact component={Home}></Route>
+        <Route path="/tv" component={TV}></Route>
+        <Route path="/search" component={Search}></Route>
+        <Route path="/detail" component={Detail}></Route>
+        <Redirect from="*" to="/"/>
+    </>
+</Router>
 ```
 
-## Spread Operator 
+### Switch 
+
+하나의 Route만 Render
 
 ```javascript
-const days = ["mon", "tue", "wed"];
-const otherDays = ["Thu", "Fri", "Sat"];
-
-const allDays = [...days, ...others, "Sun"];
-
-console.log(allDays); // ["mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-
-
-const ob {
-    first: "hi",
-    second: "hello"
-};
-
-const oob {
-    third: "third"
-}
-
-const combine = {...ob, ...oob};
-
-console.log(combine) // Object {first: "hi", second: "hello", third: "bye bye"}
+<Router>
+    <Switch>
+        <Route path="/" exact component={Home}></Route>
+        <Route path="/tv" component={TV}></Route>
+        <Route path="/search" component={Search}></Route>
+        <Route path="/detail" component={Detail}></Route>
+        <Redirect from="*" to="/"/>
+    </Switch>
+</Router>
 ```
 
-## map
+### exact
 
-모든 요소에 fucntion을 실행하고 array를 반환한다 
-
-```javascript
-const days = ["Mon", "Tue", "Wed", "Thur", "Fri"];
-
-const result = days.map((day, index) => `my ${day}`);
-
-console.log(result) // ["my Mon", "my Tue", "my Wed", "my Thur", "my Fri"]
-```
-
-## filter 
-
-모든 요소에 fucntion을 실행하고 true 일 경우 배열에 포함시킨다 
+정확히 일치해야 Route
 
 ```javascript
-
-const numbers = [1,2,3,4,5,6,3,34,22,44,56,43];
-
-const fillteredNum = numbers.filter(num => num > 15);
-
-console.log(fillteredNum); // 
-```
-
-## includes 
-
-포함여부를 확인해서 boolean 리턴 
-
-```javascript
-
-let iTsYou = ["you", "are", "so", "beautiful"]
-
-if(!iTsYou.includes("perfact!")) {
-    iTsYou.push("perfact!");
-}
-
-console.log(iTsYou); // ["you", "are", "so", "beautiful", "perfact!"]
-
+<Route path="/tv" exact component={TV}></Route>
 ```
