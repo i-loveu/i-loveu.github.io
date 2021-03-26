@@ -158,3 +158,15 @@ Axios의 인스턴스를 설정해줄 수 있다.
 ```
 yarn add axios
 ```
+
+## 검색을 위한 stirng encoding 
+
+encodeURIComponent를 사용한다
+
+```
+search: (term) => api.get("search/movie", {
+    params: {
+        query: encodeURIComponent(term)
+    }
+})
+```

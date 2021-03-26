@@ -122,3 +122,18 @@ if(!iTsYou.includes("perfact!")) {
 console.log(iTsYou); // ["you", "are", "so", "beautiful", "perfact!"]
 
 ```
+
+## export default
+
+`export` 내보낸다 `default` 기본 
+
+
+## async 
+
+나 이거 할때 까지 기다려
+
+## await 
+
+자바스크립트는 실행하고 그냥 지나가버린다. `await`는 기다려준다
+
+이거 끝날 때까지 기다려줘

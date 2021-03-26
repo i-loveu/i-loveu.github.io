@@ -16,17 +16,20 @@ mysql.server server
 
 ## root user 만들기
 
+sudo 권한으로 db 접속 
+
 ```
 sudo mysql -u root
 
 ```
-sudo 권한으로 db 접속 
+
+저는 로컬 root는 비번을 제거 합니다. 
 
 ```mysql 
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'NEW_USER_PASSWORD';
 FLUSH PRIVILEGES;
 
 ```
-저는 로컬 root는 비번을 제거 합니다. 
+
 
 
