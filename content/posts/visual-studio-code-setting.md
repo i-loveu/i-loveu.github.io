@@ -2,6 +2,8 @@
 title: "Visual Studio Code Setting"
 slug: "Visual Studio Code Setting"
 date: 2021-01-07T11:22:12+09:00
+categories: ["vscode"]
+tags: ["hotkey"]
 draft: true
 ---
 
