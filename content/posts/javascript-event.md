@@ -9,13 +9,22 @@ draft: false
 
 ## javasdcript event 종류를 알고 싶다면 MDN
 
-https://developer.mozilla.org/ko/docs/Web/Events 
+https://developer.mozilla.org/ko/docs/Web/Events
 
 ```javascript
 function functionName() {
-    consloe.log("event!!");
+  consloe.log("event!!");
 }
 
-window.addEventListener("eventName", functionName())
+window.addEventListener("eventName", functionName);
 ```
 
+## 자주 사용하게 되는 이벤트
+
+`window.addEventListener("EventName", functionName)`
+
+### resize
+
+### mouseEnter
+
+### mouseleave
