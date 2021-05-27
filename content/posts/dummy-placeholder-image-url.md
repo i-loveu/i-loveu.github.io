@@ -8,6 +8,10 @@ draft: true
 
 ### https://dummyimage.com/
 
+https://dummyimage.com/600x400/000/fff
+
+https://dummyimage.com/widthxheight/color/background-color
+
 squer
 
 https://dummyimage.com/300

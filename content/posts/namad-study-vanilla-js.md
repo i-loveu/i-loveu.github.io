@@ -17,3 +17,11 @@ https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Da
 이렇게 쓰면 브라우져 `localStorage`에 저장된다.
 
 `localStorage.getItem(key);` value가 return된다
+
+### remove Ojbect element 
+
+```javascript
+static removePassword = ({ password, ...rest }) => rest;
+```
+
+...rest 요소는 나머지를 반환한다

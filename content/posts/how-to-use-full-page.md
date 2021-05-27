@@ -11,6 +11,8 @@ draft: false
 
 https://alvarotrigo.com/fullPage/pricing/
 
+https://alvarotrigo.com/fullPage/ko/#
+
 스크롤을 fullpage로 적용할 때 유용하다. 무료는 v2 버전이고 `scrollOverflow` 기능에 제한이 있는 등 9유로이니 구매해서 v3 버전을 쓰는 것이 맞다.
 
 ### fullpage.js v2 부족한 점
