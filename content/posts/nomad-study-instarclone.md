@@ -183,3 +183,8 @@ Enter a name for the new migration: init
 ```
 
 init 이라고 친다
+
+prisma/migrations 폴도 아래에 마이그레이션 파일이 생긴다
+
+### Prisma Client
+

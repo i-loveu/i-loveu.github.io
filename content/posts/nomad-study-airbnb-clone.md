@@ -28,6 +28,8 @@ python 환경을 설정하는 package
 
 `pipenv --three`
 
+Pipfile이 생성된다
+
 ### Pipfile
 
 packge-json과 같은 기능
@@ -35,7 +37,7 @@ packge-json과 같은 기능
 ## 장고 설치
 
 ```
-pipenv she;l
+pipenv shell
 pip install Django==2.2.5
 ```
 
@@ -104,6 +106,8 @@ ctrl + C
 ```
 python manage.py migrate
 ```
+
+기본 데이터베이스를 만들기 위해 필요한 명령
 
 ## super user 만들기
 
@@ -401,7 +405,7 @@ class TimeStampedModel(models.Model):
         abstract = True
 ```
 
-`abstract = True` DB에 들어가지 않는 Database. 확장용 model
+`abstract = True` DB에 들어가지 않는 Database. 확장용 model. 추상모델
 `auto_now_add=True` 생성할 때 추가
 `auto_now=True` 저장할 때마다 업데이트
 
@@ -450,7 +454,9 @@ class Room(core_models.TimeStampedModel):
 
 `on_delete=models.CASCADE` user를 지우면 room도 지워진다
 
-`on_delete=models.PROTECT` room을 소유하면 user를 지울 수 없다
+`on_delete=models.PROTECT` room을 소유하면 room을 지울 때 까지 user를 지울 수 없다
+
+`on_delete=models.SET_NULL` 유저가 사라지면 없는 채로 놔둔다
 
 `on_delete=models.SET_DEFAULT` room을 지우면 누구의 소유로 가게 하라
 
@@ -530,11 +536,13 @@ https://docs.djangoproject.com/en/3.1/ref/models/options/
 
 ### verbose_name
 
+"이름" + "s"
+
 If this isn’t given, Django will use a munged version of the class name: CamelCase becomes camel case.
 
 https://docs.djangoproject.com/en/3.1/ref/models/options/
 
-### ordering
+### ordering 정렬 순서
 
 `ordering = ['-order_date']` -를 붙이면 역순 정렬이다
 
@@ -782,3 +790,80 @@ class ConversationAdmin(admin.ModelAdmin):
 
     pass
 ```
+
+## ROOM ADNIN 검색 조건
+
+```python
+
+search_fields = (
+    "=city",
+    "^host__username",
+)
+```
+
+`^` 시작하는 단어로 검색해야 함
+`=` 정확히 검색
+
+### Foreign Key 모델 검색
+
+
+```python
+
+search_fields = (
+    "^host__username",
+)
+```
+
+`foreignKey__fieldNAme` 릴레이션 걸린 키도 검색할 수 있다. 
+
+### manytomany 가로 필터
+
+```python
+filter_horizontal = (
+    "amenities",
+    "facilities",
+    "house_rules",
+)
+```
+
+검색이 되며 가로로 선택된 것들이 오른쪽 박스, 미선택이 왼쪽 박스에 배치되는 필터가 생긴다
+
+
+## Verify Email
+
+### Dotenv
+
+https://github.com/jpadilla/django-dotenv
+
+루트에 .env 파일을 만든다.
+
+```
+pipenv shell
+pipenv install django-dotenv
+```
+
+manage.py
+
+```python
+"""Django's command-line utility for administrative tasks."""
+import os
+import sys
+
+import dotenv  // add
+
+
+
+if __name__ == '__main__':
+    dotenv.read_dotenv() // add
+    main()
+
+
+```
+
+## deploy to eb
+
+### requirements.txt 만들기
+
+빈스톡은 이 파일을 찾아 보둘을 만든다
+
+`pipenv install pipenv-to-requirements`
