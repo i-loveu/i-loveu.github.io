@@ -21,6 +21,8 @@ npm install netlify-cli -g
 netlify deploy
 ```
 
+`netlify deploy` 명령어를 치면 임시 url이 나온다. 배포해도 괜찮으면 `netlify deploy --prod`
+
 ### DNS 설정
 
 A레코드를 75.2.60.5로 변경한다

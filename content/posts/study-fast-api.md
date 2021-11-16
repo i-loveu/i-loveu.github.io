@@ -24,7 +24,7 @@ draft: true
 
 ## 기본 서비스
 
-###  Swagger
+### Swagger
 
 RESTful API를 json으로 만들어준다
 
@@ -42,3 +42,14 @@ json 파일을 한땀 한땀 떠준다
 
 http://127.0.0.1:8000/openapi.json
 
+## folder
+
+### config.py
+
+#### @dataclass
+
+딕셔너리 형태고 사용하기 위해 사용
+
+```python
+@dataclass
+```

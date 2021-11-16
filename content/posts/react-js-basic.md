@@ -11,6 +11,23 @@ draft: true
 
 간단한 컴포넌트 묶음 `Router`를 만들고 `Route`를 만든다
 
+### setState
+
+새로운 state 불러와서 값을 바꿔주며 render()을 호출한다
+
+### current
+
+```javascript
+this.setState({ count: this.state.count - 1 });
+this.setState((current) => ({ count: current.count - 1 }));
+```
+
+위에 줄을 아래줄로 변경할 수 있따
+
+### componentDidUpdate
+
+state가 변경되고 render()를 호출하고 실행된다
+
 ### ReactJs 규칙
 
 return 두개는 할 수 없다. Fragments를 사용하여 다수의 컴포넌트를 return한다
