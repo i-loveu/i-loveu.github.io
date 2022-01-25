@@ -1,5 +1,5 @@
 ---
-title: "SSL File 셍성방법"
+title: "SSL File 생성방법"
 slug: "Ssl File Create"
 date: 2021-06-11T15:15:11+09:00
 draft: false

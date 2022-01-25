@@ -53,3 +53,13 @@ http://127.0.0.1:8000/openapi.json
 ```python
 @dataclass
 ```
+
+## plugin
+
+### EmailStr 사용하기 위한 'pydantic'
+
+`command + ,`를 누르고 설치
+
+### JSON 웹 토큰을 쓰기위한 'pyjwt'
+
+### 암호화를 위한 `bcrypt`
