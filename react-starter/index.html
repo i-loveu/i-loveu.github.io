@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>React Starter - 사랑합니다 기술 블로그</title><meta name="Description" content=""><meta property="og:title" content="React Starter" />
+<meta property="og:description" content="project Setup create-react-app 프로젝트 시작 npx create-react-app project-name
+불필요 파일 삭제 App.js, index.js 빼고 src 폴더 내 파일 삭제
+Router 추가 src/Components 폴더 생성 후 App.js Components 폴더로 이동
+index.js App 경로 수정 ./Components/App
+.env 파일 추가 후 NODE_PATH=src 추가
+`Components/Router.js``
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  import { HashRouter as Router, Route, Redirect, Switch, } from &#34;react-router-dom&#34;; import Home from &#34;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://i-loveu.github.io/react-starter/" />
+<meta property="article:published_time" content="2021-09-05T11:22:49+09:00" />
+<meta property="article:modified_time" content="2021-09-05T11:22:49+09:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="React Starter"/>
+<meta name="twitter:description" content="project Setup create-react-app 프로젝트 시작 npx create-react-app project-name
+불필요 파일 삭제 App.js, index.js 빼고 src 폴더 내 파일 삭제
+Router 추가 src/Components 폴더 생성 후 App.js Components 폴더로 이동
+index.js App 경로 수정 ./Components/App
+.env 파일 추가 후 NODE_PATH=src 추가
+`Components/Router.js``
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  import { HashRouter as Router, Route, Redirect, Switch, } from &#34;react-router-dom&#34;; import Home from &#34;."/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://i-loveu.github.io/react-starter/" /><link rel="prev" href="https://i-loveu.github.io/javascript-basic/" /><link rel="next" href="https://i-loveu.github.io/css-flex-a-to-z/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "React Starter",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/i-loveu.github.io\/react-starter\/"
+        },"genre": "posts","wordcount":  491 ,
+        "url": "https:\/\/i-loveu.github.io\/react-starter\/","datePublished": "2021-09-05T11:22:49+09:00","dateModified": "2021-09-05T11:22:49+09:00","publisher": {
+            "@type": "Organization",
+            "name": "ahntae"},"author": {
+                "@type": "Person",
+                "name": "ahntae"
+            },"description": ""
+    }
+    </script><script data-ad-client="ca-pub-4726317611282078" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="사랑합니다 기술 블로그">사랑합니다 기술 블로그</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="사랑합니다 기술 블로그">사랑합니다 기술 블로그</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">React Starter</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://iloveu.design" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ahntae</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-05">2021-09-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;491 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#project-setup">project Setup</a>
+      <ul>
+        <li><a href="#create-react-app-프로젝트-시작">create-react-app 프로젝트 시작</a></li>
+        <li><a href="#불필요-파일-삭제">불필요 파일 삭제</a></li>
+        <li><a href="#router-추가">Router 추가</a>
+          <ul>
+            <li><a href="#switch-추가">Switch 추가</a></li>
+          </ul>
+        </li>
+        <li><a href="#header-추가">Header 추가</a></li>
+      </ul>
+    </li>
+    <li><a href="#style">Style</a>
+      <ul>
+        <li><a href="#styled-components-추가">styled-components 추가</a></li>
+        <li><a href="#globalstylejs-추가">GlobalStyle.js 추가</a>
+          <ul>
+            <li><a href="#styled-reset-추가">styled-reset 추가</a></li>
+          </ul>
+        </li>
+        <li><a href="#withrouter-추가">withRouter 추가</a></li>
+      </ul>
+    </li>
+    <li><a href="#networking">Networking</a>
+      <ul>
+        <li><a href="#add-axios">add axios</a></li>
+      </ul>
+    </li>
+    <li><a href="#containers">CONTAINERS</a>
+      <ul>
+        <li><a href="#handlesubmit">handleSubmit</a></li>
+      </ul>
+    </li>
+    <li><a href="#presenters">Presenters</a>
+      <ul>
+        <li><a href="#error-js">error js</a></li>
+        <li><a href="#add-react-helmet">Add react-helmet</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="project-setup">project Setup</h2>
+<h3 id="create-react-app-프로젝트-시작">create-react-app 프로젝트 시작</h3>
+<p><code>npx create-react-app project-name</code></p>
+<h3 id="불필요-파일-삭제">불필요 파일 삭제</h3>
+<p>App.js, index.js 빼고 src 폴더 내 파일 삭제</p>
+<h3 id="router-추가">Router 추가</h3>
+<p><code>src/Components</code> 폴더 생성 후 App.js Components 폴더로 이동</p>
+<p>index.js App 경로 수정 <code>./Components/App</code></p>
+<p>.env 파일 추가 후 <code>NODE_PATH=src</code> 추가</p>
+<p>`Components/Router.js``</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="p">{</span>
+  <span class="nx">HashRouter</span> <span class="nx">as</span> <span class="nx">Router</span><span class="p">,</span>
+  <span class="nx">Route</span><span class="p">,</span>
+  <span class="nx">Redirect</span><span class="p">,</span>
+  <span class="nx">Switch</span><span class="p">,</span>
+<span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react-router-dom&#34;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">Home</span> <span class="nx">from</span> <span class="s2">&#34;../Routes/Home&#34;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">TV</span> <span class="nx">from</span> <span class="s2">&#34;../Routes/TV&#34;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">Search</span> <span class="nx">from</span> <span class="s2">&#34;../Routes/Search&#34;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">(</span>
+  <span class="o">&lt;</span><span class="nx">Router</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">Switch</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="s2">&#34;/&#34;</span> <span class="nx">exact</span> <span class="nx">component</span><span class="o">=</span><span class="p">{</span><span class="nx">Home</span><span class="p">}</span> <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="s2">&#34;/tv&#34;</span> <span class="nx">component</span><span class="o">=</span><span class="p">{</span><span class="nx">TV</span><span class="p">}</span> <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="s2">&#34;/search&#34;</span> <span class="nx">component</span><span class="o">=</span><span class="p">{</span><span class="nx">Search</span><span class="p">}</span> <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Redirect</span> <span class="nx">from</span><span class="o">=</span><span class="s2">&#34;*&#34;</span> <span class="nx">to</span><span class="o">=</span><span class="s2">&#34;/&#34;</span> <span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="err">/Switch&gt;</span>
+  <span class="o">&lt;</span><span class="err">/Router&gt;</span>
+<span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="switch-추가">Switch 추가</h4>
+<p>한번에 하나의 Route만 랜더</p>
+<h3 id="header-추가">Header 추가</h3>
+<h2 id="style">Style</h2>
+<h3 id="styled-components-추가">styled-components 추가</h3>
+<p><code>yarn add styled-components</code></p>
+<h3 id="globalstylejs-추가">GlobalStyle.js 추가</h3>
+<p>폰트 등 전체적으로 적용할 css</p>
+<h4 id="styled-reset-추가">styled-reset 추가</h4>
+<p><code>yarn add styled-reset</code></p>
+<h3 id="withrouter-추가">withRouter 추가</h3>
+<p>컴포턴트들과 연결되는 props를 다룬다</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Link</span><span class="p">,</span> <span class="nx">withRouter</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react-router-dom&#34;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">SHeader</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">location</span><span class="o">:</span> <span class="p">{</span> <span class="nx">pathname</span> <span class="p">}</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">(</span>
+  <span class="o">&lt;</span><span class="nx">Header</span><span class="o">&gt;</span>
+    <span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">pathname</span><span class="p">)}</span>
+    <span class="o">&lt;</span><span class="nx">List</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Item</span> <span class="nx">current</span><span class="o">=</span><span class="p">{</span><span class="nx">pathname</span> <span class="o">==</span> <span class="s2">&#34;/&#34;</span><span class="p">}</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">SLink</span> <span class="nx">to</span><span class="o">=</span><span class="s2">&#34;/&#34;</span><span class="o">&gt;</span><span class="nx">Home</span><span class="o">&lt;</span><span class="err">/SLink&gt;</span>
+      <span class="o">&lt;</span><span class="err">/Item&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Item</span> <span class="nx">current</span><span class="o">=</span><span class="p">{</span><span class="nx">pathname</span> <span class="o">==</span> <span class="s2">&#34;/tv&#34;</span><span class="p">}</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">SLink</span> <span class="nx">to</span><span class="o">=</span><span class="s2">&#34;tv&#34;</span><span class="o">&gt;</span><span class="nx">TV</span><span class="o">&lt;</span><span class="err">/SLink&gt;</span>
+      <span class="o">&lt;</span><span class="err">/Item&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Item</span> <span class="nx">current</span><span class="o">=</span><span class="p">{</span><span class="nx">pathname</span> <span class="o">==</span> <span class="s2">&#34;/search&#34;</span><span class="p">}</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">SLink</span> <span class="nx">to</span><span class="o">=</span><span class="s2">&#34;search&#34;</span><span class="o">&gt;</span><span class="nx">Search</span><span class="o">&lt;</span><span class="err">/SLink&gt;</span>
+      <span class="o">&lt;</span><span class="err">/Item&gt;</span>
+    <span class="o">&lt;</span><span class="err">/List&gt;</span>
+  <span class="o">&lt;</span><span class="err">/Header&gt;</span>
+<span class="p">);</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">withRouter</span><span class="p">(</span><span class="nx">SHeader</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="networking">Networking</h2>
+<p>영화 DB 얻어오는 사이트 계정얻기 <a href="https://www.themoviedb.org/">https://www.themoviedb.org/</a></p>
+<p>API 사이트: <a href="https://developers.themoviedb.org/3/getting-started/introduction">https://developers.themoviedb.org/3/getting-started/introduction</a></p>
+<h3 id="add-axios">add axios</h3>
+<p><code>yarn add axios</code></p>
+<p>create <code>api.js</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="nx">axios</span> <span class="nx">from</span> <span class="s2">&#34;axios&#34;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">axios</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
+  <span class="nx">baseURL</span><span class="o">:</span> <span class="s2">&#34;https://api.themoviedb.org/3/&#34;</span><span class="p">,</span>
+  <span class="nx">params</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">api_key</span><span class="o">:</span> <span class="s2">&#34;ad6efc0d7346f003**************&#34;</span><span class="p">,</span>
+    <span class="nx">language</span><span class="o">:</span> <span class="s2">&#34;en-US&#34;</span><span class="p">,</span>
+  <span class="p">},</span>
+<span class="p">});</span>
+
+<span class="kr">export</span> <span class="kr">const</span> <span class="nx">movieApi</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">nowPlaying</span><span class="o">:</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">api</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&#34;movie/now_playing&#34;</span><span class="p">),</span>
+  <span class="nx">upComing</span><span class="o">:</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">api</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&#34;movie/upcoming&#34;</span><span class="p">),</span>
+  <span class="nx">popular</span><span class="o">:</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">api</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&#34;movie/popular&#34;</span><span class="p">),</span>
+  <span class="nx">movie</span><span class="o">:</span> <span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">=&gt;</span>
+    <span class="nx">api</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="sb">`movie/</span><span class="si">${</span><span class="nx">id</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">params</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">append_to_response</span><span class="o">:</span> <span class="s2">&#34;videos&#34;</span><span class="p">,</span>
+      <span class="p">},</span>
+    <span class="p">}),</span>
+  <span class="nx">search</span><span class="o">:</span> <span class="p">(</span><span class="nx">term</span><span class="p">)</span> <span class="p">=&gt;</span>
+    <span class="nx">api</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&#34;search/movie&#34;</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">params</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">guery</span><span class="o">:</span> <span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">term</span><span class="p">),</span>
+      <span class="p">},</span>
+    <span class="p">}),</span>
+<span class="p">};</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="containers">CONTAINERS</h2>
+<h3 id="handlesubmit">handleSubmit</h3>
+<h2 id="presenters">Presenters</h2>
+<h3 id="error-js">error js</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="nx">PropTypes</span> <span class="nx">from</span> <span class="s2">&#34;prop-types&#34;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">styled</span> <span class="nx">from</span> <span class="s2">&#34;styled-components&#34;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">Container</span> <span class="o">=</span> <span class="nx">styled</span><span class="p">.</span><span class="nx">div</span><span class="sb">``</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">Text</span> <span class="o">=</span> <span class="nx">styled</span><span class="p">.</span><span class="nx">span</span><span class="sb">`
+</span><span class="sb">  color: #e74c3c;
+</span><span class="sb">`</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nb">Error</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">text</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="o">&lt;</span><span class="nx">Container</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">Text</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">text</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/Text&gt;</span>
+  <span class="o">&lt;</span><span class="err">/Container&gt;;</span>
+<span class="p">};</span>
+
+<span class="nb">Error</span><span class="p">.</span><span class="nx">propTypes</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">text</span><span class="o">:</span> <span class="nx">PropTypes</span><span class="p">.</span><span class="nx">string</span><span class="p">.</span><span class="nx">isRequired</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nb">Error</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="add-react-helmet">Add react-helmet</h3>
+<p><code>yarn add react-helmet</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="nx">Helmet</span> <span class="nx">from</span> <span class="s2">&#34;react-helmet&#34;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">DetailPresenter</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">result</span><span class="p">,</span> <span class="nx">error</span><span class="p">,</span> <span class="nx">loading</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">(</span>
+  <span class="o">&lt;&gt;</span>
+    <span class="o">&lt;</span><span class="nx">Helmet</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">title</span><span class="o">&gt;</span><span class="nx">Loading</span> <span class="o">|</span> <span class="nx">Nomflix</span><span class="o">&lt;</span><span class="err">/title&gt;</span>
+    <span class="o">&lt;</span><span class="err">/Helmet&gt;</span>
+    <span class="p">{</span><span class="nx">loading</span> <span class="o">?</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">Loader</span> <span class="o">/&gt;</span>
+    <span class="p">)</span> <span class="o">:</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">Container</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">Helmet</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="nx">title</span><span class="o">&gt;</span>
+            <span class="p">{</span><span class="nx">result</span><span class="p">.</span><span class="nx">original_title</span>
+              <span class="o">?</span> <span class="nx">result</span><span class="p">.</span><span class="nx">original_title</span>
+              <span class="o">:</span> <span class="nx">result</span><span class="p">.</span><span class="nx">original_name</span><span class="p">}{</span><span class="s2">&#34; &#34;</span><span class="p">}</span>
+            <span class="o">|</span> <span class="nx">Nomflix</span>
+          <span class="o">&lt;</span><span class="err">/title&gt;</span>
+        <span class="o">&lt;</span><span class="err">/Helmet&gt;</span>
+        <span class="o">&lt;</span><span class="nx">BackDrop</span> <span class="nx">bgImage</span><span class="o">=</span><span class="p">{</span><span class="nx">result</span><span class="p">.</span><span class="nx">backdrop_path</span><span class="p">}</span> <span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="nx">Content</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="nx">Poster</span>
+            <span class="nx">src</span><span class="o">=</span><span class="p">{</span>
+              <span class="nx">result</span><span class="p">.</span><span class="nx">poster_path</span>
+                <span class="o">?</span> <span class="sb">`https://image.tmdb.org/t/p/original</span><span class="si">${</span><span class="nx">result</span><span class="p">.</span><span class="nx">poster_path</span><span class="si">}</span><span class="sb">`</span>
+                <span class="o">:</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&#34;../../assets/modootango-logo.png&#34;</span><span class="p">)</span>
+            <span class="p">}</span>
+          <span class="o">/&gt;</span>
+          <span class="o">&lt;</span><span class="nx">Data</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span>
+              <span class="p">{</span><span class="nx">result</span><span class="p">.</span><span class="nx">original_title</span>
+                <span class="o">?</span> <span class="nx">result</span><span class="p">.</span><span class="nx">original_title</span>
+                <span class="o">:</span> <span class="nx">result</span><span class="p">.</span><span class="nx">original_name</span><span class="p">}</span>
+            <span class="o">&lt;</span><span class="err">/h1&gt;</span>
+          <span class="o">&lt;</span><span class="err">/Data&gt;</span>
+        <span class="o">&lt;</span><span class="err">/Content&gt;</span>
+      <span class="o">&lt;</span><span class="err">/Container&gt;</span>
+    <span class="p">)}</span>
+  <span class="o">&lt;</span><span class="err">/&gt;</span>
+<span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-09-05</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/javascript-basic/" class="prev" rel="prev" title="Javascript Basic"><i class="fas fa-angle-left fa-fw"></i>Javascript Basic</a>
+            <a href="/css-flex-a-to-z/" class="next" rel="next" title="Css Flex a to Z">Css Flex a to Z<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://iloveu.design" target="_blank">ahntae</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
