@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Npm Error - 사랑합니다 기술 블로그</title><meta name="Description" content=""><meta property="og:title" content="Npm Error" />
+<meta property="og:description" content="Npm을 쓰면서 나는 에러 대처 법 unable to resolve dependency tree npm install --save --legacy-peer-deps
+--save package.json 의 dependencies에 추가 하기 위한 것
+--legacy-peer-deps 의존성에 맞게 상위 모듈을 다운그레이드 한다.
+react의 경우 지금 사용하고 있는 버전과 개발될 때 사용한 버전이 달라 하부 의존 패키지를 설치하지 못하는 경우가 있다.
+react의 버전을 낮춰 의존성을 맞추는 설치" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://i-loveu.github.io/npm-error/" />
+<meta property="article:published_time" content="2021-05-19T18:19:27+09:00" />
+<meta property="article:modified_time" content="2021-05-19T18:19:27+09:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Npm Error"/>
+<meta name="twitter:description" content="Npm을 쓰면서 나는 에러 대처 법 unable to resolve dependency tree npm install --save --legacy-peer-deps
+--save package.json 의 dependencies에 추가 하기 위한 것
+--legacy-peer-deps 의존성에 맞게 상위 모듈을 다운그레이드 한다.
+react의 경우 지금 사용하고 있는 버전과 개발될 때 사용한 버전이 달라 하부 의존 패키지를 설치하지 못하는 경우가 있다.
+react의 버전을 낮춰 의존성을 맞추는 설치"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://i-loveu.github.io/npm-error/" /><link rel="prev" href="https://i-loveu.github.io/react-hooks-10/" /><link rel="next" href="https://i-loveu.github.io/library-parallax-universal-parallax/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Npm Error",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/i-loveu.github.io\/npm-error\/"
+        },"genre": "posts","keywords": "error","wordcount":  54 ,
+        "url": "https:\/\/i-loveu.github.io\/npm-error\/","datePublished": "2021-05-19T18:19:27+09:00","dateModified": "2021-05-19T18:19:27+09:00","publisher": {
+            "@type": "Organization",
+            "name": "ahntae"},"author": {
+                "@type": "Person",
+                "name": "ahntae"
+            },"description": ""
+    }
+    </script><script data-ad-client="ca-pub-4726317611282078" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="사랑합니다 기술 블로그">사랑합니다 기술 블로그</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="사랑합니다 기술 블로그">사랑합니다 기술 블로그</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Npm Error</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://iloveu.design" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ahntae</a></span>&nbsp;<span class="post-category">included in <a href="/categories/npm/"><i class="far fa-folder fa-fw"></i>npm</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-19">2021-05-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;54 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#npm을-쓰면서-나는-에러-대처-법">Npm을 쓰면서 나는 에러 대처 법</a>
+      <ul>
+        <li><a href="#unable-to-resolve-dependency-tree">unable to resolve dependency tree</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="npm을-쓰면서-나는-에러-대처-법">Npm을 쓰면서 나는 에러 대처 법</h2>
+<h3 id="unable-to-resolve-dependency-tree">unable to resolve dependency tree</h3>
+<p><code>npm install --save --legacy-peer-deps</code></p>
+<p><code>--save</code> package.json 의 dependencies에 추가 하기 위한 것</p>
+<p><code>--legacy-peer-deps</code> 의존성에 맞게 상위 모듈을 다운그레이드 한다.</p>
+<p>react의 경우 지금 사용하고 있는 버전과 개발될 때 사용한 버전이 달라 하부 의존 패키지를 설치하지 못하는 경우가 있다.</p>
+<p>react의 버전을 낮춰 의존성을 맞추는 설치</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-05-19</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/error/">error</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/react-hooks-10/" class="prev" rel="prev" title="React Hooks 10"><i class="fas fa-angle-left fa-fw"></i>React Hooks 10</a>
+            <a href="/library-parallax-universal-parallax/" class="next" rel="next" title="Library Parallax Universal Parallax">Library Parallax Universal Parallax<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://iloveu.design" target="_blank">ahntae</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

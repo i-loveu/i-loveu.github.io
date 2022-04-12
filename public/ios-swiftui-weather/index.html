@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Ios Swiftui Weather - 사랑합니다 기술 블로그</title><meta name="Description" content=""><meta property="og:title" content="Ios Swiftui Weather" />
+<meta property="og:description" content="SwiftUI Weather App resume hot reloading
+ui 도구 모음 단축키 command &#43; SHIFT &#43; L
+Stack Horizontal Stack - z 축
+Vertical Stack
+Z Stack
+ZStack 배경 깔기 파랑으로 깔기 1 2 3 4 5 6 7 8 9 10  struct ContentView: View { var body: some View { ZStack { Color(.blue) .edgesIgnoringSafeArea(.all) } } }   .edgesIgnoringSafeArea(.all) m자 까지 덮는 배경
+gradient로 깔기 1 2 3 4 5 6 7 8  struct ContentView: View { var body: some View { ZStack { LinearGradient(gradient: /*@START_MENU_TOKEN@*/Gradient(colors: [Color." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://i-loveu.github.io/ios-swiftui-weather/" />
+<meta property="article:published_time" content="2021-06-21T20:17:27+09:00" />
+<meta property="article:modified_time" content="2021-06-21T20:17:27+09:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ios Swiftui Weather"/>
+<meta name="twitter:description" content="SwiftUI Weather App resume hot reloading
+ui 도구 모음 단축키 command &#43; SHIFT &#43; L
+Stack Horizontal Stack - z 축
+Vertical Stack
+Z Stack
+ZStack 배경 깔기 파랑으로 깔기 1 2 3 4 5 6 7 8 9 10  struct ContentView: View { var body: some View { ZStack { Color(.blue) .edgesIgnoringSafeArea(.all) } } }   .edgesIgnoringSafeArea(.all) m자 까지 덮는 배경
+gradient로 깔기 1 2 3 4 5 6 7 8  struct ContentView: View { var body: some View { ZStack { LinearGradient(gradient: /*@START_MENU_TOKEN@*/Gradient(colors: [Color."/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://i-loveu.github.io/ios-swiftui-weather/" /><link rel="prev" href="https://i-loveu.github.io/nomad-study-react-hooks/" /><link rel="next" href="https://i-loveu.github.io/ios-swiftui-form/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Ios Swiftui Weather",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/i-loveu.github.io\/ios-swiftui-weather\/"
+        },"genre": "posts","wordcount":  240 ,
+        "url": "https:\/\/i-loveu.github.io\/ios-swiftui-weather\/","datePublished": "2021-06-21T20:17:27+09:00","dateModified": "2021-06-21T20:17:27+09:00","publisher": {
+            "@type": "Organization",
+            "name": "ahntae"},"author": {
+                "@type": "Person",
+                "name": "ahntae"
+            },"description": ""
+    }
+    </script><script data-ad-client="ca-pub-4726317611282078" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="사랑합니다 기술 블로그">사랑합니다 기술 블로그</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="사랑합니다 기술 블로그">사랑합니다 기술 블로그</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Ios Swiftui Weather</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://iloveu.design" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ahntae</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-21">2021-06-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;240 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#resume">resume</a></li>
+        <li><a href="#ui-도구-모음">ui 도구 모음</a></li>
+        <li><a href="#stack">Stack</a></li>
+      </ul>
+    </li>
+    <li><a href="#zstack-배경-깔기">ZStack 배경 깔기</a>
+      <ul>
+        <li><a href="#파랑으로-깔기">파랑으로 깔기</a></li>
+        <li><a href="#gradient로-깔기">gradient로 깔기</a></li>
+        <li><a href="#sf-symbols">SF Symbols</a></li>
+        <li><a href="#extractedview">ExTractedView</a></li>
+        <li><a href="#text-안에-value-넣는-방법">text 안에 value 넣는 방법</a></li>
+        <li><a href="#spacer">Spacer()</a></li>
+        <li><a href="#custom-color-사용-방법">Custom Color 사용 방법</a></li>
+        <li><a href="#cornerradius30">.cornerRadius(3.0)</a></li>
+        <li><a href="#command--n--새로운-파일-추가">command + n =&gt; 새로운 파일 추가</a></li>
+        <li><a href="#toggle">.toggle()</a></li>
+        <li><a href="#binding">@Binding</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="swiftui-weather-app">SwiftUI Weather App</h1>
+<h3 id="resume">resume</h3>
+<p>hot reloading</p>
+<h3 id="ui-도구-모음">ui 도구 모음</h3>
+<p>단축키 command + SHIFT + L</p>
+<h3 id="stack">Stack</h3>
+<p>Horizontal Stack - z 축</p>
+<p>Vertical Stack</p>
+<p>Z Stack</p>
+<h2 id="zstack-배경-깔기">ZStack 배경 깔기</h2>
+<h3 id="파랑으로-깔기">파랑으로 깔기</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-swift" data-lang="swift">
+<span class="kd">struct</span> <span class="nc">ContentView</span><span class="p">:</span> <span class="n">View</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nv">body</span><span class="p">:</span> <span class="n">some</span> <span class="n">View</span> <span class="p">{</span>
+        <span class="n">ZStack</span> <span class="p">{</span>
+            <span class="n">Color</span><span class="p">(.</span><span class="n">blue</span><span class="p">)</span>
+                <span class="p">.</span><span class="n">edgesIgnoringSafeArea</span><span class="p">(.</span><span class="n">all</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><p><code>.edgesIgnoringSafeArea(.all)</code> m자 까지 덮는 배경</p>
+<h3 id="gradient로-깔기">gradient로 깔기</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-swift" data-lang="swift"><span class="kd">struct</span> <span class="nc">ContentView</span><span class="p">:</span> <span class="n">View</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nv">body</span><span class="p">:</span> <span class="n">some</span> <span class="n">View</span> <span class="p">{</span>
+        <span class="n">ZStack</span> <span class="p">{</span>
+            <span class="n">LinearGradient</span><span class="p">(</span><span class="n">gradient</span><span class="p">:</span> <span class="cm">/*@START_MENU_TOKEN@*/</span><span class="n">Gradient</span><span class="p">(</span><span class="n">colors</span><span class="p">:</span> <span class="p">[</span><span class="n">Color</span><span class="p">.</span><span class="n">red</span><span class="p">,</span> <span class="n">Color</span><span class="p">.</span><span class="n">blue</span><span class="p">])</span><span class="cm">/*@END_MENU_TOKEN@*/</span><span class="p">,</span> <span class="n">startPoint</span><span class="p">:</span> <span class="cm">/*@START_MENU_TOKEN@*/</span><span class="p">.</span><span class="n">leading</span><span class="cm">/*@END_MENU_TOKEN@*/</span><span class="p">,</span> <span class="n">endPoint</span><span class="p">:</span> <span class="cm">/*@START_MENU_TOKEN@*/</span><span class="p">.</span><span class="n">trailing</span><span class="cm">/*@END_MENU_TOKEN@*/</span><span class="p">)</span>
+                <span class="p">.</span><span class="n">edgesIgnoringSafeArea</span><span class="p">(</span><span class="cm">/*@START_MENU_TOKEN@*/</span><span class="p">.</span><span class="n">all</span><span class="cm">/*@END_MENU_TOKEN@*/</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>기본값</p>
+<p><code>.leading</code> 왼쪽</p>
+<p><code>.topLeading</code> 천정</p>
+<p><code>.trailing</code> 오른쪽</p>
+<p><code>.bottomLeading</code> 아래바닥</p>
+<h3 id="sf-symbols">SF Symbols</h3>
+<p><a href="https://developer.apple.com/sf-symbols/">https://developer.apple.com/sf-symbols/</a></p>
+<p>원하는 아이콘을 선택 한 후</p>
+<p><code>command + SHIFT + C</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-swift" data-lang="swift"> <span class="n">VStack</span> <span class="p">{</span>
+    <span class="n">Image</span><span class="p">(</span><span class="n">systemName</span><span class="p">:</span> <span class="s">&#34;cloud.sun.fill&#34;</span><span class="p">)</span>
+        <span class="p">.</span><span class="n">renderingMode</span><span class="p">(.</span><span class="n">original</span><span class="p">)</span>
+        <span class="p">.</span><span class="n">resizable</span><span class="p">()</span> <span class="c1">// 사이즈를 꽉 채운다</span>
+        <span class="p">.</span><span class="n">frame</span><span class="p">(</span><span class="n">width</span><span class="p">:</span> <span class="mi">180</span><span class="p">,</span> <span class="n">height</span><span class="p">:</span> <span class="mi">180</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="extractedview">ExTractedView</h3>
+<p><code>VStack</code> Command + 클릭</p>
+<h3 id="text-안에-value-넣는-방법">text 안에 value 넣는 방법</h3>
+<p><code>Text(&quot;\(temperature)&quot;)</code></p>
+<h3 id="spacer">Spacer()</h3>
+<p>공간을 적당히 띄워준다</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-swift" data-lang="swift"><span class="n">HStack</span><span class="p">(</span><span class="n">spacing</span><span class="p">:</span> <span class="mi">28</span><span class="p">)</span> <span class="p">{</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>item 간격을 28만큼 띄운다</p>
+<h3 id="custom-color-사용-방법">Custom Color 사용 방법</h3>
+<ol>
+<li>Assets.xcassets 를 클릭</li>
+<li>하단 <code>+</code> 를 눌러서 <code>Color Set</code></li>
+</ol>
+<h3 id="cornerradius30">.cornerRadius(3.0)</h3>
+<p>border-radius 와 같은 효과</p>
+<h3 id="command--n--새로운-파일-추가">command + n =&gt; 새로운 파일 추가</h3>
+<h3 id="toggle">.toggle()</h3>
+<p>value를 반전 시킨다</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-swift" data-lang="swift"><span class="p">@</span><span class="n">State</span> <span class="kd">private</span> <span class="kd">var</span> <span class="nv">isNight</span> <span class="p">=</span> <span class="kc">false</span>
+
+<span class="n">Button</span> <span class="p">{</span>
+    <span class="n">isNight</span><span class="p">.</span><span class="n">toggle</span><span class="p">()</span>
+<span class="p">}</span> <span class="n">label</span><span class="p">:</span> <span class="p">{</span>
+    <span class="n">WweatherButton</span><span class="p">(</span><span class="n">title</span><span class="p">:</span> <span class="s">&#34;Change Day Time&#34;</span><span class="p">,</span> <span class="n">textColor</span><span class="p">:</span> <span class="p">.</span><span class="n">blue</span><span class="p">,</span> <span class="n">backgroundColor</span><span class="p">:</span> <span class="p">.</span><span class="n">white</span><span class="p">)</span>
+<span class="p">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="binding">@Binding</h3>
+<p>상위에 있는 variable을 Binding 한다</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-swift" data-lang="swift"><span class="n">BackgroundView</span><span class="p">(</span><span class="n">isNight</span><span class="p">:</span> <span class="err">$</span><span class="n">isNight</span><span class="p">)</span>
+
+<span class="kd">struct</span> <span class="nc">BackgroundView</span><span class="p">:</span> <span class="n">View</span> <span class="p">{</span>
+    
+    <span class="p">@</span><span class="n">Binding</span> <span class="kd">var</span> <span class="nv">isNight</span><span class="p">:</span> <span class="nb">Bool</span>
+
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-06-21</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/nomad-study-react-hooks/" class="prev" rel="prev" title="Nomad Study React Hooks"><i class="fas fa-angle-left fa-fw"></i>Nomad Study React Hooks</a>
+            <a href="/ios-swiftui-form/" class="next" rel="next" title="Ios Swiftui Form">Ios Swiftui Form<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://iloveu.design" target="_blank">ahntae</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

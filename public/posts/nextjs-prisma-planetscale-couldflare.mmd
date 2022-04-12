@@ -1,0 +1,33 @@
+---
+title: "Nextjs Prisma Planetscale Couldflare"
+date: 2022-02-15T18:03:05+09:00
+draft: true
+---
+
+
+
+## Prisma
+
+### local setting 
+
+`pscale login` 으로 로그임 
+
+`pscale connect db_0445 initial-setup --port 3309`
+
+`pscale connect db_0445 shadow --port 3310`
+
+## Use Prisma
+
+
+
+* create migration file
+
+`npx prisma migrate de --name somethin_work_naming`
+
+*  prisma studio 
+
+`npx prisma studio`
+
+## swr 설치 
+
+`npm install swr` 

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Nomad Study Css Layout - 사랑합니다 기술 블로그</title><meta name="Description" content=""><meta property="og:title" content="Nomad Study Css Layout" />
+<meta property="og:description" content="flex-box flex-box는 무조건 item이 몇개가 있든 한 라인에 존재하게 한다.
+넓이가 200px이어도 그 공간이 부족하면 구겨서 줄여버린다.
+https://flexboxfroggy.com/ flex 요소 게임
+flex: 1 1 50% =&gt; ` flex-grow: 1; flex-shrink: 1; flex-basis: 50%;``
+flex-grow: 1 1의 비율로 넓이를 채워라
+flex-shrink: 1 1의 비율로 줄어들어라
+flex-basis: 50% 더 넓어질 수도 있지만, 기본 값은 50%
+flex-direction row default 값 메인 축 값이 가로
+column default 값 메인 축 값이 세로
+flex-direction: row-reverse 가로 정렬 순서를 반대로 한다" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://i-loveu.github.io/nomad-study-css-layout/" />
+<meta property="article:published_time" content="2021-04-21T21:12:55+09:00" />
+<meta property="article:modified_time" content="2021-04-21T21:12:55+09:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Nomad Study Css Layout"/>
+<meta name="twitter:description" content="flex-box flex-box는 무조건 item이 몇개가 있든 한 라인에 존재하게 한다.
+넓이가 200px이어도 그 공간이 부족하면 구겨서 줄여버린다.
+https://flexboxfroggy.com/ flex 요소 게임
+flex: 1 1 50% =&gt; ` flex-grow: 1; flex-shrink: 1; flex-basis: 50%;``
+flex-grow: 1 1의 비율로 넓이를 채워라
+flex-shrink: 1 1의 비율로 줄어들어라
+flex-basis: 50% 더 넓어질 수도 있지만, 기본 값은 50%
+flex-direction row default 값 메인 축 값이 가로
+column default 값 메인 축 값이 세로
+flex-direction: row-reverse 가로 정렬 순서를 반대로 한다"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://i-loveu.github.io/nomad-study-css-layout/" /><link rel="prev" href="https://i-loveu.github.io/nomad-study-nomflix/" /><link rel="next" href="https://i-loveu.github.io/javascript-pretty-search-method/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Nomad Study Css Layout",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/i-loveu.github.io\/nomad-study-css-layout\/"
+        },"genre": "posts","keywords": "study, css","wordcount":  999 ,
+        "url": "https:\/\/i-loveu.github.io\/nomad-study-css-layout\/","datePublished": "2021-04-21T21:12:55+09:00","dateModified": "2021-04-21T21:12:55+09:00","publisher": {
+            "@type": "Organization",
+            "name": "ahntae"},"author": {
+                "@type": "Person",
+                "name": "ahntae"
+            },"description": ""
+    }
+    </script><script data-ad-client="ca-pub-4726317611282078" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="사랑합니다 기술 블로그">사랑합니다 기술 블로그</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="사랑합니다 기술 블로그">사랑합니다 기술 블로그</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Nomad Study Css Layout</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://iloveu.design" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ahntae</a></span>&nbsp;<span class="post-category">included in <a href="/categories/nomadcoder/"><i class="far fa-folder fa-fw"></i>nomadcoder</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-04-21">2021-04-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;999 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#flex-box">flex-box</a>
+      <ul>
+        <li><a href="#flex-direction">flex-direction</a></li>
+        <li><a href="#justify-content">justify-content</a></li>
+        <li><a href="#align-self">align-self</a></li>
+        <li><a href="#plaxe-self">plaxe-self</a></li>
+        <li><a href="#order">order</a></li>
+        <li><a href="#flex-wrap">flex-wrap</a></li>
+        <li><a href="#flex-flow">flex-flow</a></li>
+        <li><a href="#align-centent">align-centent</a></li>
+        <li><a href="#flex-grow">flex-grow</a></li>
+        <li><a href="#flex-shrink">flex-shrink</a></li>
+        <li><a href="#flex-basis">flex-basis</a></li>
+      </ul>
+    </li>
+    <li><a href="#grid">GRID</a>
+      <ul>
+        <li><a href="#grid-template-columns">grid-template-columns</a></li>
+        <li><a href="#grid-template-rows">grid-template-rows</a></li>
+        <li><a href="#column-gap">column-gap</a></li>
+        <li><a href="#row-gap">row-gap</a></li>
+        <li><a href="#gap">gap</a></li>
+        <li><a href="#grid-template-areas">grid-template-areas</a></li>
+        <li><a href="#grid-column-start">grid-column-start</a></li>
+        <li><a href="#grid-column-end">grid-column-end</a></li>
+        <li><a href="#grid-row-start">grid-row-start</a></li>
+        <li><a href="#grid-row-end">grid-row-end</a></li>
+        <li><a href="#grid-column">grid-column</a></li>
+        <li><a href="#grid-row">grid-row</a></li>
+        <li><a href="#grid-naming">grid naming</a></li>
+        <li><a href="#frfraction">fr(fraction)</a></li>
+        <li><a href="#grid-template">grid-template</a></li>
+        <li><a href="#justify-items">justify-items</a></li>
+        <li><a href="#align-items">align-items</a></li>
+        <li><a href="#place-items">place-items</a></li>
+        <li><a href="#place-content">place-content</a></li>
+        <li><a href="#grid-auto-row">grid-auto-row</a></li>
+        <li><a href="#grid-auto-flow">grid-auto-flow</a></li>
+        <li><a href="#minmax">minmax</a></li>
+        <li><a href="#auto-fill">auto-fill</a></li>
+        <li><a href="#auto-fit">auto-fit</a></li>
+        <li><a href="#max-content">max-content</a></li>
+        <li><a href="#min-content">min-content</a></li>
+        <li><a href="#글씨-돌리기">글씨 돌리기</a></li>
+      </ul>
+    </li>
+    <li><a href="#scss">SCSS</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="flex-box">flex-box</h2>
+<p>flex-box는 무조건 item이 몇개가 있든 한 라인에 존재하게 한다.</p>
+<p>넓이가 200px이어도 그 공간이 부족하면 구겨서 줄여버린다.</p>
+<p><a href="https://flexboxfroggy.com/">https://flexboxfroggy.com/</a> flex 요소 게임</p>
+<p><code>flex: 1 1 50%</code> =&gt; ` flex-grow: 1; flex-shrink: 1; flex-basis: 50%;``</p>
+<p><code>flex-grow: 1</code> 1의 비율로 넓이를 채워라</p>
+<p><code>flex-shrink: 1</code> 1의 비율로 줄어들어라</p>
+<p><code>flex-basis: 50%</code> 더 넓어질 수도 있지만, 기본 값은 50%</p>
+<h3 id="flex-direction">flex-direction</h3>
+<p><code>row</code> default 값 메인 축 값이 가로</p>
+<p><code>column</code> default 값 메인 축 값이 세로</p>
+<p><code>flex-direction: row-reverse</code> 가로 정렬 순서를 반대로 한다</p>
+<p><code>column-direction: row-reverse</code> 세로 정렬 순서를 반대로 한다</p>
+<h3 id="justify-content">justify-content</h3>
+<p>item은 개별 content는 전체</p>
+<p><code>justify-content: space-around</code> 모두 동일한 간격(결과적으로 시작과 끝은 오브젝트간 거리의 절반 간격)</p>
+<p><code>justify-content: space-evenly</code> 모두 동일한 간격 양끝까지 공간을 넣고 모두 동일한 공백</p>
+<p><code>justify-content: space-between</code> item을 시작과 끝에 두고 모두 동일한 간격</p>
+<h3 id="align-self">align-self</h3>
+<p><code>align-item</code> 과 비슷하지만, 자식 스스로 독자적으로 포지션을 정의한다.</p>
+<p><code>align-self: center</code> 세로축으로 중심에 혼자 선다</p>
+<p><code>align-self: flex-end</code> 세로축으로 끝에 혼자 선다</p>
+<h3 id="plaxe-self">plaxe-self</h3>
+<p><code>plaxe-self: end center</code></p>
+<h3 id="order">order</h3>
+<p><code>order</code>의 기본값은 0이다. 아무것도 쓰지 않아도 이미 <code>order: 0</code>을 갖고 있음으로 <code>order: 1</code>을 어딘가에 준다면 그것이 마지막으로 갈 것이다</p>
+<h3 id="flex-wrap">flex-wrap</h3>
+<p>기본값은 <code>nowrap</code></p>
+<p><code>flex-wrap: wrap</code> child의 크기를 유지하고 넘치면 밑으로 떨궈라</p>
+<p><code>flex-wrap: wap-reverse</code> child 크기를 유지하고 row를 거꾸로 밑에서부터 왼쪽에서부터 채워라</p>
+<h3 id="flex-flow">flex-flow</h3>
+<p><code>flex-direction</code> 속성과 <code>flex-wrap</code> 속성을 함께 쓰는 것. Shor Cut</p>
+<p><code>flex-flow: column wrap;</code></p>
+<p><code>flex-flow: flex-direction flex-wrap;</code> 첫번째가 flex-direction 두번째가 flex-wrap</p>
+<h3 id="align-centent">align-centent</h3>
+<p>align-items 는 하나의 줄에서의 정렬. align-centent 전체 여러줄의 정렬.</p>
+<p><code>align-content: flex-start</code> row 간 간격이 없다</p>
+<p><code>align-content: center</code> row 간 간격이 없이 세로 중간에 머문다</p>
+<p><code>align-content: space-between</code> row 간 간격이 시작과 끝에 붙어있다</p>
+<p><code>align-content: space-around</code> row 간 간격이 일정하게 떨어지며 그래서 시작과 끝은 간격의 절반이 된다</p>
+<p><code>align-content: baseline</code> 내용의 글자 높이를 맞춰 item 높이를 정렬한다</p>
+<h3 id="flex-grow">flex-grow</h3>
+<p>기본 값은 0이며 shrink와 반대로 공간이 빌 경우 차지하며 늘어나는 비율을 얘기한다</p>
+<p>빈 공간을 나눠가져가는 비율이다.</p>
+<p><code>flex-grow: 1</code> 늘려서 빈공간이 생길경우 늘어나며 채운다</p>
+<h3 id="flex-shrink">flex-shrink</h3>
+<p>flexbox가 쥐어 짜질때 어떻게 행동할 지 정한다</p>
+<p><code>flex-wrap: nowrap</code> 일 경우 넓이가 있어도 찌그러지는데 찌그러지는 비율 1이 기본이고 2면 기본보다 2배로 빨리 찌그러진다</p>
+<h3 id="flex-basis">flex-basis</h3>
+<p>child에 적용되는 property. width와 비슷하지만, initial크기를 지정한다.</p>
+<p><code>flex-grow</code> <code>flex-shrink</code> 에서 찌그러지거나 늘어나기 전 기본 크기다</p>
+<p><code>flex-basis: 300px</code> 일 경우 기존적으로 넒이가 300px 처럼 보인다.</p>
+<p>만약 <code>flex-direction: column</code> 일 경우 높이가 300px이 된다.</p>
+<h2 id="grid">GRID</h2>
+<p>대부분의 속성을 부모에서 지정한다</p>
+<p><a href="https://cssgridgarden.com">https://cssgridgarden.com</a> grid Game</p>
+<h3 id="grid-template-columns">grid-template-columns</h3>
+<p><code>grid-template-columns: 1th-column-width 2th-column-width 3th-column-width 4th-column-width</code> column-width 를 지정한 만큼의 column을 갖는다</p>
+<p><code>grid-template-columns: repeat(4, 200px)</code> 200px 넓이의 column 4개</p>
+<p><code>grid-template-columns: 100px repeat(2, 200px) 100px</code> 100px, 200px 넓이의 column 2개, 100px</p>
+<p><code>grid-template-columns: auto 100px</code> 전체 넓이 - 100px, 100px // 전체 공간을 사용한다</p>
+<h3 id="grid-template-rows">grid-template-rows</h3>
+<p><code>grid-template-rows: 1th-rows-height 2th-rows-height 3th-rows-height 4th-rows-height</code> row-height 를 지정한 만큼의 row를 갖는다</p>
+<p><code>grid-template-rows: repeat(4, 200px)</code> 200px 높이의 row 4개</p>
+<h3 id="column-gap">column-gap</h3>
+<p>grid column간 거리</p>
+<h3 id="row-gap">row-gap</h3>
+<p>grid row간 거리</p>
+<h3 id="gap">gap</h3>
+<p>grid column row 거리</p>
+<p><code>gap: 1rem</code> grid 간격은 1rem의 간격을 갖는다</p>
+<h3 id="grid-template-areas">grid-template-areas</h3>
+<p>template를 디자인하는 것.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">grid</span> <span class="p">{</span>
+  <span class="k">grid-template-areas</span><span class="p">:</span>
+    <span class="s2">&#34;header header header header&#34;</span>
+    <span class="s2">&#34;content content content nav&#34;</span>
+    <span class="s2">&#34;content content content nav&#34;</span>
+    <span class="s2">&#34;footer footer footer footer&#34;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">header</span> <span class="p">{</span>
+  <span class="k">grid-area</span><span class="p">:</span> <span class="n">header</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">content</span> <span class="p">{</span>
+  <span class="k">grid-area</span><span class="p">:</span> <span class="k">content</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">nav</span> <span class="p">{</span>
+  <span class="k">grid-area</span><span class="p">:</span> <span class="n">nav</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">footer</span> <span class="p">{</span>
+  <span class="k">grid-area</span><span class="p">:</span> <span class="n">footer</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>grid-area에 해당하는 것은 &ldquo;header&rdquo; 이렇게 string으로 쓰면 안된다.</p>
+<h3 id="grid-column-start">grid-column-start</h3>
+<p>테이블 처럼 <code>grid-column-start: 1</code> 첫번째 라인에서 그리드가 시작해서 <code>grid-column-end: 3</code> 3번째라인에서 끝난다. 실제로는 2칸</p>
+<h3 id="grid-column-end">grid-column-end</h3>
+<p>그리드가 끝나는 시점</p>
+<h3 id="grid-row-start">grid-row-start</h3>
+<p>row 그리드가 시작하는 시점 줄</p>
+<h3 id="grid-row-end">grid-row-end</h3>
+<p>row 그리드가 끝나는 시점 줄</p>
+<h3 id="grid-column">grid-column</h3>
+<p><code>grid-column-start: 1</code> <code>grid-column-end: 3</code> 을 아래와 같이 줄여서 쓸 수 있다</p>
+<p><code>grid-column: 1/3 </code></p>
+<p><code>grid-column: 1/-1 </code> 처음부터 끝까지</p>
+<h3 id="grid-row">grid-row</h3>
+<p><code>grid-row-start:1 </code> <code>grid-row-end: 3</code> 를 줄여 쓸 수 있다</p>
+<p><code>grid-row: 1/3 </code></p>
+<p><code>grid-row: 1/-1 </code> 처음부터 끝까지. 같은 뜻은 <code>grid-row: span 4</code></p>
+<p><code>grid-row: 1/-2 </code> 처음부터 뒤에서 2번째 라인까지</p>
+<p><code>grid-row: 2 / span 2 </code> 2번 라인부터 처음부터 뒤에서 2개 칸을 차지하기</p>
+<h3 id="grid-naming">grid naming</h3>
+<p><code>grid-template-columns: [first-name] 100px [second-name] 200px [third-name] 150px </code></p>
+<h3 id="frfraction">fr(fraction)</h3>
+<p>.grid width를 100% 로 가정하고 fraction 만큼 나눈다</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">grid</span> <span class="p">{</span>
+  <span class="k">grid-template-columns</span><span class="p">:</span> <span class="mi">1</span><span class="n">fr</span> <span class="mi">1</span><span class="n">fr</span> <span class="mi">1</span><span class="n">fr</span> <span class="mi">1</span><span class="n">fr</span><span class="p">;</span>
+  <span class="k">grid-template-columns</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="n">fr</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>위 두 개는 같은 것</p>
+<h3 id="grid-template">grid-template</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">grid</span> <span class="p">{</span>
+  <span class="k">grid-template</span><span class="p">:</span>
+    <span class="s2">&#34;header header header header&#34;</span> <span class="mi">1</span><span class="n">fr</span> <span class="o">-&gt;</span> <span class="kc">row</span>
+    <span class="s2">&#34;content content content nav&#34;</span> <span class="mi">2</span><span class="n">fr</span>
+    <span class="s2">&#34;footer footer footer footer&#34;</span> <span class="mi">1</span><span class="n">fr</span> <span class="o">/</span> <span class="mi">1</span><span class="n">fr</span> <span class="mi">1</span><span class="n">fr</span> <span class="mi">1</span><span class="n">fr</span> <span class="mi">1</span><span class="n">fr</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">header</span> <span class="p">{</span>
+  <span class="k">grid-area</span><span class="p">:</span> <span class="n">header</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">content</span> <span class="p">{</span>
+  <span class="k">grid-area</span><span class="p">:</span> <span class="k">content</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">nav</span> <span class="p">{</span>
+  <span class="k">grid-area</span><span class="p">:</span> <span class="n">nav</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">footer</span> <span class="p">{</span>
+  <span class="k">grid-area</span><span class="p">:</span> <span class="n">footer</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>1fr -&gt; row</p>
+<p>1fr 1fr 1fr 1fr -&gt;(height)</p>
+<h3 id="justify-items">justify-items</h3>
+<p>가로 채우기</p>
+<p><code>justify-items: stretch;</code> 모든 공간을 채워라 (기본갑)</p>
+<p><code>justify-items: start;</code> 내용물 공간 만큼</p>
+<p><code>justify-items: center;</code> 내용물 공간 만큼 중간</p>
+<p><code>justify-items: end;</code> 내용물 공간 만큼 끝에서</p>
+<h3 id="align-items">align-items</h3>
+<p>세로 채우기</p>
+<p><code>align-items: stretch;</code> 모든 공간을 채워라 (기본갑)</p>
+<p><code>align-items: start;</code> 내용물 공간 만큼 세로로</p>
+<p><code>align-items: center;</code> 내용물 공간 만큼 중간</p>
+<p><code>align-items: end;</code> 내용물 공간 만큼 끝에서</p>
+<h3 id="place-items">place-items</h3>
+<p><code>place-items: start center </code> 처음은 세로 그다음 가로 <code>align-items: start;</code> <code>justify-items: center;</code> 이것을 같이 쓴것</p>
+<h3 id="place-content">place-content</h3>
+<p><code>place-item</code>과의 차이는 전체 그리드의 정렬에 대한 것</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">grid</span> <span class="p">{</span>
+  <span class="n">place-content</span><span class="p">:</span> <span class="kc">end</span> <span class="kc">center</span><span class="p">;</span> <span class="err">//</span> <span class="err">세로</span> <span class="err">가로</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="grid-auto-row">grid-auto-row</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">grid</span> <span class="p">{</span>
+  <span class="k">grid-template-rows</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">100</span><span class="kt">px</span><span class="p">);</span>
+  <span class="k">grid-auto-rows</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>row가 4줄 이상일 때는 자동으로 grid높이를 100px로 해라</p>
+<h3 id="grid-auto-flow">grid-auto-flow</h3>
+<p>초기 생각했던 것보다 item이 많아지면 column을 더 만들어라. 가로로 계속 만들어 지는것</p>
+<p><code>grid-auto-flow: row</code> 기본값</p>
+<p>이렇게 되면 순서가 왼쪽에서부터 아래로 채워가며 번호가 매겨진다</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">grid</span> <span class="p">{</span>
+  <span class="k">grid-template-columns</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">100</span><span class="kt">px</span><span class="p">);</span>
+  <span class="k">grid-template-rows</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">100</span><span class="kt">px</span><span class="p">);</span>
+  <span class="k">grid-auto-flow</span><span class="p">:</span> <span class="kc">column</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="minmax">minmax</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">grid</span> <span class="p">{</span>
+  <span class="k">grid-template-columns</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="nf">minmax</span><span class="p">(</span><span class="mi">100</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="n">fr</span><span class="p">));</span>
+  <span class="k">grid-template-rows</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">100</span><span class="kt">px</span><span class="p">);</span>
+  <span class="k">grid-auto-flow</span><span class="p">:</span> <span class="kc">column</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>minmax(100px, 1fr) grid item 최소 넓이는 100px, 넘어가면 스크롤을 만들어라</p>
+<h3 id="auto-fill">auto-fill</h3>
+<p>기본 넓이 100px을 가지고 남는 넙이 만큼 item을 만들어라</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">grid</span> <span class="p">{</span>
+  <span class="k">grid-template-columns</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="kc">auto</span><span class="o">-</span><span class="kc">fill</span><span class="p">,</span> <span class="nf">minmax</span><span class="p">(</span><span class="mi">100</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="n">fr</span><span class="p">));</span>
+  <span class="k">grid-template-rows</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">100</span><span class="kt">px</span><span class="p">);</span>
+  <span class="k">grid-auto-flow</span><span class="p">:</span> <span class="kc">column</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="auto-fit">auto-fit</h3>
+<p>response와 관련이 있다. 넓이에 그리드 item 넓이를 조정해 화면 폭을 꽉 채운다</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">grid</span> <span class="p">{</span>
+  <span class="k">grid-template-columns</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="kc">auto</span><span class="o">-</span><span class="n">fit</span><span class="p">,</span> <span class="nf">minmax</span><span class="p">(</span><span class="mi">100</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="n">fr</span><span class="p">));</span>
+  <span class="k">grid-template-rows</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">100</span><span class="kt">px</span><span class="p">);</span>
+  <span class="k">grid-auto-flow</span><span class="p">:</span> <span class="kc">column</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="max-content">max-content</h3>
+<p>그리드 안의 컨텐트가 줄바꿈없이 꽉차는 크기</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">grid</span> <span class="p">{</span>
+  <span class="k">grid-template-columns</span><span class="p">:</span> <span class="n">max-content</span> <span class="n">min-content</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="min-content">min-content</h3>
+<p>그리드 안의 컨텐트가 줄바꿈을 해서 item의 공간안에 내용을 채워서 작아질 수 있는 최소한의 크기</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">grid</span> <span class="p">{</span>
+  <span class="k">grid-template-columns</span><span class="p">:</span> <span class="n">max-content</span> <span class="n">min-content</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">grid</span> <span class="p">{</span>
+  <span class="k">grid-template-columns</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="nf">minmax</span><span class="p">(</span><span class="n">max</span><span class="o">-</span><span class="n">content</span><span class="p">,</span> <span class="mi">1</span><span class="n">fr</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="글씨-돌리기">글씨 돌리기</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">writing-mode</span><span class="o">:</span> <span class="nt">vertical-rl</span><span class="o">;</span>
+<span class="nt">text-orientation</span><span class="o">:</span> <span class="nt">upright</span><span class="o">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="scss">SCSS</h2>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-04-21</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/study/">study</a>,&nbsp;<a href="/tags/css/">css</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/nomad-study-nomflix/" class="prev" rel="prev" title="Nomad Study Nomflix"><i class="fas fa-angle-left fa-fw"></i>Nomad Study Nomflix</a>
+            <a href="/javascript-pretty-search-method/" class="next" rel="next" title="Javascript Pretty Search Method">Javascript Pretty Search Method<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://iloveu.design" target="_blank">ahntae</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

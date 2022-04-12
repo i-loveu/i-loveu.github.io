@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>React Hooks - 사랑합니다 기술 블로그</title><meta name="Description" content=""><meta property="og:title" content="React Hooks" />
+<meta property="og:description" content="Info https://reactjs.org/docs/hooks-intro.html
+UseState 구성 1 2 3 4 5 6 7 8  import { useState } from &#34;react&#34;; const useStateFucntionName = (initailvalue) =&gt; { const [itemName, setItemName] = useState(iniitalValue); return { itemName, }; };   useEffect componentDidMount, componentWillUnmount, componentWillUpdate 와 비슷하다.
+1 2 3  const functionNamme = () =&gt; console.log(&#34;hello&#34;); useEffect(functionNamme, [someState]);   someState 값이 변하면 functionName을 실행한다.
+1  useEffect(functionNamme, []); // componentDidMount   이 경우 한번 실행된다" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://i-loveu.github.io/react-hooks/" />
+<meta property="article:published_time" content="2021-09-25T11:28:27+09:00" />
+<meta property="article:modified_time" content="2021-09-25T11:28:27+09:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="React Hooks"/>
+<meta name="twitter:description" content="Info https://reactjs.org/docs/hooks-intro.html
+UseState 구성 1 2 3 4 5 6 7 8  import { useState } from &#34;react&#34;; const useStateFucntionName = (initailvalue) =&gt; { const [itemName, setItemName] = useState(iniitalValue); return { itemName, }; };   useEffect componentDidMount, componentWillUnmount, componentWillUpdate 와 비슷하다.
+1 2 3  const functionNamme = () =&gt; console.log(&#34;hello&#34;); useEffect(functionNamme, [someState]);   someState 값이 변하면 functionName을 실행한다.
+1  useEffect(functionNamme, []); // componentDidMount   이 경우 한번 실행된다"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://i-loveu.github.io/react-hooks/" /><link rel="prev" href="https://i-loveu.github.io/typescript-basic/" /><link rel="next" href="https://i-loveu.github.io/session-token-cookie-jwt/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "React Hooks",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/i-loveu.github.io\/react-hooks\/"
+        },"genre": "posts","wordcount":  211 ,
+        "url": "https:\/\/i-loveu.github.io\/react-hooks\/","datePublished": "2021-09-25T11:28:27+09:00","dateModified": "2021-09-25T11:28:27+09:00","publisher": {
+            "@type": "Organization",
+            "name": "ahntae"},"author": {
+                "@type": "Person",
+                "name": "ahntae"
+            },"description": ""
+    }
+    </script><script data-ad-client="ca-pub-4726317611282078" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="사랑합니다 기술 블로그">사랑합니다 기술 블로그</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="사랑합니다 기술 블로그">사랑합니다 기술 블로그</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">React Hooks</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://iloveu.design" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ahntae</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-25">2021-09-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;211 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#info">Info</a></li>
+    <li><a href="#usestate">UseState</a>
+      <ul>
+        <li><a href="#구성">구성</a></li>
+      </ul>
+    </li>
+    <li><a href="#useeffect">useEffect</a>
+      <ul>
+        <li><a href="#useref">useRef();</a></li>
+        <li><a href="#usecinfirm--usepreventleave">useCinfirm &amp; usePreventLeave</a></li>
+      </ul>
+    </li>
+    <li><a href="#usereducer">useReducer</a>
+      <ul>
+        <li><a href="#context">Context</a></li>
+        <li><a href="#redux">Redux</a></li>
+        <li><a href="#state-management">State Management</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="info">Info</h2>
+<p><a href="https://reactjs.org/docs/hooks-intro.html">https://reactjs.org/docs/hooks-intro.html</a></p>
+<h2 id="usestate">UseState</h2>
+<h3 id="구성">구성</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react&#34;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">useStateFucntionName</span> <span class="o">=</span> <span class="p">(</span><span class="nx">initailvalue</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="p">[</span><span class="nx">itemName</span><span class="p">,</span> <span class="nx">setItemName</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="nx">iniitalValue</span><span class="p">);</span>
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="nx">itemName</span><span class="p">,</span>
+  <span class="p">};</span>
+<span class="p">};</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="useeffect">useEffect</h2>
+<p>componentDidMount, componentWillUnmount, componentWillUpdate 와 비슷하다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">functionNamme</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;hello&#34;</span><span class="p">);</span>
+
+<span class="nx">useEffect</span><span class="p">(</span><span class="nx">functionNamme</span><span class="p">,</span> <span class="p">[</span><span class="nx">someState</span><span class="p">]);</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>someState 값이 변하면 functionName을 실행한다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">useEffect</span><span class="p">(</span><span class="nx">functionNamme</span><span class="p">,</span> <span class="p">[]);</span> <span class="c1">// componentDidMount
+</span></code></pre></td></tr></table>
+</div>
+</div><p>이 경우 한번 실행된다</p>
+<h3 id="useref">useRef();</h3>
+<p>리엑트에서 input은 ref를 가지고 있는데</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">potato</span> <span class="o">=</span> <span class="nx">useRef</span><span class="p">();</span>
+<span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">potato</span><span class="p">.</span><span class="nx">current</span><span class="p">.</span><span class="nx">focus</span><span class="p">(),</span> <span class="mi">3000</span><span class="p">);</span>
+
+<span class="k">return</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="nx">potato</span><span class="p">}</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">&#34;title&#34;</span> <span class="o">/&gt;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>이렇게 하면 3초 뒤 위 input에 focus가 잡힌다.</p>
+<h3 id="usecinfirm--usepreventleave">useCinfirm &amp; usePreventLeave</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">usePreventLeave</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">listener</span> <span class="o">=</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">returnValue</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+  <span class="p">};</span>
+  <span class="kr">const</span> <span class="nx">enablePrevent</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;beforeunload&#34;</span><span class="p">,</span> <span class="nx">listener</span><span class="p">);</span>
+  <span class="kr">const</span> <span class="nx">disablePrevent</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span>
+    <span class="nb">window</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="s2">&#34;beforeunload&#34;</span><span class="p">,</span> <span class="nx">listener</span><span class="p">);</span>
+  <span class="k">return</span> <span class="p">{</span> <span class="nx">enablePrevent</span><span class="p">,</span> <span class="nx">disablePrevent</span> <span class="p">};</span>
+<span class="p">};</span>
+
+<span class="kr">const</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="p">{</span> <span class="nx">enablePrevent</span><span class="p">,</span> <span class="nx">disablePrevent</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">usePreventLeave</span><span class="p">();</span>
+
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;&gt;</span>
+      <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Add</span> <span class="nx">To</span> <span class="nx">dos</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
+      <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">enablePrevent</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">Prevent</span><span class="o">&lt;</span><span class="err">/button&gt;</span>
+      <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">disablePrevent</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">removePrevent</span><span class="o">&lt;</span><span class="err">/button&gt;</span>
+    <span class="o">&lt;</span><span class="err">/&gt;</span>
+  <span class="p">);</span>
+<span class="p">};</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="usereducer">useReducer</h2>
+<h3 id="context">Context</h3>
+<p>필요할 떄마다 불러서 사용. 데이터 저장소</p>
+<p>간단한 React 어플리케이션에 적용</p>
+<h3 id="redux">Redux</h3>
+<p>커다란 States와 많은 변화들이 있을 때 사용</p>
+<h3 id="state-management">State Management</h3>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-09-25</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/typescript-basic/" class="prev" rel="prev" title="Typescript Basic"><i class="fas fa-angle-left fa-fw"></i>Typescript Basic</a>
+            <a href="/session-token-cookie-jwt/" class="next" rel="next" title="Session Token Cookie Jwt">Session Token Cookie Jwt<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://iloveu.design" target="_blank">ahntae</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

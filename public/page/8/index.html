@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta name="generator" content="Hugo 0.80.0" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>사랑합니다 기술 블로그</title><meta name="Description" content=""><meta property="og:title" content="사랑합니다 기술 블로그" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://i-loveu.github.io/" />
+<meta property="og:updated_time" content="2022-03-21T10:37:39+09:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="사랑합니다 기술 블로그"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://i-loveu.github.io/" /><link rel="alternate" href="/index.xml" type="application/rss+xml" title="사랑합니다 기술 블로그">
+    <link rel="feed" href="/index.xml" type="application/rss+xml" title="사랑합니다 기술 블로그"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "url": "https:\/\/i-loveu.github.io\/","inLanguage": "en","author": {
+                "@type": "Person",
+                "name": "ahntae"
+            },"name": "사랑합니다 기술 블로그"
+    }
+    </script><script data-ad-client="ca-pub-4726317611282078" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="사랑합니다 기술 블로그">사랑합니다 기술 블로그</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="사랑합니다 기술 블로그">사랑합니다 기술 블로그</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page home" posts><div class="home-profile"></div>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/migration-to-cafe24name-server/">Cafe24로 네임서버 이전하기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://iloveu.design" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ahntae</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-01-28">2021-01-28</time></span>&nbsp;<span class="post-category">included in <a href="/categories/wordpress/"><i class="far fa-folder fa-fw"></i>wordpress</a></span></div><div class="content">타사에서 산 도메인을 사용해서 카페24에서 호스팅하려면 name 서버를 이전해야 합니다.  웹호스팅 https://hosting.cafe24.com/ 죄측 하단에 지정해야할 네임서버를 확인합니다. 보통은 아래와 같아요.  1 2 3 4 5  // 웹호스팅 1차 ns1.cafe24.com 175.125.93.134 2차 ns1.cafe24.co.kr 112.175.246.232 3차 ns2.cafe24.com 175.125.93.144 4차 ns2.cafe24.co.kr 112.175.247.232   What is Name Server 네임서버는 도메인의 이름을 ip와 연결해주는 서버입니다. 보통 도메인을 구매하는 사이트에서 네임서버도 제공합니다.</div><div class="post-footer">
+        <a href="/migration-to-cafe24name-server/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/server/">server</a>,&nbsp;<a href="/tags/cafe24/">cafe24</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/how-to-use-full-page/">How to Use Full Page JS</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://iloveu.design" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ahntae</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-01-28">2021-01-28</time></span>&nbsp;<span class="post-category">included in <a href="/categories/js-library/"><i class="far fa-folder fa-fw"></i>js-library</a></span></div><div class="content">fullpage.js https://alvarotrigo.com/fullPage/pricing/
+https://alvarotrigo.com/fullPage/ko/#
+스크롤을 fullpage로 적용할 때 유용하다. 무료는 v2 버전이고 scrollOverflow 기능에 제한이 있는 등 9유로이니 구매해서 v3 버전을 쓰는 것이 맞다.
+fullpage.js v2 부족한 점 scrollOverflow 높이 제한 문제
+중간에 스크롤이 필요한 높이의 경우 scrollOverflow: true scrolloverflow.min.js 를 쓰게 되는데 v2를 쓰고 있다가 높이가 짤려서 이유를 모르고 버그가 있는줄 황당해 하며 시간을 버린 경우가 있다. v3는 해당 문제가 없다.</div><div class="post-footer">
+        <a href="/how-to-use-full-page/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/pullpagejs/">pullpagejs</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/how-about-sketch/">간단히 스케치 사용해본 느낌</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://iloveu.design" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ahntae</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-01-25">2021-01-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/design/"><i class="far fa-folder fa-fw"></i>design</a></span></div><div class="content">생각보다 간단하고 웹에 적합하다 우리는 거의 대부분 웹에 관련된 뭔가를 만들어 내는데, 포토샵은 상당히 많은 작업을 할 수 있도록 열려있다.
+하지만 웹을 위한 것이라면 웹에 적합한 툴을 사용하는게 좋을 것이다.
+최근 인스타그램에 짧게 읽은 독서 서평을 올리고 있는데, 일단 구글 프리젠테이션 앱을 사용했었다.
+하지만, 이게 이미지로 다운로드를 하면 폰트가 달라 져 버리는 것.
+스캐치를 써볼까? 하고 써봤는데, 아주 만족스럽다. 아직 아무 튜토리얼도 모르는 상태에서
+쓱쓱 해보아도 손쉽다.
+저렴하다 포토샵을 사용할 경우 월 몇 만원을 지불해야하지만, 스케치는 일년에 $99 로 한 달 만원정도의 비용을 낸다.</div><div class="post-footer">
+        <a href="/how-about-sketch/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/sketch/">sketch</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/about-css-flex/">CSS Flex 속성이란?</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://iloveu.design" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ahntae</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-01-21">2021-01-21</time></span>&nbsp;<span class="post-category">included in <a href="/categories/css/"><i class="far fa-folder fa-fw"></i>css</a></span></div><div class="content">여기 내용 다 채우기 https://heropy.blog/2018/11/24/css-flexible-box/
+Flex 속성이란? 크게 container, items 두가지 영역에 해당한다
+Container: display, flex-flow, justify-content
+Items: order, flex, align-self 등의 속성이 있다.
+Item: flex 값에 대한 해석 flex: 1 -&gt; 모든 공간을 사용 가능하다
+flex: 1  1  &lt;div style=&#34;flex:1&#34;&gt;flex: 1&lt;/div&gt;    화면 전체가 꽉 찬다
+ flex: 1 flex: 2  1 2  &lt;div style=&#34;flex:1&#34;&gt;flex: 1&lt;/div&gt; &lt;div style=&#34;flex:1&#34;&gt;flex: 2&lt;/div&gt;    화면 전체가 각각 1:1 반반씩 찬다</div><div class="post-footer">
+        <a href="/about-css-flex/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/flex/">flex</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/forkin-weather-v1/">React Native로 날씨앱 만들기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://iloveu.design" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ahntae</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-01-19">2021-01-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/clonecoding/"><i class="far fa-folder fa-fw"></i>clonecoding</a></span></div><div class="content">React Native 란? ios, android 양쪽 앱을 만들 수 있는 프레임워크. React.js 기반한다.
+1  expo install expo-location    expo location plugin 설치
+ </div><div class="post-footer">
+        <a href="/forkin-weather-v1/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/clonecoding/">clonecoding</a>,&nbsp;<a href="/tags/reactnative/">ReactNative</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/wordpress-basic-htaccess/">Wordpress 고유주소 수정 후 링크가 먹지 않을때 .htaccess</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://iloveu.design" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ahntae</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-01-18">2021-01-18</time></span>&nbsp;<span class="post-category">included in <a href="/categories/wordpress/"><i class="far fa-folder fa-fw"></i>wordpress</a></span></div><div class="content">.htaccess 란? hypertext access의 약자. Rewrite engine 기능을 사용하기 위해 많이 쓴다. 워드프레스 .htacess 설명링크
+wordpress 고유주소 설정 실수로 사이트 링크가 먹지 않을 때 이 경우 서버의 .htaccess 내용이 지워졌을 가능성이 높습니다.
+서버에 접근해서 아래의 코드로 업데이트 하면 해결될 수 있습니다.
+1 2 3 4 5 6 7 8 9 10 11  # BEGIN WordPress RewriteEngine On RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}] RewriteBase / RewriteRule ^index\.php$ - [L] RewriteCond %{REQUEST_FILENAME} !</div><div class="post-footer">
+        <a href="/wordpress-basic-htaccess/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/htaccess/">htaccess</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/what-is-prisma/">Prisma란?</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://iloveu.design" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ahntae</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-01-15">2021-01-15</time></span>&nbsp;<span class="post-category">included in <a href="/categories/prisma/"><i class="far fa-folder fa-fw"></i>prisma</a></span></div><div class="content">ORM(Object-relational mapping) 객체 관계 매핑 객체간 관계를 바탕으로 SQL문을 자동으로 생성
+prisma가 하는 일 어플리케이션에 필요한 모델을 graphql로 정의할 수 있다.
+graphql로 정의한 모델을 이해한 후 코드생성</div><div class="post-footer">
+        <a href="/what-is-prisma/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/prisma/">prisma</a>,&nbsp;<a href="/tags/orm/">orm</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/wordpress-admin-editor-add-custom-css/">워드프레스 관리자 에디터 커스텀 css 추가하기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://iloveu.design" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ahntae</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-01-14">2021-01-14</time></span>&nbsp;<span class="post-category">included in <a href="/categories/wordpress/"><i class="far fa-folder fa-fw"></i>wordpress</a></span></div><div class="content">admin-editor-styles.css 만들기 theme/css/admin-editor-styles.css 위치에 파일 생성
+1 2 3  #tinymce { max-width: 860px; }   add_editor_style 추가 1 2 3 4 5 6 7 8  // add custom css to editor function wpdocs_theme_add_editor_styles() { add_editor_style(&#39;css/admin-editor-styles.css&#39;); } add_action(&#39;admin_init&#39;, &#39;wpdocs_theme_add_editor_styles&#39;);   </div><div class="post-footer">
+        <a href="/wordpress-admin-editor-add-custom-css/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/wordpress/">wordpress</a>,&nbsp;<a href="/tags/php/">php</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/wordpress-local-force-ssl-deactive/">ssl이 적용된 워드프레스 로컬에서 ssl 비활성화 세팅</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://iloveu.design" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ahntae</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-01-14">2021-01-14</time></span></div><div class="content">wp-config.php 에 세팅 1 2 3 4 5 6 7  define(&#39;FORCE_SSL_LOGIN&#39;, false); define(&#39;FORCE_SSL_ADMIN&#39;, false); define(&#39;WP_HOME&#39;, &#39;http://localhost:8080&#39;); define(&#39;WP_SITEURL&#39;, &#39;http://localhost:8080&#39;);   위 세팅 후 로그인해본다.</div><div class="post-footer">
+        <a href="/wordpress-local-force-ssl-deactive/">Read More</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/wordpress-single-page-to-list-with-page-number/">워드프레스 페이지네이션 번호를 가지고 상세와 리스트를 옮겨가기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://iloveu.design" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ahntae</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-01-14">2021-01-14</time></span></div><div class="content">list page 1 2  $paged = (get_query_var(&#39;paged&#39;)) ? get_query_var(&#39;paged&#39;) : 1; echo &#39;&lt;a href=&#34;&#39; . get_permalink() . &#39;&amp;paging=&#39; . $paged . &#39;&#34;&gt;&#39;;   리스트에서 &amp;page= 나 &amp;paged= 로 넘길경우 예약된 파라메터로 삭제될 수 있는데, 임시 paging 파라메터로 넘긴다
+single page 1 2 3 4 5  $paged = 1; if ($_GET[&#39;paging&#39;]) { $paged = $_GET[&#39;paging&#39;]; } echo &#39;&lt;a href=&#34;&#39; . home_url(&#39;/&#39;) . $post_type . &#39;?paged=&#39; . $paged . &#39;&#34; &gt;목록으로&lt;/a&gt;&#39;;   리스트페이지에서는 /page/2 이런 식으로 되어 있지만, parameter를 넘길 때에는 &amp;paged= 로 넘겨야 한다.</div><div class="post-footer">
+        <a href="/wordpress-single-page-to-list-with-page-number/">Read More</a></div>
+</article><ul class="pagination"><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/">1</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link" aria-hidden="true">&hellip;</span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/6/">6</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/7/">7</a>
+                    </span>
+                </li><li class="page-item active">
+                    <span class="page-link">
+                        <a href="/page/8/">8</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/9/">9</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/10/">10</a>
+                    </span>
+                </li></ul></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://iloveu.design" target="_blank">ahntae</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

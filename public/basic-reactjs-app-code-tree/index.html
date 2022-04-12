@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Basic Reactjs App Code Tree with Nomadcoder - 사랑합니다 기술 블로그</title><meta name="Description" content=""><meta property="og:title" content="Basic Reactjs App Code Tree with Nomadcoder" />
+<meta property="og:description" content="초보를 위한 React JS 실행
+1  npx create-react-app nomflix   삭제하는 파일 App.css index.css
+.env 생성 src부터 바라보도록 설정
+1  NODE_PATH=src   Router 설치 컴포넌트 묶음 Router 설치
+가이드문서: https://reactrouter.com/web/guides/quick-start
+1  yarn add react-router-dom   HashRouter vs BrowserRouter HashRouter 앱처럽 보여주고 싶다면 HashRouter.
+간단하지만 url에 /#/detail 처럼 Hash가 붙는다.
+Hash 사용
+BrowserRouter 사이트처럽 보여주고 싶다면 BrowserRouter.
+url이 /detail 처럼 보인다. 실제브라우져처럼 보여줌.
+HTML History API 사용" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://i-loveu.github.io/basic-reactjs-app-code-tree/" />
+<meta property="article:published_time" content="2021-03-13T18:32:04+09:00" />
+<meta property="article:modified_time" content="2021-03-13T18:32:04+09:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Basic Reactjs App Code Tree with Nomadcoder"/>
+<meta name="twitter:description" content="초보를 위한 React JS 실행
+1  npx create-react-app nomflix   삭제하는 파일 App.css index.css
+.env 생성 src부터 바라보도록 설정
+1  NODE_PATH=src   Router 설치 컴포넌트 묶음 Router 설치
+가이드문서: https://reactrouter.com/web/guides/quick-start
+1  yarn add react-router-dom   HashRouter vs BrowserRouter HashRouter 앱처럽 보여주고 싶다면 HashRouter.
+간단하지만 url에 /#/detail 처럼 Hash가 붙는다.
+Hash 사용
+BrowserRouter 사이트처럽 보여주고 싶다면 BrowserRouter.
+url이 /detail 처럼 보인다. 실제브라우져처럼 보여줌.
+HTML History API 사용"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://i-loveu.github.io/basic-reactjs-app-code-tree/" /><link rel="prev" href="https://i-loveu.github.io/what-is-npx/" /><link rel="next" href="https://i-loveu.github.io/error-rails-find-spec-for-exe/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Basic Reactjs App Code Tree with Nomadcoder",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/i-loveu.github.io\/basic-reactjs-app-code-tree\/"
+        },"genre": "posts","keywords": "nomadcoder","wordcount":  304 ,
+        "url": "https:\/\/i-loveu.github.io\/basic-reactjs-app-code-tree\/","datePublished": "2021-03-13T18:32:04+09:00","dateModified": "2021-03-13T18:32:04+09:00","publisher": {
+            "@type": "Organization",
+            "name": "ahntae"},"author": {
+                "@type": "Person",
+                "name": "ahntae"
+            },"description": ""
+    }
+    </script><script data-ad-client="ca-pub-4726317611282078" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="사랑합니다 기술 블로그">사랑합니다 기술 블로그</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="사랑합니다 기술 블로그">사랑합니다 기술 블로그</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Basic Reactjs App Code Tree with Nomadcoder</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://iloveu.design" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ahntae</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-13">2021-03-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;304 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#초보를-위한-react-js">초보를 위한 React JS</a>
+      <ul>
+        <li><a href="#env-생성">.env 생성</a></li>
+      </ul>
+    </li>
+    <li><a href="#router-설치">Router 설치</a>
+      <ul>
+        <li><a href="#hashrouter-vs-browserrouter">HashRouter vs BrowserRouter</a>
+          <ul>
+            <li><a href="#hashrouter">HashRouter</a></li>
+            <li><a href="#browserrouter">BrowserRouter</a></li>
+          </ul>
+        </li>
+        <li><a href="#components">Components</a></li>
+        <li><a href="#home">Home</a></li>
+      </ul>
+    </li>
+    <li><a href="#style">style</a>
+      <ul>
+        <li><a href="#add-style-components">add style components</a></li>
+        <li><a href="#add-styled-reset">add styled-reset</a></li>
+      </ul>
+    </li>
+    <li><a href="#plugin">plugin</a></li>
+    <li><a href="#withrouter">withRouter</a></li>
+    <li><a href="#networking">networking</a></li>
+    <li><a href="#yarn-add-axios">yarn add axios</a></li>
+    <li><a href="#검색을-위한-stirng-encoding">검색을 위한 stirng encoding</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="초보를-위한-react-js">초보를 위한 React JS</h2>
+<p>실행</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">npx create-react-app nomflix
+</code></pre></td></tr></table>
+</div>
+</div><p>삭제하는 파일
+<code>App.css index.css</code></p>
+<h3 id="env-생성">.env 생성</h3>
+<p>src부터 바라보도록 설정</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">NODE_PATH=src
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="router-설치">Router 설치</h2>
+<p>컴포넌트 묶음 Router 설치</p>
+<p>가이드문서: <a href="https://reactrouter.com/web/guides/quick-start">https://reactrouter.com/web/guides/quick-start</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">yarn add react-router-dom
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="hashrouter-vs-browserrouter">HashRouter vs BrowserRouter</h3>
+<h4 id="hashrouter">HashRouter</h4>
+<p>앱처럽 보여주고 싶다면 HashRouter.</p>
+<p>간단하지만 url에 /#/detail 처럼 Hash가 붙는다.</p>
+<p>Hash 사용</p>
+<h4 id="browserrouter">BrowserRouter</h4>
+<p>사이트처럽 보여주고 싶다면 BrowserRouter.</p>
+<p>url이 /detail 처럼 보인다. 실제브라우져처럼 보여줌.</p>
+<p>HTML History API 사용</p>
+<h3 id="components">Components</h3>
+<p>Components/Router.js</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">HashRouter</span> <span class="nx">as</span> <span class="nx">Router</span><span class="p">,</span> <span class="nx">Route</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-router-dom&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">Home</span> <span class="nx">from</span> <span class="s2">&#34;../Routes/Home&#34;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">TV</span> <span class="nx">from</span> <span class="s2">&#34;../Routes/TV&#34;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">Search</span> <span class="nx">from</span> <span class="s2">&#34;../Routes/Search&#34;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">Detail</span> <span class="nx">from</span> <span class="s2">&#34;../Routes/Detail&#34;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">coco</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">Router</span><span class="o">&gt;</span>
+        <span class="o">&lt;&gt;</span>
+            <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="s2">&#34;/&#34;</span> <span class="nx">exact</span> <span class="nx">component</span><span class="o">=</span><span class="p">{</span><span class="nx">Home</span><span class="p">}</span><span class="o">&gt;&lt;</span><span class="err">/Route&gt;</span>
+            <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="s2">&#34;/tv&#34;</span> <span class="nx">exact</span> <span class="nx">component</span><span class="o">=</span><span class="p">{</span><span class="nx">TV</span><span class="p">}</span><span class="o">&gt;&lt;</span><span class="err">/Route&gt;</span>
+            <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="s2">&#34;/search&#34;</span> <span class="nx">exact</span> <span class="nx">component</span><span class="o">=</span><span class="p">{</span><span class="nx">Search</span><span class="p">}</span><span class="o">&gt;&lt;</span><span class="err">/Route&gt;</span>
+            <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="s2">&#34;/detail&#34;</span> <span class="nx">exact</span> <span class="nx">component</span><span class="o">=</span><span class="p">{</span><span class="nx">Detail</span><span class="p">}</span><span class="o">&gt;&lt;</span><span class="err">/Route&gt;</span>
+        <span class="o">&lt;</span><span class="err">/&gt;</span>
+    <span class="o">&lt;</span><span class="err">/Router&gt;</span>
+<span class="p">)</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">coco</span><span class="p">;</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="home">Home</h3>
+<p>Routes/Home.js</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">Home</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&#34;home&#34;</span><span class="p">;</span>
+<span class="p">};</span> 
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">Home</span><span class="p">;</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="style">style</h2>
+<h3 id="add-style-components">add style components</h3>
+<p>style 안에 있는 컴포넌트를 생성할 수 있게 한다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">yarn add styled-components
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="add-styled-reset">add styled-reset</h3>
+<p>SC를 이용해서 css를 초기화해서 0의 상태에서 시작하게 하는 것</p>
+<h2 id="plugin">plugin</h2>
+<p>styled-components 에서 css를 사용하기 위한 플러그인
+<a href="https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components" target="_blank" rel="noopener noreffer">vscode-styled-components</a>
+추가</p>
+<h2 id="withrouter">withRouter</h2>
+<p>다른 컴포넌트를 감싸는 컴포넌트. 어떤 컴포넌트와도 연결할 수 있다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Link</span><span class="p">,</span> <span class="nx">withRouter</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react-router-dom&#34;</span><span class="p">;</span>
+
+
+<span class="kr">const</span> <span class="nx">Header</span> <span class="o">=</span> <span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">HeaderStyle</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">List</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">Item</span> <span class="nx">current</span><span class="o">=</span><span class="p">{</span><span class="kc">false</span><span class="p">}</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">SLink</span> <span class="nx">to</span><span class="o">=</span><span class="s2">&#34;/&#34;</span><span class="o">&gt;</span><span class="nx">Movies</span><span class="o">&lt;</span><span class="err">/SLink&gt;</span>
+            <span class="o">&lt;</span><span class="err">/Item&gt;</span>
+            <span class="o">&lt;</span><span class="nx">Item</span> <span class="nx">current</span><span class="o">=</span><span class="p">{</span><span class="kc">true</span><span class="p">}</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">SLink</span> <span class="nx">to</span><span class="o">=</span><span class="s2">&#34;/tv&#34;</span><span class="o">&gt;</span><span class="nx">TV</span><span class="o">&lt;</span><span class="err">/SLink&gt;</span>
+            <span class="o">&lt;</span><span class="err">/Item&gt;</span>
+            <span class="o">&lt;</span><span class="nx">Item</span> <span class="nx">current</span><span class="o">=</span><span class="p">{</span><span class="kc">false</span><span class="p">}</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">SLink</span> <span class="nx">to</span><span class="o">=</span><span class="s2">&#34;/search&#34;</span><span class="o">&gt;</span><span class="nx">Search</span><span class="o">&lt;</span><span class="err">/SLink&gt;</span>
+            <span class="o">&lt;</span><span class="err">/Item&gt;</span>
+        <span class="o">&lt;</span><span class="err">/List&gt;</span>
+    <span class="o">&lt;</span><span class="err">/HeaderStyle&gt;</span>
+<span class="p">);</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">withRouter</span><span class="p">(</span><span class="nx">Header</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="networking">networking</h2>
+<p><a href="https://www.themoviedb.org/">https://www.themoviedb.org/</a> 가입하기</p>
+<h2 id="yarn-add-axios">yarn add axios</h2>
+<p><a href="https://github.com/axios/axios">https://github.com/axios/axios</a>  </p>
+<p>Axios의 인스턴스를 설정해줄 수 있다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">yarn add axios
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="검색을-위한-stirng-encoding">검색을 위한 stirng encoding</h2>
+<p>encodeURIComponent를 사용한다</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">search: (term) =&gt; api.get(&#34;search/movie&#34;, {
+    params: {
+        query: encodeURIComponent(term)
+    }
+})
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-03-13</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/nomadcoder/">nomadcoder</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/what-is-npx/" class="prev" rel="prev" title="What Is Npx"><i class="fas fa-angle-left fa-fw"></i>What Is Npx</a>
+            <a href="/error-rails-find-spec-for-exe/" class="next" rel="next" title="Error Rails Find Spec for Exe">Error Rails Find Spec for Exe<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://iloveu.design" target="_blank">ahntae</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
