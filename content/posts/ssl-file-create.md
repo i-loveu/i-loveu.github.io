@@ -38,8 +38,12 @@ openssl rsa -in private.key -out nopass-private.key
 
 server.crt 생성하기
 
+순서는 서버인증서 체인인증서(1,2), Root파일 순이다.
+
 ```
 cat site_domain_cert.pem Chain_RootCA_Bundle.crt > server.crt
+// or
+cat site_domain_cert.pem site_domain_chain.crt site_domain_Root.crt > server.crt
 ```
 
 server.crt 파일 열어 줄바꿈 확인

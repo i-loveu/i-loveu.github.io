@@ -76,3 +76,30 @@ Route에 매치되는 것이 없으면 어디로 가세요.
 ```javascript
 <Route path="/tv" exact component={TV}></Route>
 ```
+
+### 루프
+
+kye를 지정한다. 하지만 `<Profile>`에서 key값을 인자로 받지는 않는다.
+
+```javascript
+{
+  data
+    ? data?.dancers?.map((dancer) => (
+        <Profile
+          id={dancer.id}
+          avatar={dancer.avatar}
+          nick={dancer.nick}
+          loginId={dancer.loginId}
+          key={dancer.loginId}
+        />
+      ))
+    : "Loading...";
+}
+
+interface ProfileProps {
+  id: number;
+  loginId: string;
+  nick: string | null;
+  avatar: string | null;
+}
+```
