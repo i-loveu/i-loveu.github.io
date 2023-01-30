@@ -304,3 +304,32 @@ markdown 파일을 읽기 위한 https://www.npmjs.com/package/gray-matter 설�
 ```javascript
 import matter from "gray-matter";
 ```
+
+### 19.13 Dynamic getStaticProps
+
+`npm i unified remark-parse remark-html`
+
+```javascript
+import { unified } from "unified";
+import remarkParse from "remark-parse";
+import remarkHtml from "remark-html";
+```
+
+### 19.14 Inner HTML
+
+reactJs는 기본적으로 safehtml을 지원한다. 그래서 태그가 포함된 데이터를 실행시키려면 아래와 같이 써야 한다.
+HTML 코드를 실행시켜주는 `dangerouslySetInnerHTML="{{" __html: html_code_value }}`
+
+```html
+<div dangerouslySetInnerHTML="{{" __html: answer }}></div>
+```
+
+## 20 INCREMENTAL SITE REGENERATION
+
+### On Demand Revalidation
+
+포스팅 후 html로 전환을 원하는 url을 `await res.revalidate()` 코드에 넣으면 된다.
+
+```javascript
+await res.revalidate("/path-to-revalidate");
+```
