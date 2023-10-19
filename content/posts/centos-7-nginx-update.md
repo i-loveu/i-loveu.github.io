@@ -38,3 +38,14 @@ sudo yum install -y nginx
 // nginx start
 systemctl start nginx
 ```
+
+nginx 버전 정보 숨기기
+nginx.conf 편집
+```
+vim /etc/nginx/nginx.conf
+$ vim /etc/nginx/nginx.conf
+http {
+...
+    server_tokens off;
+...
+```
