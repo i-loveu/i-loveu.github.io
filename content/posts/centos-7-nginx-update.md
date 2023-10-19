@@ -20,6 +20,9 @@ gpgcheck=1
 enabled=1
 gpgkey=https://nginx.org/keys/nginx_signing.key
 
+// 위 작업에서 에러가 나면
+baseurl=http://nginx.org/packages/centos/7/$basearch/ 로 변경 
+
 // statable 버전 활성화 
 yum-config-manager --enable nginx-stable
 
