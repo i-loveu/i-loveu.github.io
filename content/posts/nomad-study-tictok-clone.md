@@ -880,6 +880,14 @@ theme: ThemeData(
   splashColor: Colors.transparent,
 ```
 
+## 11 CHATS
+
+### 11.2 AnimatedList 
+
+```dart
+key: UniqueKey(), // 고유의 키를 만들어줌
+```
+
 ## 12 USER PROFILE
 
 ### 12.6 TabBar
@@ -1543,6 +1551,10 @@ firebase_auth는 로그인한 본인만 접근 가능. 그래서 email같은 외
 아바타를 올리는 것만 따로 뽑는다.
 
 `flutter pub add image_picker` 이미지 피커 패키지 설치 
+
+### 25.6 onAvatarUpload
+
+
 
 ## 26 VIDEO UPLOAD
 
