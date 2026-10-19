@@ -1,0 +1,42 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Custom Font - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/custom-font/</link>
+        <description>Custom Font - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 13 Apr 2022 12:27:24 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/custom-font/" rel="self" type="application/rss+xml" /><item>
+    <title>Svg Font Not Working on Safari</title>
+    <link>http://localhost:1313/svg-font-not-working-on-safari/</link>
+    <pubDate>Wed, 13 Apr 2022 12:27:24 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/svg-font-not-working-on-safari/</guid>
+    <description><![CDATA[<h2 id="svg-폰트가-사파리에서-안될-때">SVG 폰트가 사파리에서 안될 때!!</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-html">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">text</span>
+</span></span><span class="line"><span class="cl">  <span class="na">data-name</span><span class="o">=</span><span class="s">&#34;Noto Sans&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">transform</span><span class="o">=</span><span class="s">&#34;translate(520 348)&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">style</span><span class="o">=</span><span class="s">&#34;fill:#00c8b4;font-family:NotoSansKR-Bold,Noto Sans KR;font-weight:700;font-size:20px&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&gt;&lt;</span><span class="nt">tspan</span> <span class="na">x</span><span class="o">=</span><span class="s">&#34;-60.44&#34;</span> <span class="na">y</span><span class="o">=</span><span class="s">&#34;0&#34;</span><span class="p">&gt;</span>Noto Sans<span class="p">&lt;/</span><span class="nt">tspan</span><span class="p">&gt;&lt;/</span><span class="nt">text</span>
+</span></span><span class="line"><span class="cl"><span class="p">&gt;</span></span></span></code></pre></div></div>
+<p>대략 위와 같은 NotoSansKR폰트가 사파리에서는 그냐 sarif 폰트로 나온다면!</p>
+<p>아래와 같이 바꿔준다.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-html">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">text</span>
+</span></span><span class="line"><span class="cl">  <span class="na">data-name</span><span class="o">=</span><span class="s">&#34;Noto Sans&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">transform</span><span class="o">=</span><span class="s">&#34;translate(520 348)&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">font-family</span><span class="o">=</span><span class="s">&#34;NotoSansKR, sans-serif&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">style</span><span class="o">=</span><span class="s">&#34;fill:#00c8b4;font-weight:700;font-size:20px&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&gt;&lt;</span><span class="nt">tspan</span> <span class="na">x</span><span class="o">=</span><span class="s">&#34;-60.44&#34;</span> <span class="na">y</span><span class="o">=</span><span class="s">&#34;0&#34;</span><span class="p">&gt;</span>Noto Sans<span class="p">&lt;/</span><span class="nt">tspan</span><span class="p">&gt;&lt;/</span><span class="nt">text</span>
+</span></span><span class="line"><span class="cl"><span class="p">&gt;</span></span></span></code></pre></div></div>
+<p><code>font-family=&quot;NotoSansKR, sans-serif&quot;</code>이 부분으로 <code>style=&quot;font-family:NotoSansKR-Bold,Noto Sans KR;&quot;</code>에서 꺼내준다.
+이렇게 하면 적용 완료!</p>]]></description>
+</item>
+</channel>
+</rss>

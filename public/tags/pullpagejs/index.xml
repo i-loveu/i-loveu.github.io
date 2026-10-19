@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Pullpagejs - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/pullpagejs/</link>
+        <description>Pullpagejs - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 28 Jan 2021 13:33:37 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/pullpagejs/" rel="self" type="application/rss+xml" /><item>
+    <title>How to Use Full Page JS</title>
+    <link>http://localhost:1313/how-to-use-full-page/</link>
+    <pubDate>Thu, 28 Jan 2021 13:33:37 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/how-to-use-full-page/</guid>
+    <description><![CDATA[<h2 id="fullpagejs">fullpage.js</h2>
+<p><a href="https://alvarotrigo.com/fullPage/pricing/" target="_blank" rel="noopener noreffer ">https://alvarotrigo.com/fullPage/pricing/</a></p>
+<p><a href="https://alvarotrigo.com/fullPage/ko/#" target="_blank" rel="noopener noreffer ">https://alvarotrigo.com/fullPage/ko/#</a></p>
+<p>스크롤을 fullpage로 적용할 때 유용하다. 무료는 v2 버전이고 <code>scrollOverflow</code> 기능에 제한이 있는 등 9유로이니 구매해서 v3 버전을 쓰는 것이 맞다.</p>
+<h3 id="fullpagejs-v2-부족한-점">fullpage.js v2 부족한 점</h3>
+<p><code>scrollOverflow</code> 높이 제한 문제</p>
+<p>중간에 스크롤이 필요한 높이의 경우 <code>scrollOverflow: true</code> <code>scrolloverflow.min.js</code> 를 쓰게 되는데 v2를 쓰고 있다가 높이가 짤려서 이유를 모르고 버그가 있는줄 황당해 하며
+시간을 버린 경우가 있다. v3는 해당 문제가 없다.</p>]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,44 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Node - Category - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/categories/node/</link>
+        <description>Node - Category - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 17 Feb 2021 16:12:01 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/node/" rel="self" type="application/rss+xml" /><item>
+    <title>nvm 맥에 설치하기 - homebrew</title>
+    <link>http://localhost:1313/nvm-install-mac/</link>
+    <pubDate>Wed, 17 Feb 2021 16:12:01 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/nvm-install-mac/</guid>
+    <description><![CDATA[<h2 id="homebrew로-nvm-설치">homebrew로 nvm 설치</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install nvm</span></span></code></pre></div></div>
+<p>.zshrc에 환경변수 등록</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="k">export</span> <span class="n">NVM_DIR</span><span class="o">=</span><span class="s2">&#34;$HOME/.nvm&#34;</span><span class="err">ㅁ</span>
+</span></span><span class="line"><span class="cl"><span class="n">source</span> <span class="o">$</span><span class="p">(</span><span class="n">brew</span> <span class="o">--</span><span class="n">prefix</span> <span class="n">nvm</span><span class="p">)</span><span class="o">/</span><span class="n">nvm</span><span class="o">.</span><span class="n">sh</span></span></span></code></pre></div></div>
+<p>.zshrc 재실행</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">source .zshrc</span></span></code></pre></div></div>
+<h2 id="node-설치">node 설치</h2>
+<p><a href="https://nodejs.org/ko/" target="_blank" rel="noopener noreffer ">https://nodejs.org/ko/</a> 여기서 안정적 버전을 선택한다</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">nvm install 14.15.5</span></span></code></pre></div></div>]]></description>
+</item>
+</channel>
+</rss>

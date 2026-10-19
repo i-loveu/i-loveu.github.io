@@ -1,0 +1,35 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Book - Category - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/categories/book/</link>
+        <description>Book - Category - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 08 May 2022 05:36:31 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/book/" rel="self" type="application/rss+xml" /><item>
+    <title>객체지향 원칙</title>
+    <link>http://localhost:1313/principle-oop/</link>
+    <pubDate>Sun, 08 May 2022 05:36:31 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/principle-oop/</guid>
+    <description><![CDATA[<h2 id="객체지향-기초">객체지향 기초</h2>
+<ul>
+<li>추상화</li>
+<li>캡슐화</li>
+<li>다형성</li>
+<li>상속</li>
+</ul>
+<h2 id="객체지향-원칙">객체지향 원칙</h2>
+<ul>
+<li>바뀌는 부분은 캡슐화 한다</li>
+<li>상속보다는 구성을 활용한다</li>
+<li>구현보다는 인터페이스에 맞춰서 프로그래밍한다</li>
+<li>상호작용하는 객체 사이에서는 가능하면 느슨한 결합을 사용해야 한다</li>
+<li>클래스는 확장에는 열려 있어야 하지만 변경에는 닫혀 있어야 한다(ocp)</li>
+<li>추상화된 것에 의존하게 만들고 구상 클래스에 의존하지 않게 만든다</li>
+</ul>
+<h2 id="객체지향-패턴">객체지향 패턴</h2>
+<h3 id="어댑터-패턴">어댑터 패턴</h3>
+<p>특정 클래스 인터페이스를 클라이언트에서 요구하는 다른 인터페이스로 변환합니다. 인터페이스가 호환되지 않아 같이 쓸 수 없었던 클래스를 사용할 수 있게 도와줍니다.</p>
+<h3 id="퍼사드-패턴">퍼사드 패턴</h3>
+<p>서브시스템에 있는 일련의 인터페이스를 통합 인터페이스로 묶어 줍니다. 또한 고수준 인터페이스도 정의하므로 서브시스템을 더 편리하게 사용할 수 있습니다.</p>]]></description>
+</item>
+</channel>
+</rss>

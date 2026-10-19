@@ -1,0 +1,73 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Htaccess - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/htaccess/</link>
+        <description>Htaccess - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 16 Feb 2021 14:25:00 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/htaccess/" rel="self" type="application/rss+xml" /><item>
+    <title>맥에서 워드프레스 로컬세팅하기</title>
+    <link>http://localhost:1313/wordpress-local-setting-for-mac/</link>
+    <pubDate>Tue, 16 Feb 2021 14:25:00 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/wordpress-local-setting-for-mac/</guid>
+    <description><![CDATA[<h2 id="wp-cli-설치">wp-cli 설치</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install wp-cli</span></span></code></pre></div></div>
+<p>wp cli 설치</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">wp</span> <span class="n">core</span> <span class="n">download</span></span></span></code></pre></div></div>
+<p>wordpress 다운로드</p>
+<h2 id="db-세팅">db 세팅</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">mysql -uroot
+</span></span><span class="line"><span class="cl">create database db_name charset=utf8mb4;</span></span></code></pre></div></div>
+<h2 id="wp-서버-띄우기">wp 서버 띄우기</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">wp server</span></span></code></pre></div></div>]]></description>
+</item>
+<item>
+    <title>Wordpress 고유주소 수정 후 링크가 먹지 않을때 .htaccess</title>
+    <link>http://localhost:1313/wordpress-basic-htaccess/</link>
+    <pubDate>Mon, 18 Jan 2021 16:15:15 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/wordpress-basic-htaccess/</guid>
+    <description><![CDATA[<h2 id="htaccess-란">.htaccess 란?</h2>
+<p>hypertext access의 약자. Rewrite engine 기능을 사용하기 위해 많이 쓴다.
+<a href="https://wordpress.org/support/article/htaccess/" target="_blank" rel="noopener noreffer ">워드프레스 .htacess 설명링크</a></p>
+<h2 id="wordpress-고유주소-설정-실수로-사이트-링크가-먹지-않을-때">wordpress 고유주소 설정 실수로 사이트 링크가 먹지 않을 때</h2>
+<p>이 경우 서버의 .htaccess 내용이 지워졌을 가능성이 높습니다.</p>
+<p>서버에 접근해서 아래의 코드로 업데이트 하면 해결될 수 있습니다.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># BEGIN WordPress
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">RewriteEngine On
+</span></span><span class="line"><span class="cl">RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</span></span><span class="line"><span class="cl">RewriteBase /
+</span></span><span class="line"><span class="cl">RewriteRule ^index\.php$ - [L]
+</span></span><span class="line"><span class="cl">RewriteCond %{REQUEST_FILENAME} !-f
+</span></span><span class="line"><span class="cl">RewriteCond %{REQUEST_FILENAME} !-d
+</span></span><span class="line"><span class="cl">RewriteRule . /index.php [L]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># END WordPress</span></span></code></pre></div></div>]]></description>
+</item>
+</channel>
+</rss>

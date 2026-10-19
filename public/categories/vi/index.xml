@@ -1,0 +1,23 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Vi - Category - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/categories/vi/</link>
+        <description>Vi - Category - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 17 Feb 2021 17:42:36 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/vi/" rel="self" type="application/rss+xml" /><item>
+    <title>vi 단축키</title>
+    <link>http://localhost:1313/vi-command/</link>
+    <pubDate>Wed, 17 Feb 2021 17:42:36 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/vi-command/</guid>
+    <description><![CDATA[<h2 id="vi-단축키">vi 단축키</h2>
+<p><code>dd</code> 커서가 있는 라인 삭제</p>
+<p><code>G</code> 파일의 마지막 행으로 가기</p>
+<p><code>L</code> 화면의 맨 아래로 이동</p>
+<p><code>숫자G</code> 숫자 행으로 이동</p>
+<p><code>^</code> 행의 맨 왼쪽으로 커서 이동</p>
+<p><code>$</code> 행의 맨 오른쪽으로 커서 이동</p>
+<p><code>Ctrl + i</code> 한 화면 위로 이동</p>
+<p><code>Ctrl + b</code> 한 화면 아래로 이동</p>]]></description>
+</item>
+</channel>
+</rss>

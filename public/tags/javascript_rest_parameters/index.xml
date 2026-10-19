@@ -1,0 +1,34 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Javascript_rest_parameters - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/javascript_rest_parameters/</link>
+        <description>Javascript_rest_parameters - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 30 Mar 2021 19:18:27 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/javascript_rest_parameters/" rel="self" type="application/rss+xml" /><item>
+    <title>Javascript Rest Parameter</title>
+    <link>http://localhost:1313/javascript-rest-parameter/</link>
+    <pubDate>Tue, 30 Mar 2021 19:18:27 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/javascript-rest-parameter/</guid>
+    <description><![CDATA[<h2 id="마지막-파라미터는-rest-파라미터">마지막 파라미터는 Rest 파라미터</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-javascript">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">myFun</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="p">...</span><span class="nx">manyMoreArgs</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;a&#34;</span><span class="p">,</span> <span class="nx">a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;b&#34;</span><span class="p">,</span> <span class="nx">b</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;manyMoreArgs&#34;</span><span class="p">,</span> <span class="nx">manyMoreArgs</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">myFun</span><span class="p">(</span><span class="s2">&#34;one&#34;</span><span class="p">,</span> <span class="s2">&#34;two&#34;</span><span class="p">,</span> <span class="s2">&#34;three&#34;</span><span class="p">,</span> <span class="s2">&#34;four&#34;</span><span class="p">,</span> <span class="s2">&#34;five&#34;</span><span class="p">,</span> <span class="s2">&#34;six&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Console Output:
+</span></span></span><span class="line"><span class="cl"><span class="c1">// a, one
+</span></span></span><span class="line"><span class="cl"><span class="c1">// b, two
+</span></span></span><span class="line"><span class="cl"><span class="c1">// manyMoreArgs, [three, four, five, six]
+</span></span></span></code></pre></div></div>
+<p>앞에 명시한 파라미터를 제외한 것들을 묶어서 배열로 내보낸다</p>]]></description>
+</item>
+</channel>
+</rss>

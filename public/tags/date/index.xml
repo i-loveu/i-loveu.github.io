@@ -1,0 +1,26 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Date - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/date/</link>
+        <description>Date - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 02 Mar 2021 19:11:31 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/date/" rel="self" type="application/rss+xml" /><item>
+    <title>Javascript Date</title>
+    <link>http://localhost:1313/javascript-date/</link>
+    <pubDate>Tue, 02 Mar 2021 19:11:31 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/javascript-date/</guid>
+    <description><![CDATA[<h2 id="javascript-date-에-대해서">javascript Date 에 대해서</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-javascript">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">date</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">date</span><span class="p">.</span><span class="nx">getDay</span><span class="p">()</span> <span class="c1">// week. 1 -&gt; monday
+</span></span></span><span class="line"><span class="cl"><span class="nx">date</span><span class="p">.</span><span class="nx">getDate</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nx">date</span><span class="p">.</span><span class="nx">getHours</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nx">date</span><span class="p">.</span><span class="nx">getMinutes</span><span class="p">()</span></span></span></code></pre></div></div>]]></description>
+</item>
+</channel>
+</rss>

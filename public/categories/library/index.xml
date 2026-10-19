@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Library - Category - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/categories/library/</link>
+        <description>Library - Category - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 01 Mar 2021 17:34:57 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/library/" rel="self" type="application/rss+xml" /><item>
+    <title>사용하기 좋은 컬러 팔레트</title>
+    <link>http://localhost:1313/useful-color-palete/</link>
+    <pubDate>Mon, 01 Mar 2021 17:34:57 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/useful-color-palete/</guid>
+    <description><![CDATA[<h2><a href="https://flatuicolors.com/" target="_blank" rel="noopener noreffer ">https://flatuicolors.com/</a></h2>
+<p>테마에 해당하는 컬러가 쉽게 copy된다.</p>
+<p><a href="https://flatuicolors.com/" target="_blank" rel="noopener noreffer ">https://flatuicolors.com/</a></p>
+<figure>
+</figure>]]></description>
+</item>
+</channel>
+</rss>

@@ -18,6 +18,17 @@ draft: true
 
 이것을 쓰면 화면의 정보창 아래에서 시작
 
+### 4.1 Login Screen 
+
+```dart
+  void onLoginTap(BuildContext context) {
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute(builder: (context) => LoginScreen()));
+  }
+```
+`push`는 화면을 쌓아올리고 `pop`은 밀어내서 없앤다. 
+
 ### 4.3 Sign Up Form
 
 Private 메소드 만드는 방법 `_` 언더바를 쓴다.
@@ -888,6 +899,40 @@ theme: ThemeData(
 key: UniqueKey(), // 고유의 키를 만들어줌
 ```
 
+### 11.3 AnimatedList part Two
+
+`ListTile` 같이 위젯을 밖으로 뺄 때에는 `void`가 아니라 `Widget`으로 처리한다. 
+
+```dart 
+Widget _makeTile(int index) {
+    return ListTile(
+      onLongPress: () => _deleteItem(index),
+      leading: const CircleAvatar(
+        radius: 30,
+        foregroundImage: NetworkImage(
+          'https://cdn.jsdelivr.net/gh/i-loveu/i-loveu.github.io@main/content/images/ahntae.jpg',
+        ),
+        child: Text('ahntae'),
+      ),
+      title: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          Text(
+            "Linn ${index}",
+            style: TextStyle(fontWeight: FontWeight.w600),
+          ),
+          Text(
+            "2:15 PM",
+            style: TextStyle(fontSize: 16),
+          ),
+        ],
+      ),
+      subtitle: Text("Dont' forget make video"),
+    );
+  }
+```
+
 ## 12 USER PROFILE
 
 ### 12.6 TabBar
@@ -1585,3 +1630,77 @@ Future<void> uploadVideo(File video) async {
     });
   }
 ```
+
+## 27 VIDEO TIMELINE 
+### 27.1 VideoPost 
+```dart
+  _db.collection("videos").where("likes", isGreaterThan: 10);
+  // collection 중 likes 필드의 값이 뭐일때 
+  _db.collection("videos").orderBy("createdAt"),
+  descending: true, // 내림차순 
+
+```
+### 27.3 FamilyAsyncNotifier
+
+AsyncNotifier 에 추가 인자를 보낼 수 있게 해준다. 
+```dart
+class VideoPostViewModel extends FamilyAsyncNotifier <void, String> {
+
+}
+
+final videoPostProvider = AsyncNotifierProvider.family<VideoPostViewModel, void, String> (
+  () => VideoPostViewModel(),
+);
+```
+
+### 27.5 disLikeVideo
+
+```dart
+
+export const onLikedCreated = functions.firestore
+  .document("likes/{likeId}")
+  .onCreate(async (snapshot, context) => {
+    const db = admin.firestore();
+    const [videoId, _] = snapshot.id.split("000");
+    await db
+      .collection("videos")
+      .doc(videoId)
+      .update({
+        likes: admin.firestore.FieldValue.increment(1), // 그값이 무엇이든 1 증가 
+      });
+  });
+
+export const onLikedRemoved = functions.firestore
+  .document("likes/{likeId}")
+  .onDelete(async (snapshot, context) => {
+    const db = admin.firestore();
+    const [videoId, _] = snapshot.id.split("000");
+    await db
+      .collection("videos")
+      .doc(videoId)
+      .update({
+        likes: admin.firestore.FieldValue.increment(-1),
+      });
+  });
+```
+
+
+## 28 DIRECT MESSAGES
+
+### 28.2 StreamProvider 
+
+
+```dart
+final chatProvider = StreamProvider((ref) {
+  final db = FirebaseFirestore.instance;
+  db
+      .collection("chat_rooms")
+      .doc("Dl6ENclQ7Jn5xbwwdXT3")
+      .collection("texts")
+      .orderBy("createdAt")
+      .snapshots().map((event) => null);
+});
+
+```
+
+`.snapshots();` 한번만 가져오는 게 아니라 변경사항이 생기면 알람이 생기며 계속 가져온다. 

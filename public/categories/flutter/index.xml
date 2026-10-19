@@ -1,0 +1,82 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Flutter - Category - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/categories/flutter/</link>
+        <description>Flutter - Category - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 09 Mar 2023 11:44:23 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/flutter/" rel="self" type="application/rss+xml" /><item>
+    <title>Flutter Functions</title>
+    <link>http://localhost:1313/flutter-functions/</link>
+    <pubDate>Thu, 09 Mar 2023 11:44:23 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/flutter-functions/</guid>
+    <description><![CDATA[<h2 id="link">link</h2>
+<p><code>Navigator.of(context).push()</code> 유저가 이전 화면으로 돌아갈 수 있다.</p>
+<p><code>Navigator.of(context).pushAndRemoveUntil()</code> <code>(route)</code> 부분을 <code>false</code> return 하면 Route 히스토리가 사라진다. 그래서 이전 페이지로 가지 못한다.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-Dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Dart" data-lang="Dart"><span class="line"><span class="cl"><span class="n">Navigator</span><span class="p">.</span><span class="n">of</span><span class="p">(</span><span class="n">context</span><span class="p">).</span><span class="n">push</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Navigator</span><span class="p">.</span><span class="n">of</span><span class="p">(</span><span class="n">context</span><span class="p">).</span><span class="n">pushAndRemoveUntil</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="n">MaterialPageRoute</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">builder:</span> <span class="p">(</span><span class="n">context</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="kd">const</span> <span class="n">NextScreen</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">  <span class="p">),</span> <span class="p">(</span><span class="n">route</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span></span></span></code></pre></div></div>
+<h2 id="component">component</h2>
+<p><code>FractionallySizedBox</code> 가능한한 큰 공간을 차지</p>
+<h3 id="timerperiodic">Timer.periodic</h3>
+<p>특정 시간마다 뭐나를 한다.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">Timer</span><span class="p">.</span><span class="n">periodic</span><span class="p">(</span><span class="n">Duration</span><span class="p">(</span><span class="nl">milliseconds:</span> <span class="m">500</span><span class="p">),</span> <span class="p">(</span><span class="n">timer</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">print</span><span class="p">(</span><span class="n">_animationController</span><span class="p">.</span><span class="n">value</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span></span></span></code></pre></div></div>]]></description>
+</item>
+<item>
+    <title>플루터 CSS같은 효과주는 코드</title>
+    <link>http://localhost:1313/flutter-css-effect/</link>
+    <pubDate>Mon, 30 Jan 2023 12:49:26 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/flutter-css-effect/</guid>
+    <description><![CDATA[<h2 id="overflow-hidden">Overflow: hidden</h2>
+<p><code>clipBehavior: Clip.hardEdge</code></p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"> <span class="n">Container</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">clipBehavior:</span> <span class="n">Clip</span><span class="p">.</span><span class="n">hardEdge</span><span class="p">,</span> <span class="c1">// 기본값은 Clip.none
+</span></span></span><span class="line"><span class="cl"><span class="p">)</span></span></span></code></pre></div></div>
+<p><code>Clip.none</code> 넘쳐 흘러도 된다.</p>
+<h2 id="position-relative">position: relative</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">Transform</span><span class="p">.</span><span class="n">translate</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">offset:</span> <span class="kd">const</span> <span class="n">Offset</span><span class="p">(</span><span class="o">-</span><span class="m">10</span><span class="p">,</span> <span class="m">10</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span></span></span></code></pre></div></div>
+<p>x축 -10pixel / y축 10pixel</p>
+<h2 id="콘텐츠-높이가-창의-크기를-넘을-때">콘텐츠 높이가 창의 크기를 넘을 때</h2>
+<p><code>SingleChildScrollView </code></p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="nl">body:</span> <span class="n">SingleChildScrollView</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">child:</span> <span class="n">Padding</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">padding:</span> <span class="kd">const</span> <span class="n">EdgeInsets</span><span class="p">.</span><span class="n">symmetric</span><span class="p">(</span><span class="nl">horizontal:</span> <span class="m">40</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">child:</span> <span class="n">Column</span><span class="p">(</span></span></span></code></pre></div></div>
+<p><code>body</code>를 <code>SingleChildScrollView</code>로 감싸줍니다.</p>]]></description>
+</item>
+</channel>
+</rss>

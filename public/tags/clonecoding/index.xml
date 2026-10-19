@@ -1,0 +1,63 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Clonecoding - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/clonecoding/</link>
+        <description>Clonecoding - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 19 Jan 2021 10:35:36 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/clonecoding/" rel="self" type="application/rss+xml" /><item>
+    <title>React Native로 날씨앱 만들기</title>
+    <link>http://localhost:1313/forkin-weather-v1/</link>
+    <pubDate>Tue, 19 Jan 2021 10:35:36 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/forkin-weather-v1/</guid>
+    <description><![CDATA[<h2 id="react-native-란">React Native 란?</h2>
+<p>ios, android 양쪽 앱을 만들 수 있는 프레임워크. React.js 기반한다.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">expo install expo-location</span></span></code></pre></div></div>
+<blockquote>
+<p>expo location plugin 설치</p>
+</blockquote>]]></description>
+</item>
+<item>
+    <title>인스타그램 클론 V1</title>
+    <link>http://localhost:1313/instargram-clone-v1/</link>
+    <pubDate>Tue, 05 Jan 2021 16:00:37 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/instargram-clone-v1/</guid>
+    <description><![CDATA[<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yarn add graphql-yoga</span></span></code></pre></div></div>
+<blockquote>
+<p>graphql 설치</p>
+<blockquote>
+<p>GraphQLServer에는 express 서버가 내장</p>
+</blockquote>
+</blockquote>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yarn add nodemon -D
+</span></span><span class="line"><span class="cl">yarn add babel-cli -D
+</span></span><span class="line"><span class="cl">yarn add @babel/{node,preset-env,core}</span></span></code></pre></div></div>
+<blockquote>
+<p>nodemon, bebel-node 설치</p>
+</blockquote>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npm install --save-dev @babel/node</span></span></code></pre></div></div>
+<blockquote>
+<p>혹시 babel-core와 babel-cli 버전 차이로 서버가 뜨지 않을 경우</p>]]></description>
+</item>
+</channel>
+</rss>

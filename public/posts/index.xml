@@ -1,0 +1,299 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/posts/</link>
+        <description>All Posts | 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Oct 2026 11:11:06 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Nextjs Monorepo</title>
+    <link>http://localhost:1313/nextjs-monorepo/</link>
+    <pubDate>Mon, 19 Oct 2026 11:11:06 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/nextjs-monorepo/</guid>
+    <description><![CDATA[<h2 id="pnpm--turborepo--nextjs-app-router-조합으로-모노레포를-구축하는-세팅">pnpm + Turborepo + Next.js (App Router) 조합으로 모노레포를 구축하는 세팅</h2>
+<ol>
+<li>프로젝트 폴더 구조 목표</li>
+</ol>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">modoo-monorepo/
+</span></span><span class="line"><span class="cl">├── apps/
+</span></span><span class="line"><span class="cl">│   ├── modoo-tango/     # 홍보용 웹사이트 (Port 3000)
+</span></span><span class="line"><span class="cl">│   └── tango-talk/      # 수강생 관리 PWA 앱 (Port 3001)
+</span></span><span class="line"><span class="cl">├── packages/
+</span></span><span class="line"><span class="cl">│   ├── ui/              # 공통 UI 컴포넌트 (shadcn/ui, Tailwind)
+</span></span><span class="line"><span class="cl">│   ├── database/        # Supabase 클라이언트 &amp; TypeScript 자동 생성 타입
+</span></span><span class="line"><span class="cl">│   └── config/          # ESLint, TypeScript 공통 설정
+</span></span><span class="line"><span class="cl">├── pnpm-workspace.yaml
+</span></span><span class="line"><span class="cl">├── turbo.json
+</span></span><span class="line"><span class="cl">└── package.json</span></span></code></pre></div></div>]]></description>
+</item>
+<item>
+    <title>Flutterflow Make App</title>
+    <link>http://localhost:1313/flutterflow-make-app/</link>
+    <pubDate>Sat, 05 Apr 2025 22:21:50 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/flutterflow-make-app/</guid>
+    <description><![CDATA[<h2 id="user-signin">User Signin</h2>
+<h3 id="make-signin-page">Make signin page</h3>
+<p>reference page <a href="https://docs.flutterflow.io/integrations/authentication/firebase/initial-setup/" target="_blank" rel="noopener noreffer ">https://docs.flutterflow.io/integrations/authentication/firebase/initial-setup/</a></p>
+<figure>
+</figure>
+
+<h2 id="method">method</h2>
+<h3 id="page-state">page state</h3>
+<h3 id="app-state">App State</h3>
+<p>global memory</p>
+<p>like a logged-in user&rsquo;s details</p>]]></description>
+</item>
+<item>
+    <title>Flutter Error Cocoapods</title>
+    <link>http://localhost:1313/flutter-error-cocoapods/</link>
+    <pubDate>Wed, 01 Nov 2023 12:38:37 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/flutter-error-cocoapods/</guid>
+    <description><![CDATA[<h2 id="플루터를-실행하려고-할-때-pop-repo-update가-뜨는-경우">플루터를 실행하려고 할 때 &lsquo;pop repo update&rsquo;가 뜨는 경우</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd iso
+</span></span><span class="line"><span class="cl">rm Podfile.lock
+</span></span><span class="line"><span class="cl">pod install --repo-update
+</span></span><span class="line"><span class="cl">cd ..
+</span></span><span class="line"><span class="cl">flutter clean </span></span></code></pre></div></div>
+<p>후에 재살행</p>]]></description>
+</item>
+<item>
+    <title>Centos 7 Nginx Update</title>
+    <link>http://localhost:1313/centos-7-nginx-update/</link>
+    <pubDate>Wed, 18 Oct 2023 13:05:03 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/centos-7-nginx-update/</guid>
+    <description><![CDATA[<h2 id="작업-순서">작업 순서</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// 의존성 설치 
+</span></span><span class="line"><span class="cl">sudo yum install yum-utils 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 저장소 추가 
+</span></span><span class="line"><span class="cl">sudo vi /etc/yum.repos.d/nginx.repo
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[nginx-stable]
+</span></span><span class="line"><span class="cl">name=nginx stable repo
+</span></span><span class="line"><span class="cl">baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+</span></span><span class="line"><span class="cl">gpgcheck=1
+</span></span><span class="line"><span class="cl">enabled=1
+</span></span><span class="line"><span class="cl">gpgkey=https://nginx.org/keys/nginx_signing.key
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 위 작업에서 에러가 나면
+</span></span><span class="line"><span class="cl">baseurl=http://nginx.org/packages/centos/7/$basearch/ 로 변경 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// statable 버전 활성화 
+</span></span><span class="line"><span class="cl">yum-config-manager --enable nginx-stable
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 버전 확인
+</span></span><span class="line"><span class="cl">yum info nginx
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 저장소 갱신 
+</span></span><span class="line"><span class="cl">sudo yum update 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// nginx 업데이트
+</span></span><span class="line"><span class="cl">sudo yum install -y nginx 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// nginx start
+</span></span><span class="line"><span class="cl">systemctl start nginx</span></span></code></pre></div></div>
+<p>nginx 버전 정보 숨기기
+nginx.conf 편집</p>]]></description>
+</item>
+<item>
+    <title>Flutter Widgets</title>
+    <link>http://localhost:1313/flutter-widgets/</link>
+    <pubDate>Thu, 12 Oct 2023 18:53:52 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/flutter-widgets/</guid>
+    <description><![CDATA[<h3 id="material">Material</h3>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">Material</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">elevation:</span> <span class="m">10</span><span class="p">,</span> <span class="c1">// 높이 
+</span></span></span><span class="line"><span class="cl"><span class="p">)</span></span></span></code></pre></div></div>]]></description>
+</item>
+<item>
+    <title>Nomad Study Flutter Animations Masterclass</title>
+    <link>http://localhost:1313/nomad-study-flutter-animations-masterclass/</link>
+    <pubDate>Tue, 03 Oct 2023 20:36:12 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/nomad-study-flutter-animations-masterclass/</guid>
+    <description><![CDATA[<h2 id="implicit-animations">IMPLICIT ANIMATIONS</h2>
+<h3 id="10-project-setup">1.0 Project Setup</h3>
+<h3 id="11-implicit">1.1 Implicit</h3>
+<p>&lsquo;Animated&rsquo; 를 붙이면 애니메이션 효과를 준다</p>
+<h3 id="12-animatedcontainer">1.2 AnimatedContainer</h3>
+<h3 id="14-tweenanimationbuilder">1.4 TweenAnimationBuilder</h3>
+<p>tween 값을 줘서 애니메이션을 만든다.</p>
+<h2 id="2-explicit-animations">2 EXPLICIT ANIMATIONS</h2>
+<h3 id="21-animationcontroller">2.1 AnimationController</h3>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl">  <span class="err">@</span><span class="n">override</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">void</span> <span class="n">initState</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// TODO: implement initState
+</span></span></span><span class="line"><span class="cl">    <span class="k">super</span><span class="p">.</span><span class="n">initState</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Ticker</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="n">elapsed</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">print</span><span class="p">(</span><span class="n">elapsed</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">).</span><span class="n">start</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span></span></span></code></pre></div></div>
+<p><code>Ticker</code> 애니메이션 프레임당 1번씩 호출됨</p>
+<p><code>with SingleTickerProviderStateMixin </code> -&gt; 사용자 화면에 떠 있을 경우만 호출.</p>
+<p><code>animationController</code> 는 0 -&gt; 1로 움직인다.</p>]]></description>
+</item>
+<item>
+    <title>Flutter Functions</title>
+    <link>http://localhost:1313/flutter-functions/</link>
+    <pubDate>Thu, 09 Mar 2023 11:44:23 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/flutter-functions/</guid>
+    <description><![CDATA[<h2 id="link">link</h2>
+<p><code>Navigator.of(context).push()</code> 유저가 이전 화면으로 돌아갈 수 있다.</p>
+<p><code>Navigator.of(context).pushAndRemoveUntil()</code> <code>(route)</code> 부분을 <code>false</code> return 하면 Route 히스토리가 사라진다. 그래서 이전 페이지로 가지 못한다.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-Dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Dart" data-lang="Dart"><span class="line"><span class="cl"><span class="n">Navigator</span><span class="p">.</span><span class="n">of</span><span class="p">(</span><span class="n">context</span><span class="p">).</span><span class="n">push</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Navigator</span><span class="p">.</span><span class="n">of</span><span class="p">(</span><span class="n">context</span><span class="p">).</span><span class="n">pushAndRemoveUntil</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="n">MaterialPageRoute</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">builder:</span> <span class="p">(</span><span class="n">context</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="kd">const</span> <span class="n">NextScreen</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">  <span class="p">),</span> <span class="p">(</span><span class="n">route</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span></span></span></code></pre></div></div>
+<h2 id="component">component</h2>
+<p><code>FractionallySizedBox</code> 가능한한 큰 공간을 차지</p>
+<h3 id="timerperiodic">Timer.periodic</h3>
+<p>특정 시간마다 뭐나를 한다.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">Timer</span><span class="p">.</span><span class="n">periodic</span><span class="p">(</span><span class="n">Duration</span><span class="p">(</span><span class="nl">milliseconds:</span> <span class="m">500</span><span class="p">),</span> <span class="p">(</span><span class="n">timer</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">print</span><span class="p">(</span><span class="n">_animationController</span><span class="p">.</span><span class="n">value</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span></span></span></code></pre></div></div>]]></description>
+</item>
+<item>
+    <title>Nomad Study Tictok Clone</title>
+    <link>http://localhost:1313/nomad-study-tictok-clone/</link>
+    <pubDate>Thu, 16 Feb 2023 13:10:42 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/nomad-study-tictok-clone/</guid>
+    <description><![CDATA[<h2 id="project-setup">PROJECT SETUP</h2>
+<h3 id="30-initialization">3.0 Initialization</h3>
+<p><code>flutter create tictok_clone</code></p>
+<h2 id="4-authentication">4. AUTHENTICATION</h2>
+<h3 id="40-sign-up-screen">4.0 Sign Up Screen</h3>
+<p><code>SafeArea</code> 그 안에 있는 모든 것은 특정 공간에 있을 것이라고 보장</p>
+<p>이것을 쓰면 화면의 정보창 아래에서 시작</p>
+<h3 id="41-login-screen">4.1 Login Screen</h3>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl">  <span class="kt">void</span> <span class="n">onLoginTap</span><span class="p">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Navigator</span><span class="p">.</span><span class="n">of</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="n">context</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">).</span><span class="n">push</span><span class="p">(</span><span class="n">MaterialPageRoute</span><span class="p">(</span><span class="nl">builder:</span> <span class="p">(</span><span class="n">context</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">LoginScreen</span><span class="p">()));</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span></span></span></code></pre></div></div>
+<p><code>push</code>는 화면을 쌓아올리고 <code>pop</code>은 밀어내서 없앤다.</p>
+<h3 id="43-sign-up-form">4.3 Sign Up Form</h3>
+<p>Private 메소드 만드는 방법 <code>_</code> 언더바를 쓴다.</p>]]></description>
+</item>
+<item>
+    <title>플루터 CSS같은 효과주는 코드</title>
+    <link>http://localhost:1313/flutter-css-effect/</link>
+    <pubDate>Mon, 30 Jan 2023 12:49:26 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/flutter-css-effect/</guid>
+    <description><![CDATA[<h2 id="overflow-hidden">Overflow: hidden</h2>
+<p><code>clipBehavior: Clip.hardEdge</code></p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"> <span class="n">Container</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">clipBehavior:</span> <span class="n">Clip</span><span class="p">.</span><span class="n">hardEdge</span><span class="p">,</span> <span class="c1">// 기본값은 Clip.none
+</span></span></span><span class="line"><span class="cl"><span class="p">)</span></span></span></code></pre></div></div>
+<p><code>Clip.none</code> 넘쳐 흘러도 된다.</p>
+<h2 id="position-relative">position: relative</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">Transform</span><span class="p">.</span><span class="n">translate</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">offset:</span> <span class="kd">const</span> <span class="n">Offset</span><span class="p">(</span><span class="o">-</span><span class="m">10</span><span class="p">,</span> <span class="m">10</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span></span></span></code></pre></div></div>
+<p>x축 -10pixel / y축 10pixel</p>
+<h2 id="콘텐츠-높이가-창의-크기를-넘을-때">콘텐츠 높이가 창의 크기를 넘을 때</h2>
+<p><code>SingleChildScrollView </code></p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="nl">body:</span> <span class="n">SingleChildScrollView</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">child:</span> <span class="n">Padding</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">padding:</span> <span class="kd">const</span> <span class="n">EdgeInsets</span><span class="p">.</span><span class="n">symmetric</span><span class="p">(</span><span class="nl">horizontal:</span> <span class="m">40</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">child:</span> <span class="n">Column</span><span class="p">(</span></span></span></code></pre></div></div>
+<p><code>body</code>를 <code>SingleChildScrollView</code>로 감싸줍니다.</p>]]></description>
+</item>
+<item>
+    <title>Nomad Study Flutter for Beginners</title>
+    <link>http://localhost:1313/nomad-study-flutter-for-beginners/</link>
+    <pubDate>Thu, 12 Jan 2023 13:22:48 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/nomad-study-flutter-for-beginners/</guid>
+    <description><![CDATA[<h2 id="hello-flutter">HELLO FLUTTER</h2>
+<h3 id="installation">installation</h3>
+<p><a href="https://docs.flutter.dev/get-started/install/macos" target="_blank" rel="noopener noreffer ">https://docs.flutter.dev/get-started/install/macos</a> 참고</p>
+<h3 id="running-flutter">Running Flutter</h3>
+<ol>
+<li>extension 설치하기</li>
+</ol>
+<h2 id="ui-challenge">UI CHALLENGE</h2>
+<h3 id="33-vscode-settings">3.3 VSCode Settings</h3>
+<p><code>shift + command + p</code> 를 누르고 <code>open user settings(JSON)</code>을 선택</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-Json">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Json" data-lang="Json"><span class="line"><span class="cl">  <span class="s2">&#34;dart.previewFlutterUiGuides&#34;</span><span class="err">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;editor.codeActionsOnSave&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;source.fixAll&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span><span class="err">,</span></span></span></code></pre></div></div>
+<p><code>&quot;editor.codeActionsOnSave&quot;</code> 코드를 필요한 const를 추가하는 등 자동 수정
+<code>&quot;dart.previewFlutterUiGuides&quot;: true</code> 부모 라인을 보여준다</p>
+<h3 id="37-icons-and-transforms">3.7 Icons and Transforms</h3>
+<p><code>Icon(Icons.euro_rounded, color: Colors.white, size: 98)</code></p>
+<h4 id="overflow-hidden-과-같은-효과">overflow: hidden 과 같은 효과</h4>
+<p><code>clipBehavior: Clip.hardEdge</code></p>]]></description>
+</item>
+</channel>
+</rss>

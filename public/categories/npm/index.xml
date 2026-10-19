@@ -1,0 +1,21 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Npm - Category - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/categories/npm/</link>
+        <description>Npm - Category - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 19 May 2021 18:19:27 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/npm/" rel="self" type="application/rss+xml" /><item>
+    <title>Npm Error</title>
+    <link>http://localhost:1313/npm-error/</link>
+    <pubDate>Wed, 19 May 2021 18:19:27 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/npm-error/</guid>
+    <description><![CDATA[<h2 id="npm을-쓰면서-나는-에러-대처-법">Npm을 쓰면서 나는 에러 대처 법</h2>
+<h3 id="unable-to-resolve-dependency-tree">unable to resolve dependency tree</h3>
+<p><code>npm install --save --legacy-peer-deps</code></p>
+<p><code>--save</code> package.json 의 dependencies에 추가 하기 위한 것</p>
+<p><code>--legacy-peer-deps</code> 의존성에 맞게 상위 모듈을 다운그레이드 한다.</p>
+<p>react의 경우 지금 사용하고 있는 버전과 개발될 때 사용한 버전이 달라 하부 의존 패키지를 설치하지 못하는 경우가 있다.</p>
+<p>react의 버전을 낮춰 의존성을 맞추는 설치</p>]]></description>
+</item>
+</channel>
+</rss>

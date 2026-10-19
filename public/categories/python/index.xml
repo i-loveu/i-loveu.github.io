@@ -1,0 +1,49 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Python - Category - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/categories/python/</link>
+        <description>Python - Category - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Mar 2021 20:59:43 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/python/" rel="self" type="application/rss+xml" /><item>
+    <title>Install Pip</title>
+    <link>http://localhost:1313/install-pip/</link>
+    <pubDate>Mon, 22 Mar 2021 20:59:43 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/install-pip/</guid>
+    <description><![CDATA[<h2 id="pipenv-install">pipenv install</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install pipenv</span></span></code></pre></div></div>
+<h2 id="python3-설정">python3 설정</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pipenv --three</span></span></code></pre></div></div>
+<h2 id="pipenv-shell-활성화">pipenv shell 활성화</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pipenv shell</span></span></code></pre></div></div>]]></description>
+</item>
+<item>
+    <title>Python Functions</title>
+    <link>http://localhost:1313/python-functions/</link>
+    <pubDate>Thu, 28 Jan 2021 21:47:23 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/python-functions/</guid>
+    <description><![CDATA[<h2 id="기본이-되는-파이썬-function을-정리합니다">기본이 되는 파이썬 function을 정리합니다.</h2>
+<h3 id="meth"><code>meth</code></h3>
+<ul>
+<li><code>meth.fsum([1, 2, 3, 4])</code> -&gt; 10 더하기.</li>
+<li><code>meth.ceil(1.2)</code> -&gt; 2 값을 올림 해줍니다.</li>
+<li><code>meth.fabs(-1.2)</code> -&gt; 1.2 절대값을 보여줍니다.</li>
+</ul>]]></description>
+</item>
+</channel>
+</rss>

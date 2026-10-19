@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Iterm2 - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/iterm2/</link>
+        <description>Iterm2 - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 25 Feb 2021 20:13:10 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/iterm2/" rel="self" type="application/rss+xml" /><item>
+    <title>How to Use Iterm2</title>
+    <link>http://localhost:1313/how-to-use-iterm2/</link>
+    <pubDate>Thu, 25 Feb 2021 20:13:10 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/how-to-use-iterm2/</guid>
+    <description><![CDATA[<h2 id="imgcat---아이텀에서-이미지를-볼-수-있다">imgcat - 아이텀에서 이미지를 볼 수 있다</h2>
+<p>term에서 이미지를 볼 수 있다.</p>
+<p><a href="https://iterm2.com/documentation-images.html" target="_blank" rel="noopener noreffer ">https://iterm2.com/documentation-images.html</a></p>
+<figure>
+</figure>]]></description>
+</item>
+</channel>
+</rss>

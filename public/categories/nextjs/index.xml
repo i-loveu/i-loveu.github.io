@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Nextjs - Category - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/categories/nextjs/</link>
+        <description>Nextjs - Category - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 05 Jan 2022 17:10:32 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/nextjs/" rel="self" type="application/rss+xml" /><item>
+    <title>Next Js Basic</title>
+    <link>http://localhost:1313/next-js-basic/</link>
+    <pubDate>Wed, 05 Jan 2022 17:10:32 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/next-js-basic/</guid>
+    <description><![CDATA[<h2 id="basic">Basic</h2>
+<h3 id="run-server">run server</h3>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-javascript">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">npm</span> <span class="nx">run</span> <span class="nx">dev</span></span></span></code></pre></div></div>]]></description>
+</item>
+</channel>
+</rss>

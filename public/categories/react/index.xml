@@ -1,0 +1,46 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>React - Category - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/categories/react/</link>
+        <description>React - Category - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 27 Aug 2021 16:11:53 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/react/" rel="self" type="application/rss+xml" /><item>
+    <title>React Stric Mode란?</title>
+    <link>http://localhost:1313/react-what-is-react-stric-mode/</link>
+    <pubDate>Fri, 27 Aug 2021 16:11:53 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/react-what-is-react-stric-mode/</guid>
+    <description><![CDATA[<h2 id="react-앱-내의-잠재적-문제를-알아내가-위한-도구">React 앱 내의 잠재적 문제를 알아내가 위한 도구</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-javascript">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="nx">React</span><span class="p">.</span><span class="nx">StrictMode</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nx">App</span> <span class="o">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="err">/React.StrictMode&gt;,</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;root&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span></span></span></code></pre></div></div>
+<p>용도는 아래와 같습니다.</p>
+<ul>
+<li>안전하지 않은 생명주기를 사용하는 컴포넌트 발견</li>
+<li>레거시 문자열 ref 사용에 대한 경고</li>
+<li>권장되지 않는 findDOMNode 사용에 대한 경고</li>
+<li>예상치 못한 부작용 검사</li>
+<li>레거시 context API 검사</li>
+</ul>
+<h3 id="개발용-모드">개발용 모드</h3>
+<blockquote>
+<p>Strict 모드는 개발 모드에서만 활성화되기 때문에, 프로덕션 빌드에는 영향을 끼치지 않습니다.</p>]]></description>
+</item>
+<item>
+    <title>React Hooks 10</title>
+    <link>http://localhost:1313/react-hooks-10/</link>
+    <pubDate>Wed, 19 May 2021 17:25:58 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/react-hooks-10/</guid>
+    <description><![CDATA[<h2 id="react-hooks">React Hooks</h2>
+<h3></h3>]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,35 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Awscli - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/awscli/</link>
+        <description>Awscli - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Mar 2021 20:59:43 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/awscli/" rel="self" type="application/rss+xml" /><item>
+    <title>Install Pip</title>
+    <link>http://localhost:1313/install-pip/</link>
+    <pubDate>Mon, 22 Mar 2021 20:59:43 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/install-pip/</guid>
+    <description><![CDATA[<h2 id="pipenv-install">pipenv install</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install pipenv</span></span></code></pre></div></div>
+<h2 id="python3-설정">python3 설정</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pipenv --three</span></span></code></pre></div></div>
+<h2 id="pipenv-shell-활성화">pipenv shell 활성화</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pipenv shell</span></span></code></pre></div></div>]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,39 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Html - Category - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/categories/html/</link>
+        <description>Html - Category - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 19 Feb 2021 16:31:47 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/html/" rel="self" type="application/rss+xml" /><item>
+    <title>기본 html에 대한 설명</title>
+    <link>http://localhost:1313/bolierplate-html-base/</link>
+    <pubDate>Fri, 19 Feb 2021 16:31:47 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/bolierplate-html-base/</guid>
+    <description><![CDATA[<h2 id="doctype-html">!DOCTYPE html</h2>
+<p>html 문서 버전중 html5에 해당한다는 정의입니다.</p>
+<h2 id="html-langko">html lang=&ldquo;ko&rdquo;</h2>
+<p>컨텐츠에 포함되는 주 언어가 한국어라는 뜻입니다.</p>
+<h2 id="meta-charsetutf-8">meta charset=&ldquo;utf-8</h2>
+<p>기본문자 인코딩 형식인 유니코드(UTF-8)</p>
+<h2 id="meta-nameviewport-contentwidthdevice-width">meta name=&ldquo;viewport&rdquo; content=&ldquo;width=device-width&rdquo;</h2>
+<p>viewport: 화면 표시 영역(브라우져 크기)</p>
+<p>width=device-width: 화면 크기를 장치의 크기로 설정</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-html">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;ko&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>문서 제목<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>이 문서는 HTML 문서입니다.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></span></span></code></pre></div></div>]]></description>
+</item>
+</channel>
+</rss>

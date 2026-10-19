@@ -1,0 +1,28 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Browser - Category - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/categories/browser/</link>
+        <description>Browser - Category - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 03 Mar 2021 10:38:31 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/browser/" rel="self" type="application/rss+xml" /><item>
+    <title>Browser Local Storage</title>
+    <link>http://localhost:1313/browser-local-storage/</link>
+    <pubDate>Wed, 03 Mar 2021 10:38:31 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/browser-local-storage/</guid>
+    <description><![CDATA[<h2 id="내-컴퓨터-브라우져에-저장하는-storage">내 컴퓨터 브라우져에 저장하는 storage</h2>
+<figure>
+</figure>
+
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-javascript">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s2">&#34;keyName&#34;</span><span class="p">,</span> <span class="s2">&#34;value&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s2">&#34;keyName&#34;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&#34;value&#34;</span></span></span></code></pre></div></div>
+<p>localStorage는 오로지 String만 저장 가능하다.</p>
+<p>그래서 <code>JSON.stringify(Object)</code>를 사용해서 저장해준다.</p>
+<p>다시 object 시킬경우 <code>JSON.parse(sringObject)</code>를 사용한다</p>]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Nomad Study Flutter for Beginners - 사랑합니다 기술 블로그</title><meta name="Description" content="This is my cool site"><meta property="og:url" content="http://localhost:1313/nomad-study-flutter-for-beginners/">
+	<meta property="og:site_name" content="사랑합니다 기술 블로그">
+	<meta property="og:title" content="Nomad Study Flutter for Beginners">
+	<meta property="og:description" content="HELLO FLUTTER installation https://docs.flutter.dev/get-started/install/macos 참고
+Running Flutter extension 설치하기 UI CHALLENGE 3.3 VSCode Settings shift &#43; command &#43; p 를 누르고 open user settings(JSON)을 선택
+&#34;dart.previewFlutterUiGuides&#34;: true &#34;editor.codeActionsOnSave&#34;: { &#34;source.fixAll&#34;: true }, &#34;editor.codeActionsOnSave&#34; 코드를 필요한 const를 추가하는 등 자동 수정 &#34;dart.previewFlutterUiGuides&#34;: true 부모 라인을 보여준다
+3.7 Icons and Transforms Icon(Icons.euro_rounded, color: Colors.white, size: 98)
+overflow: hidden 과 같은 효과 clipBehavior: Clip.hardEdge">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2023-01-12T13:22:48+09:00">
+		<meta property="article:modified_time" content="2023-01-12T13:22:48+09:00">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Nomad Study Flutter for Beginners">
+	<meta name="twitter:description" content="HELLO FLUTTER installation https://docs.flutter.dev/get-started/install/macos 참고
+Running Flutter extension 설치하기 UI CHALLENGE 3.3 VSCode Settings shift &#43; command &#43; p 를 누르고 open user settings(JSON)을 선택
+&#34;dart.previewFlutterUiGuides&#34;: true &#34;editor.codeActionsOnSave&#34;: { &#34;source.fixAll&#34;: true }, &#34;editor.codeActionsOnSave&#34; 코드를 필요한 const를 추가하는 등 자동 수정 &#34;dart.previewFlutterUiGuides&#34;: true 부모 라인을 보여준다
+3.7 Icons and Transforms Icon(Icons.euro_rounded, color: Colors.white, size: 98)
+overflow: hidden 과 같은 효과 clipBehavior: Clip.hardEdge">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/nomad-study-flutter-for-beginners/" /><link rel="prev" href="http://localhost:1313/nomard-study-dart-beginner/" /><link rel="next" href="http://localhost:1313/flutter-css-effect/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Nomad Study Flutter for Beginners",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/nomad-study-flutter-for-beginners\/"
+        },"genre": "posts","wordcount":  556 ,
+        "url": "http:\/\/localhost:1313\/nomad-study-flutter-for-beginners\/","datePublished": "2023-01-12T13:22:48+09:00","dateModified": "2023-01-12T13:22:48+09:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "xxxx"
+            },"description": ""
+    }
+    </script><script data-ad-client="ca-pub-4726317611282078" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="사랑합니다 기술 블로그">My cool site</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="사랑합니다 기술 블로그">My cool site</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Nomad Study Flutter for Beginners</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>xxxx</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-12">2023-01-12</time>&nbsp;<i class="fas fa-pencil-alt" aria-hidden="true"></i>&nbsp;556 words&nbsp;
+                <i class="far fa-clock" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#hello-flutter">HELLO FLUTTER</a>
+      <ul>
+        <li><a href="#installation">installation</a></li>
+        <li><a href="#running-flutter">Running Flutter</a></li>
+      </ul>
+    </li>
+    <li><a href="#ui-challenge">UI CHALLENGE</a>
+      <ul>
+        <li><a href="#33-vscode-settings">3.3 VSCode Settings</a></li>
+        <li><a href="#37-icons-and-transforms">3.7 Icons and Transforms</a>
+          <ul>
+            <li><a href="#overflow-hidden-과-같은-효과">overflow: hidden 과 같은 효과</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#4-stateful-widgets">4 STATEFUL WIDGETS</a>
+      <ul>
+        <li><a href="#40-state">4.0 State</a></li>
+        <li><a href="#44-widget-lifecycle">4.4 Widget Lifecycle</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-pomodoro-app">5 POMODORO APP</a>
+      <ul>
+        <li><a href="#50-user-interface">5.0 User Interface</a></li>
+      </ul>
+    </li>
+    <li><a href="#webtoon-app">WEBTOON APP</a>
+      <ul>
+        <li><a href="#62-data-feching">6.2 Data Feching</a></li>
+        <li><a href="#65-waitforwebtoons">6.5 waitForWebToons</a></li>
+        <li><a href="#66-futurebuilder">6.6 Futurebuilder</a></li>
+        <li><a href="#67-listview">6.7 ListView</a></li>
+        <li><a href="#68-webtoon-card">6.8 WebToon Card</a></li>
+        <li><a href="#69-detail-screen">6.9 Detail Screen</a></li>
+        <li><a href="#610-hero">6.10 Hero</a></li>
+        <li><a href="#episodes">Episodes</a></li>
+        <li><a href="#url-launcher">Url Launcher</a></li>
+        <li><a href="#617-favorites">6.17 Favorites</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="hello-flutter">HELLO FLUTTER</h2>
+<h3 id="installation">installation</h3>
+<p><a href="https://docs.flutter.dev/get-started/install/macos" target="_blank" rel="noopener noreffer ">https://docs.flutter.dev/get-started/install/macos</a> 참고</p>
+<h3 id="running-flutter">Running Flutter</h3>
+<ol>
+<li>extension 설치하기</li>
+</ol>
+<h2 id="ui-challenge">UI CHALLENGE</h2>
+<h3 id="33-vscode-settings">3.3 VSCode Settings</h3>
+<p><code>shift + command + p</code> 를 누르고 <code>open user settings(JSON)</code>을 선택</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-Json">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Json" data-lang="Json"><span class="line"><span class="cl">  <span class="s2">&#34;dart.previewFlutterUiGuides&#34;</span><span class="err">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;editor.codeActionsOnSave&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;source.fixAll&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span><span class="err">,</span></span></span></code></pre></div></div>
+<p><code>&quot;editor.codeActionsOnSave&quot;</code> 코드를 필요한 const를 추가하는 등 자동 수정
+<code>&quot;dart.previewFlutterUiGuides&quot;: true</code> 부모 라인을 보여준다</p>
+<h3 id="37-icons-and-transforms">3.7 Icons and Transforms</h3>
+<p><code>Icon(Icons.euro_rounded, color: Colors.white, size: 98)</code></p>
+<h4 id="overflow-hidden-과-같은-효과">overflow: hidden 과 같은 효과</h4>
+<p><code>clipBehavior: Clip.hardEdge</code></p>
+<h2 id="4-stateful-widgets">4 STATEFUL WIDGETS</h2>
+<p><code>StateLessWidget</code> 정적페이지 같은 것</p>
+<h3 id="40-state">4.0 State</h3>
+<h3 id="44-widget-lifecycle">4.4 Widget Lifecycle</h3>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl">  <span class="err">@</span><span class="n">override</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">void</span> <span class="n">initState</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// TODO: implement initState
+</span></span></span><span class="line"><span class="cl">    <span class="k">super</span><span class="p">.</span><span class="n">initState</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">print</span><span class="p">(</span><span class="s1">&#39;init State!&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span></span></span></code></pre></div></div>
+<p><code>dispose</code> 위젯이 떨어질때</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl">  <span class="err">@</span><span class="n">override</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">void</span> <span class="n">dispose</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// TODO: implement dispose
+</span></span></span><span class="line"><span class="cl">    <span class="k">super</span><span class="p">.</span><span class="n">dispose</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">print</span><span class="p">(</span><span class="s1">&#39;dispose!&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span></span></span></code></pre></div></div>
+<h2 id="5-pomodoro-app">5 POMODORO APP</h2>
+<h3 id="50-user-interface">5.0 User Interface</h3>
+<p><code>Flexible</code> flex 비율로 화면을 구성.</p>
+<p><code>Expanded</code> 자신이 속한 영역 전부를 채운다.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">Column</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">children:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Flexible</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">flex:</span> <span class="m">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">child:</span> <span class="n">Container</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">alignment:</span> <span class="n">Alignment</span><span class="p">.</span><span class="n">bottomCenter</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">child:</span> <span class="n">Text</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">          <span class="s1">&#39;25:00&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">),</span>
+</span></span><span class="line"><span class="cl">      <span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Flexible</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">flex:</span> <span class="m">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">child:</span> <span class="n">Center</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Flexible</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">flex:</span> <span class="m">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">child:</span> <span class="n">Row</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">children:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">          <span class="n">Expanded</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="nl">child:</span> <span class="n">Container</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">              <span class="nl">decoration:</span>
+</span></span><span class="line"><span class="cl">                  <span class="n">BoxDecoration</span><span class="p">(</span><span class="nl">color:</span> <span class="n">Theme</span><span class="p">.</span><span class="n">of</span><span class="p">(</span><span class="n">context</span><span class="p">).</span><span class="n">cardColor</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="p">),</span>
+</span></span><span class="line"><span class="cl">          <span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="p">],</span>
+</span></span><span class="line"><span class="cl">      <span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">),</span>
+</span></span><span class="line"><span class="cl">  <span class="p">],</span></span></span></code></pre></div></div>
+<h2 id="webtoon-app">WEBTOON APP</h2>
+<h3 id="62-data-feching">6.2 Data Feching</h3>
+<p>http 설치</p>
+<p>file <code>pubspec.yaml</code> 에 아래 위치 삽입</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-yaml">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">dependencies</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">flutter</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">sdk</span><span class="p">:</span><span class="w"> </span><span class="l">flutter</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">http</span><span class="p">:</span><span class="w"> </span><span class="l">^0.13.5</span></span></span></code></pre></div></div>
+<p><code>lib</code>폴더에 <code>services</code>폴더 생성 <code>api_service.dart</code>파일 생성</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="k">import</span> <span class="s1">&#39;package:http/http.dart&#39;</span> <span class="k">as</span> <span class="n">http</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">ApiService</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">final</span> <span class="kt">String</span> <span class="n">baseUrl</span> <span class="o">=</span> <span class="s1">&#39;https://webtoon-crawler.nomadcoders.workers.dev&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">final</span> <span class="kt">String</span> <span class="n">today</span> <span class="o">=</span> <span class="s2">&#34;today&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kt">void</span> <span class="n">getTodaysToons</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">final</span> <span class="n">url</span> <span class="o">=</span> <span class="n">Uri</span><span class="p">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">$</span><span class="n">baseUrl</span><span class="s1">/</span><span class="si">$</span><span class="n">today</span><span class="s1">&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">http</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="n">url</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+<h3 id="65-waitforwebtoons">6.5 waitForWebToons</h3>
+<p><code>ApiService</code> 폴더 생성</p>
+<h3 id="66-futurebuilder">6.6 Futurebuilder</h3>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Widget</span> <span class="n">build</span><span class="p">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">Scaffold</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">backgroundColor:</span> <span class="n">Colors</span><span class="p">.</span><span class="n">white</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">appBar:</span> <span class="n">AppBar</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">elevation:</span> <span class="m">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">backgroundColor:</span> <span class="n">Colors</span><span class="p">.</span><span class="n">white</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">foregroundColor:</span> <span class="n">Colors</span><span class="p">.</span><span class="n">green</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">title:</span> <span class="kd">const</span> <span class="n">Text</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">          <span class="s2">&#34;오늘의 웹툰&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nl">style:</span> <span class="n">TextStyle</span><span class="p">(</span><span class="nl">fontSize:</span> <span class="m">24</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="p">),</span>
+</span></span><span class="line"><span class="cl">      <span class="p">),</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">body:</span> <span class="n">FutureBuilder</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">future:</span> <span class="n">webtoons</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">builder:</span> <span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">snapshot</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="k">if</span> <span class="p">(</span><span class="n">snapshot</span><span class="p">.</span><span class="n">hasData</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kd">const</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&#34;thers is data!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">          <span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="k">return</span> <span class="kd">const</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&#34;loading&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">      <span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span></span></span></code></pre></div></div>
+<h3 id="67-listview">6.7 ListView</h3>
+<p><code>separatorBuilder</code> 리스트 item 사이에 원가를 해주는 빌더</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="nl">body:</span> <span class="n">FutureBuilder</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">future:</span> <span class="n">webtoons</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">builder:</span> <span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">snapshot</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">snapshot</span><span class="p">.</span><span class="n">hasData</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="n">ListView</span><span class="p">.</span><span class="n">separated</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">scrollDirection:</span> <span class="n">Axis</span><span class="p">.</span><span class="n">horizontal</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">itemCount:</span> <span class="n">snapshot</span><span class="p">.</span><span class="n">data</span><span class="o">!</span><span class="p">.</span><span class="n">length</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">itemBuilder:</span> <span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="kd">var</span> <span class="n">webtoon</span> <span class="o">=</span> <span class="n">snapshot</span><span class="p">.</span><span class="n">data</span><span class="o">!</span><span class="p">[</span><span class="n">index</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">          <span class="k">return</span> <span class="n">Text</span><span class="p">(</span><span class="n">webtoon</span><span class="p">.</span><span class="n">title</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">separatorBuilder:</span> <span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="kd">const</span> <span class="n">SizedBox</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">          <span class="nl">width:</span> <span class="m">20</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">),</span>
+</span></span><span class="line"><span class="cl">      <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kd">const</span> <span class="n">Center</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">child:</span> <span class="n">CircularProgressIndicator</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl"><span class="p">),</span></span></span></code></pre></div></div>
+<h3 id="68-webtoon-card">6.8 WebToon Card</h3>
+<p><code>Image.network(url)</code> Img 태그 같은 것</p>
+<p><code>clipBehavior: Clip.hardEdge,</code> BorderRadius를 적용하고 싶으면 <code>Clip.hardEdge</code> 요소를 추가해야 한다.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="k">return</span> <span class="n">Column</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">children:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Container</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">width:</span> <span class="m">250</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">clipBehavior:</span> <span class="n">Clip</span><span class="p">.</span><span class="n">hardEdge</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">decoration:</span> <span class="n">BoxDecoration</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">borderRadius:</span> <span class="n">BorderRadius</span><span class="p">.</span><span class="n">circular</span><span class="p">(</span><span class="m">10</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">      <span class="p">),</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">child:</span> <span class="n">Image</span><span class="p">.</span><span class="n">network</span><span class="p">(</span><span class="n">webtoon</span><span class="p">.</span><span class="n">thumb</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">const</span> <span class="n">SizedBox</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">height:</span> <span class="m">10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Text</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="n">webtoon</span><span class="p">.</span><span class="n">title</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">style:</span> <span class="kd">const</span> <span class="n">TextStyle</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">fontSize:</span> <span class="m">22</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">fontWeight:</span> <span class="n">FontWeight</span><span class="p">.</span><span class="n">w500</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">),</span>
+</span></span><span class="line"><span class="cl">  <span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span></span></span></code></pre></div></div>
+<h3 id="69-detail-screen">6.9 Detail Screen</h3>
+<p><code>onTap:</code> 유저가 Click했다는 뜻</p>
+<h3 id="610-hero">6.10 Hero</h3>
+<p>페이지가 전화되어도 해당 위젯 부분은 애니메이션 되듯 화면으로 옮겨짐
+<code>tag</code> 가 필요하다.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="c1">// 리스트
+</span></span></span><span class="line"><span class="cl"><span class="n">Hero</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">tag:</span> <span class="n">id</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">child:</span> <span class="n">Container</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">width:</span> <span class="m">250</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">clipBehavior:</span> <span class="n">Clip</span><span class="p">.</span><span class="n">hardEdge</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">decoration:</span> <span class="n">BoxDecoration</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">borderRadius:</span> <span class="n">BorderRadius</span><span class="p">.</span><span class="n">circular</span><span class="p">(</span><span class="m">15</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">boxShadow:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">          <span class="n">BoxShadow</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="nl">blurRadius:</span> <span class="m">15</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nl">offset:</span> <span class="kd">const</span> <span class="n">Offset</span><span class="p">(</span><span class="m">10</span><span class="p">,</span> <span class="m">10</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="nl">color:</span> <span class="n">Colors</span><span class="p">.</span><span class="n">black</span><span class="p">.</span><span class="n">withOpacity</span><span class="p">(</span><span class="m">0.5</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">          <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">]),</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">child:</span> <span class="n">Image</span><span class="p">.</span><span class="n">network</span><span class="p">(</span><span class="n">thumb</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">  <span class="p">),</span></span></span></code></pre></div></div>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="c1">// 상세페이지
+</span></span></span><span class="line"><span class="cl"><span class="n">Hero</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">tag:</span> <span class="n">id</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">child:</span> <span class="n">Container</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">width:</span> <span class="m">250</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">clipBehavior:</span> <span class="n">Clip</span><span class="p">.</span><span class="n">hardEdge</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">decoration:</span> <span class="n">BoxDecoration</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">borderRadius:</span> <span class="n">BorderRadius</span><span class="p">.</span><span class="n">circular</span><span class="p">(</span><span class="m">15</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">boxShadow:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">          <span class="n">BoxShadow</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="nl">blurRadius:</span> <span class="m">15</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nl">offset:</span> <span class="kd">const</span> <span class="n">Offset</span><span class="p">(</span><span class="m">10</span><span class="p">,</span> <span class="m">10</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="nl">color:</span> <span class="n">Colors</span><span class="p">.</span><span class="n">black</span><span class="p">.</span><span class="n">withOpacity</span><span class="p">(</span><span class="m">0.5</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">          <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">]),</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">child:</span> <span class="n">Image</span><span class="p">.</span><span class="n">network</span><span class="p">(</span><span class="n">thumb</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">  <span class="p">),</span>
+</span></span><span class="line"><span class="cl"><span class="p">),</span></span></span></code></pre></div></div>
+<h3 id="episodes">Episodes</h3>
+<h3 id="url-launcher">Url Launcher</h3>
+<p><a href="https://pub.dev/packages/url_launcher/install" target="_blank" rel="noopener noreffer ">https://pub.dev/packages/url_launcher/install</a></p>
+<p><code>flutter pub add url_launcher</code> 터미널에 입력</p>
+<p>ios면 Info.plist 에 아래를 넣어준다</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;key&gt;LSApplicationQueriesSchemes&lt;/key&gt;
+</span></span><span class="line"><span class="cl">&lt;array&gt;
+</span></span><span class="line"><span class="cl">  &lt;string&gt;sms&lt;/string&gt;
+</span></span><span class="line"><span class="cl">  &lt;string&gt;tel&lt;/string&gt;
+</span></span><span class="line"><span class="cl">&lt;/array&gt;</span></span></code></pre></div></div>
+<p>android면 AndroidManifest.xml 에 넣어준다</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;!-- Provide required visibility configuration for API level 30 and above --&gt;
+</span></span><span class="line"><span class="cl">&lt;queries&gt;
+</span></span><span class="line"><span class="cl">  &lt;!-- If your app checks for SMS support --&gt;
+</span></span><span class="line"><span class="cl">  &lt;intent&gt;
+</span></span><span class="line"><span class="cl">    &lt;action android:name=&#34;android.intent.action.VIEW&#34; /&gt;
+</span></span><span class="line"><span class="cl">    &lt;data android:scheme=&#34;sms&#34; /&gt;
+</span></span><span class="line"><span class="cl">  &lt;/intent&gt;
+</span></span><span class="line"><span class="cl">  &lt;!-- If your app checks for call support --&gt;
+</span></span><span class="line"><span class="cl">  &lt;intent&gt;
+</span></span><span class="line"><span class="cl">    &lt;action android:name=&#34;android.intent.action.VIEW&#34; /&gt;
+</span></span><span class="line"><span class="cl">    &lt;data android:scheme=&#34;tel&#34; /&gt;
+</span></span><span class="line"><span class="cl">  &lt;/intent&gt;
+</span></span><span class="line"><span class="cl">&lt;/queries&gt;</span></span></code></pre></div></div>
+<h3 id="617-favorites">6.17 Favorites</h3>
+<p><a href="https://pub.dev/packages/shared_preferences/install" target="_blank" rel="noopener noreffer ">https://pub.dev/packages/shared_preferences/install</a></p>
+<p><code>flutter pub add shared_preferences</code> 휴대폰 저장 공간을 사용하는 패키지</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">_DetailScreenState</span> <span class="kd">extends</span> <span class="n">State</span><span class="o">&lt;</span><span class="n">DetailScreen</span><span class="o">&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">late</span> <span class="n">Future</span><span class="o">&lt;</span><span class="n">WebtoonDetailModel</span><span class="o">&gt;</span> <span class="n">webtoon</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">late</span> <span class="n">Future</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;</span><span class="n">WebtoonEpisodeModal</span><span class="o">&gt;&gt;</span> <span class="n">episodes</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">late</span> <span class="n">SharedPreferences</span> <span class="n">pref</span><span class="p">;</span></span></span></code></pre></div></div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-01-12</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://localhost:1313/nomad-study-flutter-for-beginners/" data-title="Nomad Study Flutter for Beginners"><i class="fab fa-x-twitter" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://localhost:1313/nomad-study-flutter-for-beginners/" data-title="Nomad Study Flutter for Beginners"><i class="fab fa-threads" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/nomad-study-flutter-for-beginners/"><i class="fab fa-facebook-square" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/nomad-study-flutter-for-beginners/" data-title="Nomad Study Flutter for Beginners"><i class="fab fa-hacker-news" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/nomad-study-flutter-for-beginners/" data-title="Nomad Study Flutter for Beginners"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/nomad-study-flutter-for-beginners/" data-title="Nomad Study Flutter for Beginners"><i class="fab fa-weibo" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="http://localhost:1313/nomad-study-flutter-for-beginners/" data-title="Nomad Study Flutter for Beginners" data-description=""><i class="fab fa-diaspora" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fnomad-study-flutter-for-beginners%2f&amp;text=Nomad%20Study%20Flutter%20for%20Beginners" target="_blank" title="Share on Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/nomard-study-dart-beginner/" class="prev" rel="prev" title="Nomard Study Dart Beginner"><i class="fas fa-angle-left" aria-hidden="true"></i>Nomard Study Dart Beginner</a>
+            <a href="/flutter-css-effect/" class="next" rel="next" title="플루터 CSS같은 효과주는 코드">플루터 CSS같은 효과주는 코드<i class="fas fa-angle-right" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.166.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 1.0.0"><i class="far fa-kiss-wink-heart" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"comment":{}};</script><script src="/js/theme.js"></script></body>
+</html>

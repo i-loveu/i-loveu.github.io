@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Nomad Study Flutter Animations Masterclass - 사랑합니다 기술 블로그</title><meta name="Description" content="This is my cool site"><meta property="og:url" content="http://localhost:1313/nomad-study-flutter-animations-masterclass/">
+	<meta property="og:site_name" content="사랑합니다 기술 블로그">
+	<meta property="og:title" content="Nomad Study Flutter Animations Masterclass">
+	<meta property="og:description" content="IMPLICIT ANIMATIONS 1.0 Project Setup 1.1 Implicit ‘Animated’ 를 붙이면 애니메이션 효과를 준다
+1.2 AnimatedContainer 1.4 TweenAnimationBuilder tween 값을 줘서 애니메이션을 만든다.
+2 EXPLICIT ANIMATIONS 2.1 AnimationController @override void initState() { // TODO: implement initState super.initState(); Ticker( (elapsed) =&gt; print(elapsed), ).start(); } Ticker 애니메이션 프레임당 1번씩 호출됨
+with SingleTickerProviderStateMixin -&gt; 사용자 화면에 떠 있을 경우만 호출.
+animationController 는 0 -&gt; 1로 움직인다.">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2023-10-03T20:36:12+09:00">
+		<meta property="article:modified_time" content="2023-10-03T20:36:12+09:00">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Nomad Study Flutter Animations Masterclass">
+	<meta name="twitter:description" content="IMPLICIT ANIMATIONS 1.0 Project Setup 1.1 Implicit ‘Animated’ 를 붙이면 애니메이션 효과를 준다
+1.2 AnimatedContainer 1.4 TweenAnimationBuilder tween 값을 줘서 애니메이션을 만든다.
+2 EXPLICIT ANIMATIONS 2.1 AnimationController @override void initState() { // TODO: implement initState super.initState(); Ticker( (elapsed) =&gt; print(elapsed), ).start(); } Ticker 애니메이션 프레임당 1번씩 호출됨
+with SingleTickerProviderStateMixin -&gt; 사용자 화면에 떠 있을 경우만 호출.
+animationController 는 0 -&gt; 1로 움직인다.">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/nomad-study-flutter-animations-masterclass/" /><link rel="prev" href="http://localhost:1313/flutter-functions/" /><link rel="next" href="http://localhost:1313/flutter-widgets/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Nomad Study Flutter Animations Masterclass",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/nomad-study-flutter-animations-masterclass\/"
+        },"genre": "posts","wordcount":  271 ,
+        "url": "http:\/\/localhost:1313\/nomad-study-flutter-animations-masterclass\/","datePublished": "2023-10-03T20:36:12+09:00","dateModified": "2023-10-03T20:36:12+09:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "xxxx"
+            },"description": ""
+    }
+    </script><script data-ad-client="ca-pub-4726317611282078" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="사랑합니다 기술 블로그">My cool site</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="사랑합니다 기술 블로그">My cool site</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Nomad Study Flutter Animations Masterclass</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>xxxx</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;<time datetime="2023-10-03">2023-10-03</time>&nbsp;<i class="fas fa-pencil-alt" aria-hidden="true"></i>&nbsp;271 words&nbsp;
+                <i class="far fa-clock" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#implicit-animations">IMPLICIT ANIMATIONS</a>
+      <ul>
+        <li><a href="#10-project-setup">1.0 Project Setup</a></li>
+        <li><a href="#11-implicit">1.1 Implicit</a></li>
+        <li><a href="#12-animatedcontainer">1.2 AnimatedContainer</a></li>
+        <li><a href="#14-tweenanimationbuilder">1.4 TweenAnimationBuilder</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-explicit-animations">2 EXPLICIT ANIMATIONS</a>
+      <ul>
+        <li><a href="#21-animationcontroller">2.1 AnimationController</a></li>
+        <li><a href="#23-animatedbuilder">2.3 AnimatedBuilder</a></li>
+        <li><a href="#25-explicit-widgets">2.5 Explicit Widgets</a></li>
+        <li><a href="#28-animationstatus">2.8 AnimationStatus</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-apple-watch-project">3 APPLE WATCH PROJECT</a>
+      <ul>
+        <li><a href="#31-drawarc">3.1 drawArc</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-swiping-cards-project">4 SWIPING CARDS PROJECT</a>
+      <ul>
+        <li><a href="#41-bounds">4.1 Bounds</a></li>
+        <li><a href="#44-background-card">4.4 Background Card</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="implicit-animations">IMPLICIT ANIMATIONS</h2>
+<h3 id="10-project-setup">1.0 Project Setup</h3>
+<h3 id="11-implicit">1.1 Implicit</h3>
+<p>&lsquo;Animated&rsquo; 를 붙이면 애니메이션 효과를 준다</p>
+<h3 id="12-animatedcontainer">1.2 AnimatedContainer</h3>
+<h3 id="14-tweenanimationbuilder">1.4 TweenAnimationBuilder</h3>
+<p>tween 값을 줘서 애니메이션을 만든다.</p>
+<h2 id="2-explicit-animations">2 EXPLICIT ANIMATIONS</h2>
+<h3 id="21-animationcontroller">2.1 AnimationController</h3>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl">  <span class="err">@</span><span class="n">override</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">void</span> <span class="n">initState</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// TODO: implement initState
+</span></span></span><span class="line"><span class="cl">    <span class="k">super</span><span class="p">.</span><span class="n">initState</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Ticker</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="n">elapsed</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">print</span><span class="p">(</span><span class="n">elapsed</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">).</span><span class="n">start</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span></span></span></code></pre></div></div>
+<p><code>Ticker</code> 애니메이션 프레임당 1번씩 호출됨</p>
+<p><code>with SingleTickerProviderStateMixin </code> -&gt; 사용자 화면에 떠 있을 경우만 호출.</p>
+<p><code>animationController</code> 는 0 -&gt; 1로 움직인다.</p>
+<h3 id="23-animatedbuilder">2.3 AnimatedBuilder</h3>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">late</span> <span class="kd">final</span> <span class="n">Animation</span><span class="o">&lt;</span><span class="n">Color</span><span class="o">?&gt;</span> <span class="n">_color</span> <span class="o">=</span> <span class="n">ColorTween</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">begin:</span> <span class="n">Colors</span><span class="p">.</span><span class="n">amber</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">end:</span> <span class="n">Colors</span><span class="p">.</span><span class="n">red</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">).</span><span class="n">animate</span><span class="p">(</span><span class="n">_animationController</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">AnimatedBuilder</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">animation:</span> <span class="n">_color</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">builder:</span> <span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">child</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">Container</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">color:</span> <span class="n">_color</span><span class="p">.</span><span class="n">value</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">width:</span> <span class="m">400</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">height:</span> <span class="m">400</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">),</span></span></span></code></pre></div></div>
+<p>AnimatedBuilder -&gt; 최후로 쓰는게 좋다 .</p>
+<h3 id="25-explicit-widgets">2.5 Explicit Widgets</h3>
+<h3 id="28-animationstatus">2.8 AnimationStatus</h3>
+<p><code>addStatusListener</code> 활용하면 status를 확인할 수 있다.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="p">..</span><span class="n">addStatusListener</span><span class="p">((</span><span class="n">status</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">if</span> <span class="p">(</span><span class="n">status</span> <span class="o">==</span> <span class="n">AnimationStatus</span><span class="p">.</span><span class="n">completed</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">_animationController</span><span class="p">.</span><span class="n">reverse</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">status</span> <span class="o">==</span> <span class="n">AnimationStatus</span><span class="p">.</span><span class="n">dismissed</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">_animationController</span><span class="p">.</span><span class="n">forward</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span></span></span></code></pre></div></div>
+<h2 id="3-apple-watch-project">3 APPLE WATCH PROJECT</h2>
+<p><code>CustomPainter</code> 위젯을 써서 그려야 한다.</p>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">AppleWatchPainter</span> <span class="kd">extends</span> <span class="n">CustomPainter</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="n">override</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="n">paint</span><span class="p">(</span><span class="n">Canvas</span> <span class="n">canvas</span><span class="p">,</span> <span class="n">Size</span> <span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">rect</span> <span class="o">=</span> <span class="n">Rect</span><span class="p">.</span><span class="n">fromLTWH</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="m">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="m">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">size</span><span class="p">.</span><span class="n">width</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">size</span><span class="p">.</span><span class="n">height</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">paint</span> <span class="o">=</span> <span class="n">Paint</span><span class="p">()..</span><span class="n">color</span> <span class="o">=</span> <span class="n">Colors</span><span class="p">.</span><span class="n">blue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">canvas</span><span class="p">.</span><span class="n">drawRect</span><span class="p">(</span><span class="n">rect</span><span class="p">,</span> <span class="n">paint</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">circlaPaint</span> <span class="o">=</span> <span class="n">Paint</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">..</span><span class="n">color</span> <span class="o">=</span> <span class="n">Colors</span><span class="p">.</span><span class="n">red</span>
+</span></span><span class="line"><span class="cl">        <span class="p">..</span><span class="n">style</span> <span class="o">=</span> <span class="n">PaintingStyle</span><span class="p">.</span><span class="n">stroke</span>
+</span></span><span class="line"><span class="cl">        <span class="p">..</span><span class="n">strokeWidth</span> <span class="o">=</span> <span class="m">20</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">canvas</span><span class="p">.</span><span class="n">drawCircle</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Offset</span><span class="p">(</span><span class="n">size</span><span class="p">.</span><span class="n">width</span> <span class="o">/</span> <span class="m">2</span><span class="p">,</span> <span class="n">size</span><span class="p">.</span><span class="n">height</span> <span class="o">/</span> <span class="m">2</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">size</span><span class="p">.</span><span class="n">width</span> <span class="o">/</span> <span class="m">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">circlaPaint</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="n">override</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">bool</span> <span class="n">shouldRepaint</span><span class="p">(</span><span class="n">covariant</span> <span class="n">CustomPainter</span> <span class="n">oldDelegate</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+<h3 id="31-drawarc">3.1 drawArc</h3>
+<p><code>shouldRepaint</code> 다시 그리기</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"> <span class="err">@</span><span class="n">override</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">bool</span> <span class="n">shouldRepaint</span><span class="p">(</span><span class="n">covariant</span> <span class="n">AppleWatchPainter</span> <span class="n">oldDelegate</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">oldDelegate</span><span class="p">.</span><span class="n">progress</span> <span class="o">!=</span> <span class="n">progress</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span></span></span></code></pre></div></div>
+<h2 id="4-swiping-cards-project">4 SWIPING CARDS PROJECT</h2>
+<h3 id="41-bounds">4.1 Bounds</h3>
+<p>AnimationController 는 기본적 0 ~ 1로 움직이기 때문에 하한, 상한을 수정한다.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-dart">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"> <span class="n">late</span> <span class="kd">final</span> <span class="n">AnimationController</span> <span class="n">_animationController</span> <span class="o">=</span> <span class="n">AnimationController</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">vsync:</span> <span class="k">this</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">duration:</span> <span class="n">Duration</span><span class="p">(</span><span class="nl">seconds:</span> <span class="m">2</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">lowerBound:</span> <span class="n">size</span><span class="p">.</span><span class="n">width</span> <span class="o">*</span> <span class="o">-</span><span class="m">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">upperBound:</span> <span class="n">size</span><span class="p">.</span><span class="n">height</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">value:</span> <span class="m">0.0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">);</span></span></span></code></pre></div></div>
+<h3 id="44-background-card">4.4 Background Card</h3>
+<p>이미지를 <code>assets/covers/</code> 넣고 아래 pubspec.yaml에 아래와 같이 적는다.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-yaml">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="w">  </span><span class="nt">assets</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">assets/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">assets/covers/</span></span></span></code></pre></div></div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-10-03</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://localhost:1313/nomad-study-flutter-animations-masterclass/" data-title="Nomad Study Flutter Animations Masterclass"><i class="fab fa-x-twitter" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://localhost:1313/nomad-study-flutter-animations-masterclass/" data-title="Nomad Study Flutter Animations Masterclass"><i class="fab fa-threads" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/nomad-study-flutter-animations-masterclass/"><i class="fab fa-facebook-square" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/nomad-study-flutter-animations-masterclass/" data-title="Nomad Study Flutter Animations Masterclass"><i class="fab fa-hacker-news" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/nomad-study-flutter-animations-masterclass/" data-title="Nomad Study Flutter Animations Masterclass"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/nomad-study-flutter-animations-masterclass/" data-title="Nomad Study Flutter Animations Masterclass"><i class="fab fa-weibo" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="http://localhost:1313/nomad-study-flutter-animations-masterclass/" data-title="Nomad Study Flutter Animations Masterclass" data-description=""><i class="fab fa-diaspora" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fnomad-study-flutter-animations-masterclass%2f&amp;text=Nomad%20Study%20Flutter%20Animations%20Masterclass" target="_blank" title="Share on Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/flutter-functions/" class="prev" rel="prev" title="Flutter Functions"><i class="fas fa-angle-left" aria-hidden="true"></i>Flutter Functions</a>
+            <a href="/flutter-widgets/" class="next" rel="next" title="Flutter Widgets">Flutter Widgets<i class="fas fa-angle-right" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.166.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 1.0.0"><i class="far fa-kiss-wink-heart" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"comment":{}};</script><script src="/js/theme.js"></script></body>
+</html>

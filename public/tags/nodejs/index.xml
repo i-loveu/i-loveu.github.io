@@ -1,0 +1,32 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Nodejs - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/nodejs/</link>
+        <description>Nodejs - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 13 Mar 2021 18:27:17 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/nodejs/" rel="self" type="application/rss+xml" /><item>
+    <title>What Is Npx</title>
+    <link>http://localhost:1313/what-is-npx/</link>
+    <pubDate>Sat, 13 Mar 2021 18:27:17 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/what-is-npx/</guid>
+    <description><![CDATA[<h2 id="npx란-무엇인가">npx란 무엇인가</h2>
+<p>최신버전의 javascript 라이브러리를 다운받아 실행하고 끝나면 삭제</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yarn global add npx
+</span></span><span class="line"><span class="cl">npm i npx -g</span></span></code></pre></div></div>]]></description>
+</item>
+<item>
+    <title>Yarn Basic</title>
+    <link>http://localhost:1313/yarn-basic/</link>
+    <pubDate>Sat, 13 Mar 2021 18:24:24 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/yarn-basic/</guid>
+    <description><![CDATA[<h1 id="yarn은-무엇인가">Yarn은 무엇인가?</h1>
+<p>npm과 비슷하지만 더 빠르고 안전한 javascript package manager</p>]]></description>
+</item>
+</channel>
+</rss>

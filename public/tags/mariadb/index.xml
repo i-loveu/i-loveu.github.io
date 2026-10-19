@@ -1,0 +1,38 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>MariaDB - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/mariadb/</link>
+        <description>MariaDB - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 16 Feb 2021 14:44:22 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/mariadb/" rel="self" type="application/rss+xml" /><item>
+    <title>맥에 mariaDB 설치하기</title>
+    <link>http://localhost:1313/setting-mariadb-for-mac/</link>
+    <pubDate>Tue, 16 Feb 2021 14:44:22 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/setting-mariadb-for-mac/</guid>
+    <description><![CDATA[<h2 id="brew-install-mariadb">brew install mariadb</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install mariadb
+</span></span><span class="line"><span class="cl">mysql.server server</span></span></code></pre></div></div>
+<h2 id="root-user-만들기">root user 만들기</h2>
+<p>sudo 권한으로 db 접속</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo mysql -u root</span></span></code></pre></div></div>
+<p>저는 로컬 root는 비번을 제거 합니다.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-mysql">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="k">ALTER</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="s1">&#39;root&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="w"> </span><span class="k">IDENTIFIED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="s1">&#39;NEW_USER_PASSWORD&#39;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">FLUSH</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="p">;</span></span></span></code></pre></div></div>]]></description>
+</item>
+</channel>
+</rss>

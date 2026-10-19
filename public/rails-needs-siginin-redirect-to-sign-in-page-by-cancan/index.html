@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Rails 로그인이 필요한 페이지 로그인 갔다 돌아오는 방법 by Cancan Gem - 사랑합니다 기술 블로그</title><meta name="Description" content=""><meta property="og:title" content="Rails 로그인이 필요한 페이지 로그인 갔다 돌아오는 방법 by Cancan Gem" />
-<meta property="og:description" content="application_controller.rb 코드 추가 application_controller.rb에 아래 사항 추가
-1 2 3 4 5 6 7 8 9  class ApplicationController &lt; ActionController::Base rescue_from CanCan::AccessDenied, with: :access_denied private def access_denied(exception) store_location_for :user, request.path redirect_to user_signed_in? ? root_path : new_user_session_path, alert: exception.message end end   " />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://i-loveu.github.io/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/" />
-<meta property="article:published_time" content="2021-03-26T17:00:51+09:00" />
-<meta property="article:modified_time" content="2021-03-26T17:00:51+09:00" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Rails 로그인이 필요한 페이지 로그인 갔다 돌아오는 방법 by Cancan Gem"/>
-<meta name="twitter:description" content="application_controller.rb 코드 추가 application_controller.rb에 아래 사항 추가
-1 2 3 4 5 6 7 8 9  class ApplicationController &lt; ActionController::Base rescue_from CanCan::AccessDenied, with: :access_denied private def access_denied(exception) store_location_for :user, request.path redirect_to user_signed_in? ? root_path : new_user_session_path, alert: exception.message end end   "/>
+        <title>Rails 로그인이 필요한 페이지 로그인 갔다 돌아오는 방법 by Cancan Gem - 사랑합니다 기술 블로그</title><meta name="Description" content="This is my cool site"><meta property="og:url" content="http://localhost:1313/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/">
+	<meta property="og:site_name" content="사랑합니다 기술 블로그">
+	<meta property="og:title" content="Rails 로그인이 필요한 페이지 로그인 갔다 돌아오는 방법 by Cancan Gem">
+	<meta property="og:description" content="application_controller.rb 코드 추가 application_controller.rb에 아래 사항 추가
+class ApplicationController &lt; ActionController::Base rescue_from CanCan::AccessDenied, with: :access_denied private def access_denied(exception) store_location_for :user, request.path redirect_to user_signed_in? ? root_path : new_user_session_path, alert: exception.message end end">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2021-03-26T17:00:51+09:00">
+		<meta property="article:modified_time" content="2021-03-26T17:00:51+09:00">
+		<meta property="article:tag" content="Rubyonrails">
+		<meta property="article:tag" content="Ruby">
+		<meta property="article:tag" content="Cancan">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Rails 로그인이 필요한 페이지 로그인 갔다 돌아오는 방법 by Cancan Gem">
+	<meta name="twitter:description" content="application_controller.rb 코드 추가 application_controller.rb에 아래 사항 추가
+class ApplicationController &lt; ActionController::Base rescue_from CanCan::AccessDenied, with: :access_denied private def access_denied(exception) store_location_for :user, request.path redirect_to user_signed_in? ? root_path : new_user_session_path, alert: exception.message end end">
 <meta name="application-name" content="LoveIt">
-<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="LoveIt">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://i-loveu.github.io/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/" /><link rel="prev" href="https://i-loveu.github.io/use-aws-elasticbeanstalk-rails/" /><link rel="next" href="https://i-loveu.github.io/rails-best-server-condition/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/" /><link rel="prev" href="http://localhost:1313/use-aws-elasticbeanstalk-rails/" /><link rel="next" href="http://localhost:1313/rails-best-server-condition/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -27,63 +37,55 @@
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/i-loveu.github.io\/rails-needs-siginin-redirect-to-sign-in-page-by-cancan\/"
-        },"genre": "posts","keywords": "rubyonrails, ruby, cancan","wordcount":  40 ,
-        "url": "https:\/\/i-loveu.github.io\/rails-needs-siginin-redirect-to-sign-in-page-by-cancan\/","datePublished": "2021-03-26T17:00:51+09:00","dateModified": "2021-03-26T17:00:51+09:00","publisher": {
+            "@id": "http:\/\/localhost:1313\/rails-needs-siginin-redirect-to-sign-in-page-by-cancan\/"
+        },"genre": "posts","keywords": "rubyonrails, ruby, cancan","wordcount":  31 ,
+        "url": "http:\/\/localhost:1313\/rails-needs-siginin-redirect-to-sign-in-page-by-cancan\/","datePublished": "2021-03-26T17:00:51+09:00","dateModified": "2021-03-26T17:00:51+09:00","publisher": {
             "@type": "Organization",
-            "name": "ahntae"},"author": {
+            "name": ""},"author": {
                 "@type": "Person",
-                "name": "ahntae"
+                "name": "xxxx"
             },"description": ""
     }
     </script><script data-ad-client="ca-pub-4726317611282078" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
-    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="사랑합니다 기술 블로그">사랑합니다 기술 블로그</a>
+            <a href="/" title="사랑합니다 기술 블로그">My cool site</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw"></i>
-                </a>
-            </div>
+                    <i class="fas fa-adjust" aria-hidden="true"></i>
+                </a></div>
         </div>
     </div>
 </header><header class="mobile" id="header-mobile">
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="사랑합니다 기술 블로그">사랑합니다 기술 블로그</a>
+                <a href="/" title="사랑합니다 기술 블로그">My cool site</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
             </div>
         </div>
         <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw"></i>
+                <i class="fas fa-adjust" aria-hidden="true"></i>
             </a></div>
     </div>
-</header>
-<div class="search-dropdown desktop">
-    <div id="search-dropdown-desktop"></div>
-</div>
-<div class="search-dropdown mobile">
-    <div id="search-dropdown-mobile"></div>
-</div>
-<main class="main">
+</header><main class="main">
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Rails 로그인이 필요한 페이지 로그인 갔다 돌아오는 방법 by Cancan Gem</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="https://iloveu.design" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ahntae</a></span>&nbsp;<span class="post-category">included in <a href="/categories/rubyonrails/"><i class="far fa-folder fa-fw"></i>rubyonrails</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-26">2021-03-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;40 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
-        </div><div class="details toc" id="toc-static"  kept="">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Rails 로그인이 필요한 페이지 로그인 갔다 돌아오는 방법 by Cancan Gem</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>xxxx</a></span>&nbsp;<span class="post-category">included in <a href="/categories/rubyonrails/"><i class="far fa-folder" aria-hidden="true"></i>Rubyonrails</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;<time datetime="2021-03-26">2021-03-26</time>&nbsp;<i class="fas fa-pencil-alt" aria-hidden="true"></i>&nbsp;31 words&nbsp;
+                <i class="far fa-clock" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
-                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
@@ -92,60 +94,48 @@
 </nav></div>
             </div><div class="content" id="content"><h2 id="application_controllerrb-코드-추가">application_controller.rb 코드 추가</h2>
 <p>application_controller.rb에 아래 사항 추가</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">ApplicationController</span> <span class="o">&lt;</span> <span class="no">ActionController</span><span class="o">::</span><span class="no">Base</span>
-    <span class="n">rescue_from</span> <span class="no">CanCan</span><span class="o">::</span><span class="no">AccessDenied</span><span class="p">,</span> <span class="ss">with</span><span class="p">:</span> <span class="ss">:access_denied</span>
-    <span class="kp">private</span>
-
-    <span class="k">def</span> <span class="nf">access_denied</span><span class="p">(</span><span class="n">exception</span><span class="p">)</span>
-    <span class="n">store_location_for</span> <span class="ss">:user</span><span class="p">,</span> <span class="n">request</span><span class="o">.</span><span class="n">path</span>
-    <span class="n">redirect_to</span> <span class="n">user_signed_in?</span> <span class="p">?</span> <span class="n">root_path</span> <span class="p">:</span> <span class="n">new_user_session_path</span><span class="p">,</span> <span class="ss">alert</span><span class="p">:</span> <span class="n">exception</span><span class="o">.</span><span class="n">message</span>
-    <span class="k">end</span>
-<span class="k">end</span>
-</code></pre></td></tr></table>
-</div>
-</div></div><div class="post-footer" id="post-footer">
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-ruby">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ruby" data-lang="ruby"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">ApplicationController</span> <span class="o">&lt;</span> <span class="no">ActionController</span><span class="o">::</span><span class="no">Base</span>
+</span></span><span class="line"><span class="cl">    <span class="n">rescue_from</span> <span class="no">CanCan</span><span class="o">::</span><span class="no">AccessDenied</span><span class="p">,</span> <span class="ss">with</span><span class="p">:</span> <span class="ss">:access_denied</span>
+</span></span><span class="line"><span class="cl">    <span class="kp">private</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">access_denied</span><span class="p">(</span><span class="n">exception</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">store_location_for</span> <span class="ss">:user</span><span class="p">,</span> <span class="n">request</span><span class="o">.</span><span class="n">path</span>
+</span></span><span class="line"><span class="cl">    <span class="n">redirect_to</span> <span class="n">user_signed_in?</span> <span class="p">?</span> <span class="n">root_path</span> <span class="p">:</span> <span class="n">new_user_session_path</span><span class="p">,</span> <span class="ss">alert</span><span class="p">:</span> <span class="n">exception</span><span class="o">.</span><span class="n">message</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span></span></span></code></pre></div></div>
+</div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
                 <span>Updated on 2021-03-26</span>
-            </div>
-            <div class="post-info-license"></div>
-        </div>
+            </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span></span>
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://localhost:1313/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/" data-title="Rails 로그인이 필요한 페이지 로그인 갔다 돌아오는 방법 by Cancan Gem" data-hashtags="rubyonrails,ruby,cancan"><i class="fab fa-x-twitter" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://localhost:1313/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/" data-title="Rails 로그인이 필요한 페이지 로그인 갔다 돌아오는 방법 by Cancan Gem"><i class="fab fa-threads" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/" data-hashtag="rubyonrails"><i class="fab fa-facebook-square" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/" data-title="Rails 로그인이 필요한 페이지 로그인 갔다 돌아오는 방법 by Cancan Gem"><i class="fab fa-hacker-news" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/" data-title="Rails 로그인이 필요한 페이지 로그인 갔다 돌아오는 방법 by Cancan Gem"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/" data-title="Rails 로그인이 필요한 페이지 로그인 갔다 돌아오는 방법 by Cancan Gem"><i class="fab fa-weibo" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="http://localhost:1313/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/" data-title="Rails 로그인이 필요한 페이지 로그인 갔다 돌아오는 방법 by Cancan Gem" data-description=""><i class="fab fa-diaspora" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2frails-needs-siginin-redirect-to-sign-in-page-by-cancan%2f&amp;text=Rails%20%eb%a1%9c%ea%b7%b8%ec%9d%b8%ec%9d%b4%20%ed%95%84%ec%9a%94%ed%95%9c%20%ed%8e%98%ec%9d%b4%ec%a7%80%20%eb%a1%9c%ea%b7%b8%ec%9d%b8%20%ea%b0%94%eb%8b%a4%20%eb%8f%8c%ec%95%84%ec%98%a4%eb%8a%94%20%eb%b0%a9%eb%b2%95%20by%20Cancan%20Gem" target="_blank" title="Share on Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/rubyonrails/">rubyonrails</a>,&nbsp;<a href="/tags/ruby/">ruby</a>,&nbsp;<a href="/tags/cancan/">cancan</a></section>
+        <section class="post-tags"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<a href="/tags/rubyonrails/">Rubyonrails</a>,&nbsp;<a href="/tags/ruby/">Ruby</a>,&nbsp;<a href="/tags/cancan/">Cancan</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/use-aws-elasticbeanstalk-rails/" class="prev" rel="prev" title="Use Aws Elasticbeanstalk Rails"><i class="fas fa-angle-left fa-fw"></i>Use Aws Elasticbeanstalk Rails</a>
-            <a href="/rails-best-server-condition/" class="next" rel="next" title="Rails 최적의 서버 환경">Rails 최적의 서버 환경<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/use-aws-elasticbeanstalk-rails/" class="prev" rel="prev" title="Use Aws Elasticbeanstalk Rails"><i class="fas fa-angle-left" aria-hidden="true"></i>Use Aws Elasticbeanstalk Rails</a>
+            <a href="/rails-best-server-condition/" class="next" rel="next" title="Rails 최적의 서버 환경">Rails 최적의 서버 환경<i class="fas fa-angle-right" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://iloveu.design" target="_blank">ahntae</a></span></div>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.166.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 1.0.0"><i class="far fa-kiss-wink-heart" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span></div>
         </div>
     </footer></div>
 
@@ -154,5 +144,5 @@
             </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment fa-fw"></i>
             </a>
-        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"comment":{}};</script><script src="/js/theme.js"></script></body>
 </html>

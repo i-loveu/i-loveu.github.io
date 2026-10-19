@@ -1,0 +1,40 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Openssl.bundle - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/openssl.bundle/</link>
+        <description>Openssl.bundle - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 29 Dec 2020 20:05:14 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/openssl.bundle/" rel="self" type="application/rss+xml" /><item>
+    <title>Rails Ruby 2 4 0 Openssl Bundle Error</title>
+    <link>http://localhost:1313/rails-ruby-2-4-0-openssl-bundle-error/</link>
+    <pubDate>Tue, 29 Dec 2020 20:05:14 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/rails-ruby-2-4-0-openssl-bundle-error/</guid>
+    <description><![CDATA[<h2 id="새로-오픈한-유투브-채널-코딩병원">새로 오픈한 유투브 채널 코딩병원</h2>
+<p>채널을 만들자 마자, 처방전 발급
+<a href="https://www.youtube.com/channel/UCk5P3qw9-Oy8l5fnxDF_CNA" target="_blank" rel="noopener noreffer ">안태의 코딩병원</a></p>
+<h2 id="에러상황">에러상황</h2>
+<p>rails s 나 bundler을 쳐도 먹히지 않는 먹통
+아래와 같은 에러들이 줄줄</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">kernel_require</span><span class="o">.</span><span class="n">rb</span><span class="p">:</span><span class="mi">55</span><span class="p">:</span><span class="ow">in</span>
+</span></span><span class="line"><span class="cl"><span class="n">dlopen</span><span class="p">(</span><span class="o">/</span><span class="p">)</span><span class="o">..</span>
+</span></span><span class="line"><span class="cl"><span class="mi">9</span><span class="p">):</span> <span class="n">Library</span> <span class="ow">not</span> <span class="n">loaded</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="n">Reason</span><span class="p">:</span> <span class="n">image</span> <span class="ow">not</span> <span class="n">found</span> <span class="o">-</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">p</span><span class="o">..</span>
+</span></span><span class="line"><span class="cl"><span class="n">openssl</span><span class="o">.</span><span class="n">bundle</span></span></span></code></pre></div></div>
+<h2 id="해결책-1">해결책 1</h2>
+<p>루비를 다시 설치</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">rbenv uninstall 2.4.0
+</span></span><span class="line"><span class="cl">rbenv install 2.4.0
+</span></span><span class="line"><span class="cl">gem install bundler</span></span></code></pre></div></div>]]></description>
+</item>
+</channel>
+</rss>

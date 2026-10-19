@@ -1,0 +1,94 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Ruby - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/ruby/</link>
+        <description>Ruby - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 26 Mar 2021 17:00:51 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/ruby/" rel="self" type="application/rss+xml" /><item>
+    <title>Rails 로그인이 필요한 페이지 로그인 갔다 돌아오는 방법 by Cancan Gem</title>
+    <link>http://localhost:1313/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/</link>
+    <pubDate>Fri, 26 Mar 2021 17:00:51 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/</guid>
+    <description><![CDATA[<h2 id="application_controllerrb-코드-추가">application_controller.rb 코드 추가</h2>
+<p>application_controller.rb에 아래 사항 추가</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-ruby">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ruby" data-lang="ruby"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">ApplicationController</span> <span class="o">&lt;</span> <span class="no">ActionController</span><span class="o">::</span><span class="no">Base</span>
+</span></span><span class="line"><span class="cl">    <span class="n">rescue_from</span> <span class="no">CanCan</span><span class="o">::</span><span class="no">AccessDenied</span><span class="p">,</span> <span class="ss">with</span><span class="p">:</span> <span class="ss">:access_denied</span>
+</span></span><span class="line"><span class="cl">    <span class="kp">private</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">access_denied</span><span class="p">(</span><span class="n">exception</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">store_location_for</span> <span class="ss">:user</span><span class="p">,</span> <span class="n">request</span><span class="o">.</span><span class="n">path</span>
+</span></span><span class="line"><span class="cl">    <span class="n">redirect_to</span> <span class="n">user_signed_in?</span> <span class="p">?</span> <span class="n">root_path</span> <span class="p">:</span> <span class="n">new_user_session_path</span><span class="p">,</span> <span class="ss">alert</span><span class="p">:</span> <span class="n">exception</span><span class="o">.</span><span class="n">message</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span></span></span></code></pre></div></div>]]></description>
+</item>
+<item>
+    <title>레일즈 로컬 세팅 mac</title>
+    <link>http://localhost:1313/rails-setting-mac/</link>
+    <pubDate>Tue, 16 Feb 2021 16:52:30 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/rails-setting-mac/</guid>
+    <description><![CDATA[<h2 id="rbenv-설치">rbenv 설치</h2>
+<p>brew로 설치</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install rbenv ruby-build</span></span></code></pre></div></div>
+<p>환경 변수 추가</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">echo</span> <span class="s1">&#39;export PATH=&#34;$HOME/.rbenv/bin:$PATH&#34;&#39;</span> <span class="o">&gt;&gt;</span> <span class="o">~/.</span><span class="n">zshrc</span>
+</span></span><span class="line"><span class="cl"><span class="n">echo</span> <span class="s1">&#39;eval &#34;$(rbenv init -)&#34;&#39;</span> <span class="o">&gt;&gt;</span> <span class="o">~/.</span><span class="n">zshrc</span></span></span></code></pre></div></div>
+<p>루비 설치</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">rbenv install --list // 설치 가능한 루비 버전 보기 
+</span></span><span class="line"><span class="cl">rbenv install 3.0.0</span></span></code></pre></div></div>]]></description>
+</item>
+<item>
+    <title>Rails Ruby 2 4 0 Openssl Bundle Error</title>
+    <link>http://localhost:1313/rails-ruby-2-4-0-openssl-bundle-error/</link>
+    <pubDate>Tue, 29 Dec 2020 20:05:14 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/rails-ruby-2-4-0-openssl-bundle-error/</guid>
+    <description><![CDATA[<h2 id="새로-오픈한-유투브-채널-코딩병원">새로 오픈한 유투브 채널 코딩병원</h2>
+<p>채널을 만들자 마자, 처방전 발급
+<a href="https://www.youtube.com/channel/UCk5P3qw9-Oy8l5fnxDF_CNA" target="_blank" rel="noopener noreffer ">안태의 코딩병원</a></p>
+<h2 id="에러상황">에러상황</h2>
+<p>rails s 나 bundler을 쳐도 먹히지 않는 먹통
+아래와 같은 에러들이 줄줄</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">kernel_require</span><span class="o">.</span><span class="n">rb</span><span class="p">:</span><span class="mi">55</span><span class="p">:</span><span class="ow">in</span>
+</span></span><span class="line"><span class="cl"><span class="n">dlopen</span><span class="p">(</span><span class="o">/</span><span class="p">)</span><span class="o">..</span>
+</span></span><span class="line"><span class="cl"><span class="mi">9</span><span class="p">):</span> <span class="n">Library</span> <span class="ow">not</span> <span class="n">loaded</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="n">Reason</span><span class="p">:</span> <span class="n">image</span> <span class="ow">not</span> <span class="n">found</span> <span class="o">-</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">p</span><span class="o">..</span>
+</span></span><span class="line"><span class="cl"><span class="n">openssl</span><span class="o">.</span><span class="n">bundle</span></span></span></code></pre></div></div>
+<h2 id="해결책-1">해결책 1</h2>
+<p>루비를 다시 설치</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">rbenv uninstall 2.4.0
+</span></span><span class="line"><span class="cl">rbenv install 2.4.0
+</span></span><span class="line"><span class="cl">gem install bundler</span></span></code></pre></div></div>]]></description>
+</item>
+</channel>
+</rss>

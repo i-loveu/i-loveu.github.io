@@ -1,0 +1,34 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Github - Category - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/categories/github/</link>
+        <description>Github - Category - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 20 Aug 2021 14:38:17 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/github/" rel="self" type="application/rss+xml" /><item>
+    <title>Deploy Github React to Netlify</title>
+    <link>http://localhost:1313/deploy-github-react-to-netlify/</link>
+    <pubDate>Fri, 20 Aug 2021 14:38:17 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/deploy-github-react-to-netlify/</guid>
+    <description><![CDATA[<h1 id="github-react-deploy-to-netlify">Github React Deploy To Netlify</h1>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npx create-react-app app-name
+</span></span><span class="line"><span class="cl">cd app-name
+</span></span><span class="line"><span class="cl">yarn build </span></span></code></pre></div></div>
+<h2 id="settings">settings</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npm install netlify-cli -g
+</span></span><span class="line"><span class="cl">netlify deploy</span></span></code></pre></div></div>
+<p><code>netlify deploy</code> 명령어를 치면 임시 url이 나온다. 배포해도 괜찮으면 <code>netlify deploy --prod</code></p>
+<h3 id="dns-설정">DNS 설정</h3>
+<p>A레코드를 75.2.60.5로 변경한다</p>]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>객체지향 원칙 - 사랑합니다 기술 블로그</title><meta name="Description" content="This is my cool site"><meta property="og:url" content="http://localhost:1313/principle-oop/">
+	<meta property="og:site_name" content="사랑합니다 기술 블로그">
+	<meta property="og:title" content="객체지향 원칙">
+	<meta property="og:description" content="객체지향 기초 추상화 캡슐화 다형성 상속 객체지향 원칙 바뀌는 부분은 캡슐화 한다 상속보다는 구성을 활용한다 구현보다는 인터페이스에 맞춰서 프로그래밍한다 상호작용하는 객체 사이에서는 가능하면 느슨한 결합을 사용해야 한다 클래스는 확장에는 열려 있어야 하지만 변경에는 닫혀 있어야 한다(ocp) 추상화된 것에 의존하게 만들고 구상 클래스에 의존하지 않게 만든다 객체지향 패턴 어댑터 패턴 특정 클래스 인터페이스를 클라이언트에서 요구하는 다른 인터페이스로 변환합니다. 인터페이스가 호환되지 않아 같이 쓸 수 없었던 클래스를 사용할 수 있게 도와줍니다.
+퍼사드 패턴 서브시스템에 있는 일련의 인터페이스를 통합 인터페이스로 묶어 줍니다. 또한 고수준 인터페이스도 정의하므로 서브시스템을 더 편리하게 사용할 수 있습니다.">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2022-05-08T05:36:31+09:00">
+		<meta property="article:modified_time" content="2022-05-08T05:36:31+09:00">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="객체지향 원칙">
+	<meta name="twitter:description" content="객체지향 기초 추상화 캡슐화 다형성 상속 객체지향 원칙 바뀌는 부분은 캡슐화 한다 상속보다는 구성을 활용한다 구현보다는 인터페이스에 맞춰서 프로그래밍한다 상호작용하는 객체 사이에서는 가능하면 느슨한 결합을 사용해야 한다 클래스는 확장에는 열려 있어야 하지만 변경에는 닫혀 있어야 한다(ocp) 추상화된 것에 의존하게 만들고 구상 클래스에 의존하지 않게 만든다 객체지향 패턴 어댑터 패턴 특정 클래스 인터페이스를 클라이언트에서 요구하는 다른 인터페이스로 변환합니다. 인터페이스가 호환되지 않아 같이 쓸 수 없었던 클래스를 사용할 수 있게 도와줍니다.
+퍼사드 패턴 서브시스템에 있는 일련의 인터페이스를 통합 인터페이스로 묶어 줍니다. 또한 고수준 인터페이스도 정의하므로 서브시스템을 더 편리하게 사용할 수 있습니다.">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/principle-oop/" /><link rel="prev" href="http://localhost:1313/svg-font-not-working-on-safari/" /><link rel="next" href="http://localhost:1313/coding-design-principles/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "객체지향 원칙",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/principle-oop\/"
+        },"genre": "posts","wordcount":  163 ,
+        "url": "http:\/\/localhost:1313\/principle-oop\/","datePublished": "2022-05-08T05:36:31+09:00","dateModified": "2022-05-08T05:36:31+09:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "xxxx"
+            },"description": ""
+    }
+    </script><script data-ad-client="ca-pub-4726317611282078" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="사랑합니다 기술 블로그">My cool site</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="사랑합니다 기술 블로그">My cool site</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">객체지향 원칙</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>xxxx</a></span>&nbsp;<span class="post-category">included in <a href="/categories/book/"><i class="far fa-folder" aria-hidden="true"></i>Book</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;<time datetime="2022-05-08">2022-05-08</time>&nbsp;<i class="fas fa-pencil-alt" aria-hidden="true"></i>&nbsp;163 words&nbsp;
+                <i class="far fa-clock" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#객체지향-기초">객체지향 기초</a></li>
+    <li><a href="#객체지향-원칙">객체지향 원칙</a></li>
+    <li><a href="#객체지향-패턴">객체지향 패턴</a>
+      <ul>
+        <li><a href="#어댑터-패턴">어댑터 패턴</a></li>
+        <li><a href="#퍼사드-패턴">퍼사드 패턴</a></li>
+      </ul>
+    </li>
+    <li><a href="#정리">정리</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="객체지향-기초">객체지향 기초</h2>
+<ul>
+<li>추상화</li>
+<li>캡슐화</li>
+<li>다형성</li>
+<li>상속</li>
+</ul>
+<h2 id="객체지향-원칙">객체지향 원칙</h2>
+<ul>
+<li>바뀌는 부분은 캡슐화 한다</li>
+<li>상속보다는 구성을 활용한다</li>
+<li>구현보다는 인터페이스에 맞춰서 프로그래밍한다</li>
+<li>상호작용하는 객체 사이에서는 가능하면 느슨한 결합을 사용해야 한다</li>
+<li>클래스는 확장에는 열려 있어야 하지만 변경에는 닫혀 있어야 한다(ocp)</li>
+<li>추상화된 것에 의존하게 만들고 구상 클래스에 의존하지 않게 만든다</li>
+</ul>
+<h2 id="객체지향-패턴">객체지향 패턴</h2>
+<h3 id="어댑터-패턴">어댑터 패턴</h3>
+<p>특정 클래스 인터페이스를 클라이언트에서 요구하는 다른 인터페이스로 변환합니다. 인터페이스가 호환되지 않아 같이 쓸 수 없었던 클래스를 사용할 수 있게 도와줍니다.</p>
+<h3 id="퍼사드-패턴">퍼사드 패턴</h3>
+<p>서브시스템에 있는 일련의 인터페이스를 통합 인터페이스로 묶어 줍니다. 또한 고수준 인터페이스도 정의하므로 서브시스템을 더 편리하게 사용할 수 있습니다.</p>
+<h2 id="정리">정리</h2>
+<ul>
+<li>기존 클래스를 사용하려고 하는데 인터페이스가 맞지 않으면 어댑털를 쓰면 됩니다</li>
+<li>큰 인터페이스와 여러 인터페이스를 단순하게 바꾸거나 통합해야 하면 퍼사드를 쓰면 됩니다.</li>
+<li>어댑터는 인터페이스를 클라이언트에서 원하는 인터페이스로 바꾸는 역할을 합니다.</li>
+<li>퍼사드는 클라이언트를 복잡한 서브시스템과 분리하는 역할을 합니다.</li>
+<li>어댑터를 구현할 때는 타깃 인터페이스의 크기와 구조에 따라 코딩해야 할 분량이 결정됩니다.</li>
+<li>퍼사드 패턴에서는 서브시스템으로 퍼사드를 만들고 진짜 작업은 서브클래스에 맡깁니다.</li>
+<li>어댑터 패턴에는 객체 어댑터 패턴과 클래스 어댑태 패턴이 있습니다. 클래스 어댑터를 쓰려면 다중 상속이 가능해야 합니다.</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-05-08</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://localhost:1313/principle-oop/" data-title="객체지향 원칙"><i class="fab fa-x-twitter" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://localhost:1313/principle-oop/" data-title="객체지향 원칙"><i class="fab fa-threads" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/principle-oop/"><i class="fab fa-facebook-square" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/principle-oop/" data-title="객체지향 원칙"><i class="fab fa-hacker-news" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/principle-oop/" data-title="객체지향 원칙"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/principle-oop/" data-title="객체지향 원칙"><i class="fab fa-weibo" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="http://localhost:1313/principle-oop/" data-title="객체지향 원칙" data-description=""><i class="fab fa-diaspora" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fprinciple-oop%2f&amp;text=%ea%b0%9d%ec%b2%b4%ec%a7%80%ed%96%a5%20%ec%9b%90%ec%b9%99" target="_blank" title="Share on Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/svg-font-not-working-on-safari/" class="prev" rel="prev" title="Svg Font Not Working on Safari"><i class="fas fa-angle-left" aria-hidden="true"></i>Svg Font Not Working on Safari</a>
+            <a href="/coding-design-principles/" class="next" rel="next" title="코딩 디자인 원칙">코딩 디자인 원칙<i class="fas fa-angle-right" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.166.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 1.0.0"><i class="far fa-kiss-wink-heart" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"comment":{}};</script><script src="/js/theme.js"></script></body>
+</html>

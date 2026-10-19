@@ -1,0 +1,54 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Css - Category - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/categories/css/</link>
+        <description>Css - Category - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 09 Sep 2021 15:41:13 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/css/" rel="self" type="application/rss+xml" /><item>
+    <title>Css Flex a to Z</title>
+    <link>http://localhost:1313/css-flex-a-to-z/</link>
+    <pubDate>Thu, 09 Sep 2021 15:41:13 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/css-flex-a-to-z/</guid>
+    <description><![CDATA[<h2 id="flex">Flex</h2>]]></description>
+</item>
+<item>
+    <title>CSS Flex 속성이란?</title>
+    <link>http://localhost:1313/about-css-flex/</link>
+    <pubDate>Thu, 21 Jan 2021 08:31:24 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/about-css-flex/</guid>
+    <description><![CDATA[<p>여기 내용 다 채우기 <a href="https://heropy.blog/2018/11/24/css-flexible-box/" target="_blank" rel="noopener noreffer ">https://heropy.blog/2018/11/24/css-flexible-box/</a></p>
+<h2 id="flex-속성이란">Flex 속성이란?</h2>
+<p>크게 container, items 두가지 영역에 해당한다</p>
+<p><code>Container: display, flex-flow, justify-content</code></p>
+<p><code>Items: order, flex, align-self</code> 등의 속성이 있다.</p>
+<h2 id="item-flex-값에-대한-해석">Item: flex 값에 대한 해석</h2>
+<p><code>flex: 1</code> -&gt; 모든 공간을 사용 가능하다</p>
+<div style="display: flex; height: 100px;">
+  <div style="flex:1; background-color: #ddd;"">flex: 1</div>
+</div>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-html">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;flex:1&#34;</span><span class="p">&gt;</span>flex: 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre></div></div>
+<blockquote>
+<p>화면 전체가 꽉 찬다</p>
+</blockquote>
+<div style="display: flex; height: 100px;">
+  <div style="flex:1; background-color: #ddd;"">flex: 1</div>
+  <div style="flex:1; background-color: #eee;"">flex: 2</div>
+</div>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-html">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;flex:1&#34;</span><span class="p">&gt;</span>flex: 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;flex:1&#34;</span><span class="p">&gt;</span>flex: 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre></div></div>
+<blockquote>
+<p>화면 전체가 각각 1:1 반반씩 찬다</p>]]></description>
+</item>
+</channel>
+</rss>

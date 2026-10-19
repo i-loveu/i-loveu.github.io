@@ -1,0 +1,26 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Message - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/message/</link>
+        <description>Message - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 10 Apr 2021 05:49:21 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/message/" rel="self" type="application/rss+xml" /><item>
+    <title>좋은 Commit Message</title>
+    <link>http://localhost:1313/commit-message-on-git/</link>
+    <pubDate>Sat, 10 Apr 2021 05:49:21 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/commit-message-on-git/</guid>
+    <description><![CDATA[<h2 id="좋은-commit-message-작성-방법">좋은 Commit Message 작성 방법</h2>
+<p>간결하게 쓴다.</p>
+<p>사람 뿐 아니라 기계도 어떤 작업을 했는지 알 수 있도록 한다.</p>
+<h2 id="주요-단어">주요 단어</h2>
+<h3 id="fix">fix</h3>
+<h3 id="add">add</h3>
+<h3 id="remove">remove</h3>
+<h3 id="use">use</h3>
+<h3 id="refactor">refactor</h3>
+<h3 id="simplyfy">simplyfy</h3>
+<h3 id="update">update</h3>
+<p>어떤 라이드러리를 업데이트 했다</p>]]></description>
+</item>
+</channel>
+</rss>

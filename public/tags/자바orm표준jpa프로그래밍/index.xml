@@ -1,0 +1,117 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>자바ORM표준JPA프로그래밍 - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/%EC%9E%90%EB%B0%94orm%ED%91%9C%EC%A4%80jpa%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</link>
+        <description>자바ORM표준JPA프로그래밍 - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 16 Nov 2021 10:15:30 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/%EC%9E%90%EB%B0%94orm%ED%91%9C%EC%A4%80jpa%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" rel="self" type="application/rss+xml" /><item>
+    <title>Jpa Basic</title>
+    <link>http://localhost:1313/jpa-basic/</link>
+    <pubDate>Tue, 16 Nov 2021 10:15:30 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/jpa-basic/</guid>
+    <description><![CDATA[<h2 id="필드-칼럼-매핑">필드, 칼럼 매핑</h2>
+<table>
+	<thead>
+			<tr>
+					<th>분류</th>
+					<th>매핑 어노테이션</th>
+					<th>설명</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>필드와 칼럼 매핑</td>
+					<td>@Column</td>
+					<td>칼럼을 매핑한다</td>
+			</tr>
+			<tr>
+					<td></td>
+					<td>@Enumerated</td>
+					<td>자바의 enum 타입을 매핑한다</td>
+			</tr>
+			<tr>
+					<td></td>
+					<td>@Temporal</td>
+					<td>날짜 타입을 매핑한다</td>
+			</tr>
+			<tr>
+					<td></td>
+					<td>@Lob</td>
+					<td>BLOB, CLOB 타입을 매핑한다</td>
+			</tr>
+			<tr>
+					<td></td>
+					<td>@Transient</td>
+					<td>특정 필드를 데이터베이스에 매핑하지 않는다</td>
+			</tr>
+			<tr>
+					<td>기타</td>
+					<td>@Access</td>
+					<td>JPA가 엔티티에 접근하는 방식을 지정한다</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="column">@Column</h3>
+<table>
+	<thead>
+			<tr>
+					<th>속성</th>
+					<th>기능</th>
+					<th>기본값</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>name</td>
+					<td>필드와 매핑할 테이블의 칼럼 이름</td>
+					<td>객체의 필드 이름</td>
+			</tr>
+			<tr>
+					<td>insertalbe (거의 사용하지 않음)</td>
+					<td>엔티티 저장 시 이 필드도 같이 저장한다</td>
+					<td>true</td>
+			</tr>
+			<tr>
+					<td>updatable (거의 사용하지 않음)</td>
+					<td>엔티티 저장 시 이 필드도 같이 수정한다</td>
+					<td>true</td>
+			</tr>
+			<tr>
+					<td>table (거의 사용하지 않음)</td>
+					<td>하나의 엔티티를 두 개 이상의 테이블에 매핑할 때 사용한다</td>
+					<td>현재 클래스가 매핑된 테이블</td>
+			</tr>
+			<tr>
+					<td>nullable(DDL)</td>
+					<td>null 값의 허용 여부를 설정한다. false로 설정하면 DDL 생성 시에 not null 제약조건이 붙는다</td>
+					<td>true</td>
+			</tr>
+			<tr>
+					<td>unique(DDL)</td>
+					<td>@Table의 uniqueConstraints와 같지만 한 칼럼에 간단히 유니크 제약조건을 걸 때 사용한다. 만약 두 칼럼 이상을 사용해서 유니크 제약조건을 사용하려면 클래스 레벨에서 @Table.uniqueConstraints를 사용해야 한다</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>colomnDefinition(DDL)</td>
+					<td>데이터베이스 칼럼 정보를 직접 줄 수 있다</td>
+					<td>필드의 자바 타입과 방언 정보를 사용해서 적절한 칼럼 타입을 생성한다</td>
+			</tr>
+			<tr>
+					<td>length(DDL)</td>
+					<td>문자 길이 제약조건, String 타입에만 사용한다</td>
+					<td>255</td>
+			</tr>
+			<tr>
+					<td>precision, scale(DDL)</td>
+					<td>BigDecimal 타입에서 사용한다(BigInterger도 사용할 수 있다). ercision은 소수점을 포함한 전체 자릿수를, scale은 소수의 자릿수다. 참고로 double, float 타입에는 적용되지 않는다. 아주 큰 숫자나 정밀한 소수를 다루어야 할 때만 사요한다</td>
+					<td>precision=19, scalee=2</td>
+			</tr>
+	</tbody>
+</table>
+<h2 id="영속성-관리">영속성 관리</h2>
+<h3 id="엔티티-메니저">엔티티 메니저</h3>
+<p>엔티티 메니저는 엔티티를 저장하고, 수정하고, 삭제하고, 조회하는 등 엔티티와 관련된 모든 일을 처리한다.
+엔티티 메니저는 데이터베이스 연결이 꼭 필요한 시점까지 연결하지 않는다.</p>]]></description>
+</item>
+</channel>
+</rss>

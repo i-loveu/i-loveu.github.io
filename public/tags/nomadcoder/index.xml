@@ -1,0 +1,44 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Nomadcoder - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/nomadcoder/</link>
+        <description>Nomadcoder - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 13 Mar 2021 18:32:04 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/nomadcoder/" rel="self" type="application/rss+xml" /><item>
+    <title>Basic Reactjs App Code Tree with Nomadcoder</title>
+    <link>http://localhost:1313/basic-reactjs-app-code-tree/</link>
+    <pubDate>Sat, 13 Mar 2021 18:32:04 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/basic-reactjs-app-code-tree/</guid>
+    <description><![CDATA[<h2 id="초보를-위한-react-js">초보를 위한 React JS</h2>
+<p>실행</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npx create-react-app nomflix</span></span></code></pre></div></div>
+<p>삭제하는 파일
+<code>App.css index.css</code></p>
+<h3 id="env-생성">.env 생성</h3>
+<p>src부터 바라보도록 설정</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">NODE_PATH=src</span></span></code></pre></div></div>
+<h2 id="router-설치">Router 설치</h2>
+<p>컴포넌트 묶음 Router 설치</p>
+<p>가이드문서: <a href="https://reactrouter.com/web/guides/quick-start" target="_blank" rel="noopener noreffer ">https://reactrouter.com/web/guides/quick-start</a></p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yarn add react-router-dom</span></span></code></pre></div></div>
+<h3 id="hashrouter-vs-browserrouter">HashRouter vs BrowserRouter</h3>
+<h4 id="hashrouter">HashRouter</h4>
+<p>앱처럽 보여주고 싶다면 HashRouter.</p>]]></description>
+</item>
+</channel>
+</rss>

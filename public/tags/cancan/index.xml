@@ -1,0 +1,30 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cancan - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/cancan/</link>
+        <description>Cancan - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 26 Mar 2021 17:00:51 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/cancan/" rel="self" type="application/rss+xml" /><item>
+    <title>Rails 로그인이 필요한 페이지 로그인 갔다 돌아오는 방법 by Cancan Gem</title>
+    <link>http://localhost:1313/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/</link>
+    <pubDate>Fri, 26 Mar 2021 17:00:51 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/</guid>
+    <description><![CDATA[<h2 id="application_controllerrb-코드-추가">application_controller.rb 코드 추가</h2>
+<p>application_controller.rb에 아래 사항 추가</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-ruby">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ruby" data-lang="ruby"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">ApplicationController</span> <span class="o">&lt;</span> <span class="no">ActionController</span><span class="o">::</span><span class="no">Base</span>
+</span></span><span class="line"><span class="cl">    <span class="n">rescue_from</span> <span class="no">CanCan</span><span class="o">::</span><span class="no">AccessDenied</span><span class="p">,</span> <span class="ss">with</span><span class="p">:</span> <span class="ss">:access_denied</span>
+</span></span><span class="line"><span class="cl">    <span class="kp">private</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">access_denied</span><span class="p">(</span><span class="n">exception</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">store_location_for</span> <span class="ss">:user</span><span class="p">,</span> <span class="n">request</span><span class="o">.</span><span class="n">path</span>
+</span></span><span class="line"><span class="cl">    <span class="n">redirect_to</span> <span class="n">user_signed_in?</span> <span class="p">?</span> <span class="n">root_path</span> <span class="p">:</span> <span class="n">new_user_session_path</span><span class="p">,</span> <span class="ss">alert</span><span class="p">:</span> <span class="n">exception</span><span class="o">.</span><span class="n">message</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span></span></span></code></pre></div></div>]]></description>
+</item>
+</channel>
+</rss>

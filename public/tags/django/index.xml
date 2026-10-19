@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Django - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/django/</link>
+        <description>Django - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 02 Aug 2021 19:54:57 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/django/" rel="self" type="application/rss+xml" /><item>
+    <title>Django What Is Field Type</title>
+    <link>http://localhost:1313/django-what-is-field-type/</link>
+    <pubDate>Mon, 02 Aug 2021 19:54:57 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/django-what-is-field-type/</guid>
+    <description><![CDATA[<h2 id="장고에서-field-type에-대해-말해봅니다">장고에서 Field Type에 대해 말해봅니다</h2>
+<h3 id="blank-true">blank-True</h3>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-python">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">(</span><span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></span></span></code></pre></div></div>]]></description>
+</item>
+</channel>
+</rss>

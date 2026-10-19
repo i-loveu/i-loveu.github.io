@@ -1,0 +1,28 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Es6 - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/es6/</link>
+        <description>Es6 - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 19 Feb 2021 19:57:41 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/es6/" rel="self" type="application/rss+xml" /><item>
+    <title>Javascript ES6란 무엇인가?</title>
+    <link>http://localhost:1313/javascript-ecmascript-es-list/</link>
+    <pubDate>Fri, 19 Feb 2021 19:57:41 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/javascript-ecmascript-es-list/</guid>
+    <description><![CDATA[<h2 id="es6란-무엇인가">ES6란 무엇인가?</h2>
+<p>ecmascript2015를</p>
+<h2 id="es-history">ES history</h2>
+<h3 id="es31999">ES3(1999)</h3>
+<p>ie8까지 지원하는 자바스크립트</p>
+<h3 id="es52009">ES5(2009)</h3>
+<p>forEach, map, reduce, filter 등이 생김</p>
+<h3 id="es6es2015">ES6(ES2015)</h3>
+<p>let, const 등장. promise가 나온다</p>
+<h3 id="es7es2016">ES7(ES2016)</h3>
+<p>Array.includes 등장.</p>
+<h3 id="es8es2017">ES8(ES2017)</h3>
+<p>async, await 등장.</p>
+<h3 id="es9es2018">ES9(ES2018)</h3>]]></description>
+</item>
+</channel>
+</rss>

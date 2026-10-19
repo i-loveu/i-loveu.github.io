@@ -1,0 +1,25 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Css - Tag - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/tags/css/</link>
+        <description>Css - Tag - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 21 Apr 2021 21:12:55 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/css/" rel="self" type="application/rss+xml" /><item>
+    <title>Nomad Study Css Layout</title>
+    <link>http://localhost:1313/nomad-study-css-layout/</link>
+    <pubDate>Wed, 21 Apr 2021 21:12:55 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/nomad-study-css-layout/</guid>
+    <description><![CDATA[<h2 id="flex-box">flex-box</h2>
+<p>flex-box는 무조건 item이 몇개가 있든 한 라인에 존재하게 한다.</p>
+<p>넓이가 200px이어도 그 공간이 부족하면 구겨서 줄여버린다.</p>
+<p><a href="https://flexboxfroggy.com/" target="_blank" rel="noopener noreffer ">https://flexboxfroggy.com/</a> flex 요소 게임</p>
+<p><code>flex: 1 1 50%</code> =&gt; ` flex-grow: 1; flex-shrink: 1; flex-basis: 50%;``</p>
+<p><code>flex-grow: 1</code> 1의 비율로 넓이를 채워라</p>
+<p><code>flex-shrink: 1</code> 1의 비율로 줄어들어라</p>
+<p><code>flex-basis: 50%</code> 더 넓어질 수도 있지만, 기본 값은 50%</p>
+<h3 id="flex-direction">flex-direction</h3>
+<p><code>row</code> default 값 메인 축 값이 가로</p>
+<p><code>column</code> default 값 메인 축 값이 세로</p>]]></description>
+</item>
+</channel>
+</rss>

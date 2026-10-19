@@ -1,0 +1,25 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Flutterflow - Category - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/categories/flutterflow/</link>
+        <description>Flutterflow - Category - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 05 Apr 2025 22:21:50 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/flutterflow/" rel="self" type="application/rss+xml" /><item>
+    <title>Flutterflow Make App</title>
+    <link>http://localhost:1313/flutterflow-make-app/</link>
+    <pubDate>Sat, 05 Apr 2025 22:21:50 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/flutterflow-make-app/</guid>
+    <description><![CDATA[<h2 id="user-signin">User Signin</h2>
+<h3 id="make-signin-page">Make signin page</h3>
+<p>reference page <a href="https://docs.flutterflow.io/integrations/authentication/firebase/initial-setup/" target="_blank" rel="noopener noreffer ">https://docs.flutterflow.io/integrations/authentication/firebase/initial-setup/</a></p>
+<figure>
+</figure>
+
+<h2 id="method">method</h2>
+<h3 id="page-state">page state</h3>
+<h3 id="app-state">App State</h3>
+<p>global memory</p>
+<p>like a logged-in user&rsquo;s details</p>]]></description>
+</item>
+</channel>
+</rss>

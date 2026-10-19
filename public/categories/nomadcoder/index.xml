@@ -1,0 +1,73 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Nomadcoder - Category - 사랑합니다 기술 블로그</title>
+        <link>http://localhost:1313/categories/nomadcoder/</link>
+        <description>Nomadcoder - Category - 사랑합니다 기술 블로그</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 21 Apr 2021 21:12:55 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/nomadcoder/" rel="self" type="application/rss+xml" /><item>
+    <title>Nomad Study Css Layout</title>
+    <link>http://localhost:1313/nomad-study-css-layout/</link>
+    <pubDate>Wed, 21 Apr 2021 21:12:55 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/nomad-study-css-layout/</guid>
+    <description><![CDATA[<h2 id="flex-box">flex-box</h2>
+<p>flex-box는 무조건 item이 몇개가 있든 한 라인에 존재하게 한다.</p>
+<p>넓이가 200px이어도 그 공간이 부족하면 구겨서 줄여버린다.</p>
+<p><a href="https://flexboxfroggy.com/" target="_blank" rel="noopener noreffer ">https://flexboxfroggy.com/</a> flex 요소 게임</p>
+<p><code>flex: 1 1 50%</code> =&gt; ` flex-grow: 1; flex-shrink: 1; flex-basis: 50%;``</p>
+<p><code>flex-grow: 1</code> 1의 비율로 넓이를 채워라</p>
+<p><code>flex-shrink: 1</code> 1의 비율로 줄어들어라</p>
+<p><code>flex-basis: 50%</code> 더 넓어질 수도 있지만, 기본 값은 50%</p>
+<h3 id="flex-direction">flex-direction</h3>
+<p><code>row</code> default 값 메인 축 값이 가로</p>
+<p><code>column</code> default 값 메인 축 값이 세로</p>]]></description>
+</item>
+<item>
+    <title>Nomad Study Airbnb Clone</title>
+    <link>http://localhost:1313/nomad-study-airbnb-clone/</link>
+    <pubDate>Mon, 12 Apr 2021 15:41:07 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/nomad-study-airbnb-clone/</guid>
+    <description><![CDATA[<h2 id="flask-vs-django">Flask vs Django</h2>
+<h3 id="flask">Flask</h3>
+<p>괭장히 작은 프레임워크. 데이터베이스, 이메일, 로그인, 로그아웃 등 모든 것을 다 만들어야 한다.</p>
+<p>목표한 기능에 집중한다면 괜찮은 프레임워크</p>
+<h3 id="django">Django</h3>
+<p>거대한 프레임워크. 이미 많은 유틸리티가 장착되어있다</p>
+<p>Pinterest, instagram</p>
+<h2 id="pipenv">pipenv</h2>
+<p>python 환경을 설정하는 package</p>
+<h2 id="python3-사용">python3 사용</h2>
+<p><code>pipenv --three</code></p>
+<p>Pipfile이 생성된다</p>
+<h3 id="pipfile">Pipfile</h3>
+<p>packge-json과 같은 기능</p>
+<h2 id="장고-설치">장고 설치</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pipenv shell
+</span></span><span class="line"><span class="cl">pip install Django==2.2.5</span></span></code></pre></div></div>
+<h2 id="github">github</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git branch -M main</span></span></code></pre></div></div>
+<h2 id="config파일-만들기">config파일 만들기</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">django-admin startproject config
+</span></span><span class="line"><span class="cl">move config Aconfig
+</span></span><span class="line"><span class="cl">mv Aconfig/* .
+</span></span><span class="line"><span class="cl">rm -rf Aconfig</span></span></code></pre></div></div>
+<h2 id="vs-code-extension-설치">vs code extension 설치</h2>
+<p><code>Python</code></p>]]></description>
+</item>
+</channel>
+</rss>
