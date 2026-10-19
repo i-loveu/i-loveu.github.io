@@ -1,7 +1,8 @@
 ---
 title: "Nextjs Monorepo"
+categories: ["nextjs"]
 date: 2026-10-19T11:11:06+09:00
-draft: true
+draft: false
 ---
 
 ## pnpm + Turborepo + Next.js (App Router) 조합으로 모노레포를 구축하는 세팅

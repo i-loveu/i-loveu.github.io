@@ -3,9 +3,36 @@
         <title>사랑합니다 기술 블로그</title>
         <link>https://i-loveu.github.io/</link>
         <description>This is my cool site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 05 Apr 2025 22:21:50 &#43;0900</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Oct 2026 11:11:06 &#43;0900</lastBuildDate>
             <atom:link href="https://i-loveu.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Nextjs Monorepo</title>
+    <link>https://i-loveu.github.io/nextjs-monorepo/</link>
+    <pubDate>Mon, 19 Oct 2026 11:11:06 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>https://i-loveu.github.io/nextjs-monorepo/</guid>
+    <description><![CDATA[<h2 id="pnpm--turborepo--nextjs-app-router-조합으로-모노레포를-구축하는-세팅">pnpm + Turborepo + Next.js (App Router) 조합으로 모노레포를 구축하는 세팅</h2>
+<ol>
+<li>프로젝트 폴더 구조 목표</li>
+</ol>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">modoo-monorepo/
+</span></span><span class="line"><span class="cl">├── apps/
+</span></span><span class="line"><span class="cl">│   ├── modoo-tango/     # 홍보용 웹사이트 (Port 3000)
+</span></span><span class="line"><span class="cl">│   └── tango-talk/      # 수강생 관리 PWA 앱 (Port 3001)
+</span></span><span class="line"><span class="cl">├── packages/
+</span></span><span class="line"><span class="cl">│   ├── ui/              # 공통 UI 컴포넌트 (shadcn/ui, Tailwind)
+</span></span><span class="line"><span class="cl">│   ├── database/        # Supabase 클라이언트 &amp; TypeScript 자동 생성 타입
+</span></span><span class="line"><span class="cl">│   └── config/          # ESLint, TypeScript 공통 설정
+</span></span><span class="line"><span class="cl">├── pnpm-workspace.yaml
+</span></span><span class="line"><span class="cl">├── turbo.json
+</span></span><span class="line"><span class="cl">└── package.json</span></span></code></pre></div></div>]]></description>
+</item>
+<item>
     <title>Flutterflow Make App</title>
     <link>https://i-loveu.github.io/flutterflow-make-app/</link>
     <pubDate>Sat, 05 Apr 2025 22:21:50 &#43;0900</pubDate>
@@ -268,26 +295,6 @@ nginx.conf 편집</p>]]></description>
 </span></span><span class="line"><span class="cl"><span class="p">&gt;</span></span></span></code></pre></div></div>
 <p><code>font-family=&quot;NotoSansKR, sans-serif&quot;</code>이 부분으로 <code>style=&quot;font-family:NotoSansKR-Bold,Noto Sans KR;&quot;</code>에서 꺼내준다.
 이렇게 하면 적용 완료!</p>]]></description>
-</item>
-<item>
-    <title>Picture Tag</title>
-    <link>https://i-loveu.github.io/picture-tag/</link>
-    <pubDate>Tue, 12 Apr 2022 13:21:37 &#43;0900</pubDate>
-    <author>xxxx</author>
-    <guid>https://i-loveu.github.io/picture-tag/</guid>
-    <description><![CDATA[<h2 id="picture-tag">Picture Tag</h2>
-<p>백그라운드 이미지는 css에서 처리하지만, img태그는 처리하기 어려웠다. 그런데 img태그도 html상에서 미디어 쿼리를 적용할 수 있는 태그가 있다.</p>
-<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-html">
-        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
-        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">picture</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;images/logo-sone.svg&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;(min-width:768px)&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;images/logo-sone-m.svg&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;(max-width:767px)&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;images/logo-sone.svg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;에스원&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">picture</span><span class="p">&gt;</span></span></span></code></pre></div></div>
-<p><code>&lt;picture&gt;&lt;/picture&gt;</code> 태그로 묶고 그 안에 소스로 미디어쿼리 처리를 한다. 그리고 위 설정이 먹히지 않는 곳은 img 태그가 보이게 된다.</p>]]></description>
 </item>
 </channel>
 </rss>

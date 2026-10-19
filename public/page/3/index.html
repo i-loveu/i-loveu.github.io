@@ -63,6 +63,32 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/react-what-is-react-stric-mode/">React Stric Mode란?</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-08-27">2021-08-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/react/"><i class="far fa-folder" aria-hidden="true"></i>React</a></span></div><div class="content"><h2 id="react-앱-내의-잠재적-문제를-알아내가-위한-도구">React 앱 내의 잠재적 문제를 알아내가 위한 도구</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-javascript">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="nx">React</span><span class="p">.</span><span class="nx">StrictMode</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nx">App</span> <span class="o">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="err">/React.StrictMode&gt;,</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;root&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span></span></span></code></pre></div></div>
+<p>용도는 아래와 같습니다.</p>
+<ul>
+<li>안전하지 않은 생명주기를 사용하는 컴포넌트 발견</li>
+<li>레거시 문자열 ref 사용에 대한 경고</li>
+<li>권장되지 않는 findDOMNode 사용에 대한 경고</li>
+<li>예상치 못한 부작용 검사</li>
+<li>레거시 context API 검사</li>
+</ul>
+<h3 id="개발용-모드">개발용 모드</h3>
+<blockquote>
+<p>Strict 모드는 개발 모드에서만 활성화되기 때문에, 프로덕션 빌드에는 영향을 끼치지 않습니다.</p></div><div class="post-footer">
+        <a href="/react-what-is-react-stric-mode/">Read More</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/ssl-file-create/">SSL File 생성방법</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-11">2021-06-11</time></span></div><div class="content"><h2 id="ssl">SSL</h2>
 <p>전송계층보안: 데이터를 중간에서 해킹당하지 않도록 암호화 해서 데이터를 서버로 전송</p>
@@ -164,30 +190,6 @@
 <p>어떤 라이드러리를 업데이트 했다</p></div><div class="post-footer">
         <a href="/commit-message-on-git/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<a href="/tags/message/">Message</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/javascript-rest-parameter/">Javascript Rest Parameter</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-03-30">2021-03-30</time></span>&nbsp;<span class="post-category">included in <a href="/categories/javascript/"><i class="far fa-folder" aria-hidden="true"></i>Javascript</a></span></div><div class="content"><h2 id="마지막-파라미터는-rest-파라미터">마지막 파라미터는 Rest 파라미터</h2>
-<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-javascript">
-        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
-        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">myFun</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="p">...</span><span class="nx">manyMoreArgs</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;a&#34;</span><span class="p">,</span> <span class="nx">a</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;b&#34;</span><span class="p">,</span> <span class="nx">b</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;manyMoreArgs&#34;</span><span class="p">,</span> <span class="nx">manyMoreArgs</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">myFun</span><span class="p">(</span><span class="s2">&#34;one&#34;</span><span class="p">,</span> <span class="s2">&#34;two&#34;</span><span class="p">,</span> <span class="s2">&#34;three&#34;</span><span class="p">,</span> <span class="s2">&#34;four&#34;</span><span class="p">,</span> <span class="s2">&#34;five&#34;</span><span class="p">,</span> <span class="s2">&#34;six&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// Console Output:
-</span></span></span><span class="line"><span class="cl"><span class="c1">// a, one
-</span></span></span><span class="line"><span class="cl"><span class="c1">// b, two
-</span></span></span><span class="line"><span class="cl"><span class="c1">// manyMoreArgs, [three, four, five, six]
-</span></span></span></code></pre></div></div>
-<p>앞에 명시한 파라미터를 제외한 것들을 묶어서 배열로 내보낸다</p></div><div class="post-footer">
-        <a href="/javascript-rest-parameter/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<a href="/tags/javascript_rest_parameters/">Javascript_rest_parameters</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -212,7 +214,7 @@
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/9/">9</a>
+                        <a href="/page/10/">10</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

@@ -63,6 +63,30 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/javascript-rest-parameter/">Javascript Rest Parameter</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-03-30">2021-03-30</time></span>&nbsp;<span class="post-category">included in <a href="/categories/javascript/"><i class="far fa-folder" aria-hidden="true"></i>Javascript</a></span></div><div class="content"><h2 id="마지막-파라미터는-rest-파라미터">마지막 파라미터는 Rest 파라미터</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-javascript">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">myFun</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="p">...</span><span class="nx">manyMoreArgs</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;a&#34;</span><span class="p">,</span> <span class="nx">a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;b&#34;</span><span class="p">,</span> <span class="nx">b</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;manyMoreArgs&#34;</span><span class="p">,</span> <span class="nx">manyMoreArgs</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">myFun</span><span class="p">(</span><span class="s2">&#34;one&#34;</span><span class="p">,</span> <span class="s2">&#34;two&#34;</span><span class="p">,</span> <span class="s2">&#34;three&#34;</span><span class="p">,</span> <span class="s2">&#34;four&#34;</span><span class="p">,</span> <span class="s2">&#34;five&#34;</span><span class="p">,</span> <span class="s2">&#34;six&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Console Output:
+</span></span></span><span class="line"><span class="cl"><span class="c1">// a, one
+</span></span></span><span class="line"><span class="cl"><span class="c1">// b, two
+</span></span></span><span class="line"><span class="cl"><span class="c1">// manyMoreArgs, [three, four, five, six]
+</span></span></span></code></pre></div></div>
+<p>앞에 명시한 파라미터를 제외한 것들을 묶어서 배열로 내보낸다</p></div><div class="post-footer">
+        <a href="/javascript-rest-parameter/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<a href="/tags/javascript_rest_parameters/">Javascript_rest_parameters</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/vscode-format-on-save/">Vscode Format on Save</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-03-30">2021-03-30</time></span>&nbsp;<span class="post-category">included in <a href="/categories/vscode/"><i class="far fa-folder" aria-hidden="true"></i>Vscode</a></span></div><div class="content"><h2 id="vs-code-format-on-save">VS Code format on Save</h2>
 <p>VS 코드 저장할 때 format 정렬</p>
@@ -138,19 +162,6 @@
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">gem i bundler -v &#39;Gemfile.lock&#39;</span></span></code></pre></div></div></div><div class="post-footer">
         <a href="/error-rails-find-spec-for-exe/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<a href="/tags/rubyonrails/">Rubyonrails</a>,&nbsp;<a href="/tags/bundler/">Bundler</a>,&nbsp;<a href="/tags/error/">Error</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/what-is-npx/">What Is Npx</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-03-13">2021-03-13</time></span>&nbsp;<span class="post-category">included in <a href="/categories/javascript/"><i class="far fa-folder" aria-hidden="true"></i>Javascript</a></span></div><div class="content"><h2 id="npx란-무엇인가">npx란 무엇인가</h2>
-<p>최신버전의 javascript 라이브러리를 다운받아 실행하고 끝나면 삭제</p>
-<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-">
-        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
-        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yarn global add npx
-</span></span><span class="line"><span class="cl">npm i npx -g</span></span></code></pre></div></div></div><div class="post-footer">
-        <a href="/what-is-npx/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<a href="/tags/npx/">Npx</a>,&nbsp;<a href="/tags/nodejs/">Nodejs</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -179,7 +190,7 @@
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/9/">9</a>
+                        <a href="/page/10/">10</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

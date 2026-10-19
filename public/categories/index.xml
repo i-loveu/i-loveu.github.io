@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Sat, 05 Apr 2025 22:21:50 +0900</lastBuildDate>
+			<lastBuildDate>Mon, 19 Oct 2026 11:11:06 +0900</lastBuildDate>
 		
 			<atom:link href="https://i-loveu.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Nextjs</title>
+				<link>https://i-loveu.github.io/categories/nextjs/</link>
+				<pubDate>Mon, 19 Oct 2026 11:11:06 +0900</pubDate>
+				<guid>https://i-loveu.github.io/categories/nextjs/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>Flutterflow</title>
 				<link>https://i-loveu.github.io/categories/flutterflow/</link>

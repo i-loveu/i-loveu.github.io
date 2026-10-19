@@ -63,6 +63,26 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/whatisprotocol/">TCP/IP 프로토콜이란?</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-01-07">2021-01-07</time></span></div><div class="content"><h2 id="tcpip-프로토콜이란">TCP/IP 프로토콜이란?</h2>
+<p>TCP(Transmission Control Protocol): 신뢰있는 데이타 전송방법.</p>
+<p>IP(internet protocol): 각각의 컴퓨터에 부여되는 고유주소.</p>
+<p>전 세계에 총42억개의 IP가 가능하다.</p>
+<p>프로토콜(protocol)은 정보를 주고 받기 위한 규칙</p>
+<h2 id="tcpip-프로토콜의-5계층">TCP/IP 프로토콜의 5계층</h2>
+<h3 id="물리층">물리층</h3>
+<p>link층에서 받은 frame을 signal로 바꾼다.</p>
+<h3 id="데이터-링크층">데이터 링크층</h3>
+<p>network츠에서 받은 datagram을 frame으로 캡슐하한다.</p>
+<h3 id="네트워크층">네트워크층</h3>
+<p>transport층에서 받은 TCP를 받아서 datagram으로 캡슐화 한다. ip주소를 써서 목적지를 찾아간다.</p>
+<p>주요기능은 라우팅, 포워딩.</p>
+<h3 id="전송층">전송층</h3>
+<p>application층에서 받은 메세지를 segment(by TCP)와 같은 것들로 캡슐화 한다.</p>
+<h3 id="응용층">응용층</h3>
+<p>프로세스간 통신을 하는 층이다.</p></div><div class="post-footer">
+        <a href="/whatisprotocol/">Read More</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/localhost-127-0-0-1/">localhost 와 127.0.0.1 이란?</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-01-06">2021-01-06</time></span></div><div class="content"><h2 id="localhost">localhost</h2>
 <p>localhost는 자기 컴퓨터의 호스트명이다</p>
@@ -161,42 +181,6 @@
 </span></span><span class="line"><span class="cl">gem install bundler</span></span></code></pre></div></div></div><div class="post-footer">
         <a href="/rails-ruby-2-4-0-openssl-bundle-error/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<a href="/tags/rubyonrails/">Rubyonrails</a>,&nbsp;<a href="/tags/ruby/">Ruby</a>,&nbsp;<a href="/tags/openssl.bundle/">Openssl.bundle</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/rails-local-mail-test-gem-letter_opener_web/">레일즈 메일, 로컬 테스트를 위한 Gem : Letter_opener_web</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-12-22">2020-12-22</time></span>&nbsp;<span class="post-category">included in <a href="/categories/rubyonrails/"><i class="far fa-folder" aria-hidden="true"></i>Rubyonrails</a></span></div><div class="content"><h2 id="gem-file-추가">Gem file 추가</h2>
-<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-">
-        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
-        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">group :development do
-</span></span><span class="line"><span class="cl">  gem &#39;letter_opener_web&#39;, &#39;~&gt; 1.0&#39;
-</span></span><span class="line"><span class="cl">end
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">$ bunlde install</span></span></code></pre></div></div>
-<h2 id="routesrb-에-작성">routes.rb 에 작성</h2>
-<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-">
-        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
-        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">mount LetterOpenerWeb::Engine, at: &#34;/letter_opener&#34; if Rails.env.development?</span></span></code></pre></div></div>
-<h2 id="configenvironmentsdevelopmentrb">config/environments/development.rb</h2>
-<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-">
-        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
-        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">config.action_mailer.delivery_method = :letter_opener_web</span></span></code></pre></div></div>
-<h2 id="server-접속">server 접속</h2>
-<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-">
-        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
-        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">http://localhost:3000/letter_opener</span></span></code></pre></div></div></div><div class="post-footer">
-        <a href="/rails-local-mail-test-gem-letter_opener_web/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<a href="/tags/mail/">Mail</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -214,6 +198,10 @@
                 </li><li class="page-item active">
                     <span class="page-link">
                         <a href="/page/9/">9</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/10/">10</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
