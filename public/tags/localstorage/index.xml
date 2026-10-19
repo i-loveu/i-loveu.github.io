@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Localstorage - Tag - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/tags/localstorage/</link>
+        <link>https://i-loveu.github.io/tags/localstorage/</link>
         <description>Localstorage - Tag - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 03 Mar 2021 10:38:31 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/localstorage/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 03 Mar 2021 10:38:31 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/tags/localstorage/" rel="self" type="application/rss+xml" /><item>
     <title>Browser Local Storage</title>
-    <link>http://localhost:1313/browser-local-storage/</link>
+    <link>https://i-loveu.github.io/browser-local-storage/</link>
     <pubDate>Wed, 03 Mar 2021 10:38:31 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/browser-local-storage/</guid>
+    <guid>https://i-loveu.github.io/browser-local-storage/</guid>
     <description><![CDATA[<h2 id="내-컴퓨터-브라우져에-저장하는-storage">내 컴퓨터 브라우져에 저장하는 storage</h2>
 <figure>
 </figure>

@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Wordpress - Category - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/categories/wordpress/</link>
+        <link>https://i-loveu.github.io/categories/wordpress/</link>
         <description>Wordpress - Category - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 16 Feb 2021 17:49:02 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/wordpress/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 16 Feb 2021 17:49:02 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/categories/wordpress/" rel="self" type="application/rss+xml" /><item>
     <title>워드프레스 password로 입력하는 댓글 만들기</title>
-    <link>http://localhost:1313/wordpress-add-password-comment/</link>
+    <link>https://i-loveu.github.io/wordpress-add-password-comment/</link>
     <pubDate>Tue, 16 Feb 2021 17:49:02 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/wordpress-add-password-comment/</guid>
+    <guid>https://i-loveu.github.io/wordpress-add-password-comment/</guid>
     <description><![CDATA[<h2 id="wp-admin--설정--토론--댓글-글쓴이는-이름과-이메일을-채워야만-합니다-해제">wp-admin &gt; 설정 &gt; 토론 &gt; &lsquo;댓글 글쓴이는 이름과 이메일을 채워야만 합니다&rsquo; 해제</h2>
 <figure>
 </figure>
@@ -228,10 +228,10 @@
 </item>
 <item>
     <title>맥에서 워드프레스 로컬세팅하기</title>
-    <link>http://localhost:1313/wordpress-local-setting-for-mac/</link>
+    <link>https://i-loveu.github.io/wordpress-local-setting-for-mac/</link>
     <pubDate>Tue, 16 Feb 2021 14:25:00 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/wordpress-local-setting-for-mac/</guid>
+    <guid>https://i-loveu.github.io/wordpress-local-setting-for-mac/</guid>
     <description><![CDATA[<h2 id="wp-cli-설치">wp-cli 설치</h2>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-">
@@ -264,36 +264,11 @@
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">wp server</span></span></code></pre></div></div>]]></description>
 </item>
 <item>
-    <title>Cafe24로 네임서버 이전하기</title>
-    <link>http://localhost:1313/migration-to-cafe24name-server/</link>
-    <pubDate>Thu, 28 Jan 2021 16:36:32 &#43;0900</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:1313/migration-to-cafe24name-server/</guid>
-    <description><![CDATA[<h2 id="타사에서-산-도메인을-사용해서-카페24에서-호스팅하려면-name-서버를-이전해야-합니다">타사에서 산 도메인을 사용해서 카페24에서 호스팅하려면 name 서버를 이전해야 합니다.</h2>
-<ul>
-<li>웹호스팅 <a href="https://hosting.cafe24.com/" target="_blank" rel="noopener noreffer ">https://hosting.cafe24.com/</a> 죄측 하단에 지정해야할 네임서버를 확인합니다.
-보통은 아래와 같아요.</li>
-</ul>
-<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-">
-        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
-        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// 웹호스팅
-</span></span><span class="line"><span class="cl">1차 ns1.cafe24.com 175.125.93.134
-</span></span><span class="line"><span class="cl">2차 ns1.cafe24.co.kr 112.175.246.232
-</span></span><span class="line"><span class="cl">3차 ns2.cafe24.com 175.125.93.144
-</span></span><span class="line"><span class="cl">4차 ns2.cafe24.co.kr 112.175.247.232</span></span></code></pre></div></div>
-<h3 id="what-is-name-server">What is Name Server</h3>
-<p>네임서버는 도메인의 이름을 ip와 연결해주는 서버입니다.
-보통 도메인을 구매하는 사이트에서 네임서버도 제공합니다.</p>]]></description>
-</item>
-<item>
     <title>Wordpress 고유주소 수정 후 링크가 먹지 않을때 .htaccess</title>
-    <link>http://localhost:1313/wordpress-basic-htaccess/</link>
+    <link>https://i-loveu.github.io/wordpress-basic-htaccess/</link>
     <pubDate>Mon, 18 Jan 2021 16:15:15 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/wordpress-basic-htaccess/</guid>
+    <guid>https://i-loveu.github.io/wordpress-basic-htaccess/</guid>
     <description><![CDATA[<h2 id="htaccess-란">.htaccess 란?</h2>
 <p>hypertext access의 약자. Rewrite engine 기능을 사용하기 위해 많이 쓴다.
 <a href="https://wordpress.org/support/article/htaccess/" target="_blank" rel="noopener noreffer ">워드프레스 .htacess 설명링크</a></p>
@@ -319,10 +294,10 @@
 </item>
 <item>
     <title>워드프레스 관리자 에디터 커스텀 css 추가하기</title>
-    <link>http://localhost:1313/wordpress-admin-editor-add-custom-css/</link>
+    <link>https://i-loveu.github.io/wordpress-admin-editor-add-custom-css/</link>
     <pubDate>Thu, 14 Jan 2021 14:08:18 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/wordpress-admin-editor-add-custom-css/</guid>
+    <guid>https://i-loveu.github.io/wordpress-admin-editor-add-custom-css/</guid>
     <description><![CDATA[<h2 id="admin-editor-stylescss-만들기">admin-editor-styles.css 만들기</h2>
 <p>theme/css/admin-editor-styles.css 위치에 파일 생성</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">

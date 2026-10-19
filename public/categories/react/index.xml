@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>React - Category - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/categories/react/</link>
+        <link>https://i-loveu.github.io/categories/react/</link>
         <description>React - Category - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 27 Aug 2021 16:11:53 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/react/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 27 Aug 2021 16:11:53 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/categories/react/" rel="self" type="application/rss+xml" /><item>
     <title>React Stric Mode란?</title>
-    <link>http://localhost:1313/react-what-is-react-stric-mode/</link>
+    <link>https://i-loveu.github.io/react-what-is-react-stric-mode/</link>
     <pubDate>Fri, 27 Aug 2021 16:11:53 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/react-what-is-react-stric-mode/</guid>
+    <guid>https://i-loveu.github.io/react-what-is-react-stric-mode/</guid>
     <description><![CDATA[<h2 id="react-앱-내의-잠재적-문제를-알아내가-위한-도구">React 앱 내의 잠재적 문제를 알아내가 위한 도구</h2>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-javascript">
@@ -32,15 +32,6 @@
 <h3 id="개발용-모드">개발용 모드</h3>
 <blockquote>
 <p>Strict 모드는 개발 모드에서만 활성화되기 때문에, 프로덕션 빌드에는 영향을 끼치지 않습니다.</p>]]></description>
-</item>
-<item>
-    <title>React Hooks 10</title>
-    <link>http://localhost:1313/react-hooks-10/</link>
-    <pubDate>Wed, 19 May 2021 17:25:58 &#43;0900</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:1313/react-hooks-10/</guid>
-    <description><![CDATA[<h2 id="react-hooks">React Hooks</h2>
-<h3></h3>]]></description>
 </item>
 </channel>
 </rss>

@@ -1,26 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Mdn - Tag - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/tags/mdn/</link>
+        <link>https://i-loveu.github.io/tags/mdn/</link>
         <description>Mdn - Tag - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 23 Apr 2021 09:24:37 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/mdn/" rel="self" type="application/rss+xml" /><item>
-    <title>Javascript Pretty Search Method</title>
-    <link>http://localhost:1313/javascript-pretty-search-method/</link>
-    <pubDate>Fri, 23 Apr 2021 09:24:37 &#43;0900</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:1313/javascript-pretty-search-method/</guid>
-    <description><![CDATA[<h2 id="헷갈려서-자주-검색하는-method">헷갈려서 자주 검색하는 method</h2>
-<h3 id="windowinnerwidth">window.innerWidth</h3>
-<p>스크린 넓이</p>
-<h3 id="windowinnerheight">window.innerHeight</h3>
-<p>스크린 높이</p>]]></description>
-</item>
-<item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 01 Mar 2021 17:12:48 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/tags/mdn/" rel="self" type="application/rss+xml" /><item>
     <title>Javascript Event 찾는곳 MDN</title>
-    <link>http://localhost:1313/javascript-event/</link>
+    <link>https://i-loveu.github.io/javascript-event/</link>
     <pubDate>Mon, 01 Mar 2021 17:12:48 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/javascript-event/</guid>
+    <guid>https://i-loveu.github.io/javascript-event/</guid>
     <description><![CDATA[<h2 id="javasdcript-event-종류를-알고-싶다면-mdn">javasdcript event 종류를 알고 싶다면 MDN</h2>
 <p><a href="https://developer.mozilla.org/ko/docs/Web/Events" target="_blank" rel="noopener noreffer ">https://developer.mozilla.org/ko/docs/Web/Events</a></p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">

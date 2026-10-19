@@ -1,41 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>All Posts - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/posts/</link>
+        <link>https://i-loveu.github.io/posts/</link>
         <description>All Posts | 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Oct 2026 11:11:06 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Nextjs Monorepo</title>
-    <link>http://localhost:1313/nextjs-monorepo/</link>
-    <pubDate>Mon, 19 Oct 2026 11:11:06 &#43;0900</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:1313/nextjs-monorepo/</guid>
-    <description><![CDATA[<h2 id="pnpm--turborepo--nextjs-app-router-조합으로-모노레포를-구축하는-세팅">pnpm + Turborepo + Next.js (App Router) 조합으로 모노레포를 구축하는 세팅</h2>
-<ol>
-<li>프로젝트 폴더 구조 목표</li>
-</ol>
-<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-">
-        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
-        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">modoo-monorepo/
-</span></span><span class="line"><span class="cl">├── apps/
-</span></span><span class="line"><span class="cl">│   ├── modoo-tango/     # 홍보용 웹사이트 (Port 3000)
-</span></span><span class="line"><span class="cl">│   └── tango-talk/      # 수강생 관리 PWA 앱 (Port 3001)
-</span></span><span class="line"><span class="cl">├── packages/
-</span></span><span class="line"><span class="cl">│   ├── ui/              # 공통 UI 컴포넌트 (shadcn/ui, Tailwind)
-</span></span><span class="line"><span class="cl">│   ├── database/        # Supabase 클라이언트 &amp; TypeScript 자동 생성 타입
-</span></span><span class="line"><span class="cl">│   └── config/          # ESLint, TypeScript 공통 설정
-</span></span><span class="line"><span class="cl">├── pnpm-workspace.yaml
-</span></span><span class="line"><span class="cl">├── turbo.json
-</span></span><span class="line"><span class="cl">└── package.json</span></span></code></pre></div></div>]]></description>
-</item>
-<item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 05 Apr 2025 22:21:50 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Flutterflow Make App</title>
-    <link>http://localhost:1313/flutterflow-make-app/</link>
+    <link>https://i-loveu.github.io/flutterflow-make-app/</link>
     <pubDate>Sat, 05 Apr 2025 22:21:50 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/flutterflow-make-app/</guid>
+    <guid>https://i-loveu.github.io/flutterflow-make-app/</guid>
     <description><![CDATA[<h2 id="user-signin">User Signin</h2>
 <h3 id="make-signin-page">Make signin page</h3>
 <p>reference page <a href="https://docs.flutterflow.io/integrations/authentication/firebase/initial-setup/" target="_blank" rel="noopener noreffer ">https://docs.flutterflow.io/integrations/authentication/firebase/initial-setup/</a></p>
@@ -50,10 +23,10 @@
 </item>
 <item>
     <title>Flutter Error Cocoapods</title>
-    <link>http://localhost:1313/flutter-error-cocoapods/</link>
+    <link>https://i-loveu.github.io/flutter-error-cocoapods/</link>
     <pubDate>Wed, 01 Nov 2023 12:38:37 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/flutter-error-cocoapods/</guid>
+    <guid>https://i-loveu.github.io/flutter-error-cocoapods/</guid>
     <description><![CDATA[<h2 id="플루터를-실행하려고-할-때-pop-repo-update가-뜨는-경우">플루터를 실행하려고 할 때 &lsquo;pop repo update&rsquo;가 뜨는 경우</h2>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-">
@@ -69,10 +42,10 @@
 </item>
 <item>
     <title>Centos 7 Nginx Update</title>
-    <link>http://localhost:1313/centos-7-nginx-update/</link>
+    <link>https://i-loveu.github.io/centos-7-nginx-update/</link>
     <pubDate>Wed, 18 Oct 2023 13:05:03 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/centos-7-nginx-update/</guid>
+    <guid>https://i-loveu.github.io/centos-7-nginx-update/</guid>
     <description><![CDATA[<h2 id="작업-순서">작업 순서</h2>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-">
@@ -113,59 +86,11 @@
 nginx.conf 편집</p>]]></description>
 </item>
 <item>
-    <title>Flutter Widgets</title>
-    <link>http://localhost:1313/flutter-widgets/</link>
-    <pubDate>Thu, 12 Oct 2023 18:53:52 &#43;0900</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:1313/flutter-widgets/</guid>
-    <description><![CDATA[<h3 id="material">Material</h3>
-<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-dart">
-        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
-        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">Material</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">    <span class="nl">elevation:</span> <span class="m">10</span><span class="p">,</span> <span class="c1">// 높이 
-</span></span></span><span class="line"><span class="cl"><span class="p">)</span></span></span></code></pre></div></div>]]></description>
-</item>
-<item>
-    <title>Nomad Study Flutter Animations Masterclass</title>
-    <link>http://localhost:1313/nomad-study-flutter-animations-masterclass/</link>
-    <pubDate>Tue, 03 Oct 2023 20:36:12 &#43;0900</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:1313/nomad-study-flutter-animations-masterclass/</guid>
-    <description><![CDATA[<h2 id="implicit-animations">IMPLICIT ANIMATIONS</h2>
-<h3 id="10-project-setup">1.0 Project Setup</h3>
-<h3 id="11-implicit">1.1 Implicit</h3>
-<p>&lsquo;Animated&rsquo; 를 붙이면 애니메이션 효과를 준다</p>
-<h3 id="12-animatedcontainer">1.2 AnimatedContainer</h3>
-<h3 id="14-tweenanimationbuilder">1.4 TweenAnimationBuilder</h3>
-<p>tween 값을 줘서 애니메이션을 만든다.</p>
-<h2 id="2-explicit-animations">2 EXPLICIT ANIMATIONS</h2>
-<h3 id="21-animationcontroller">2.1 AnimationController</h3>
-<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-dart">
-        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
-        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl">  <span class="err">@</span><span class="n">override</span>
-</span></span><span class="line"><span class="cl">  <span class="kt">void</span> <span class="n">initState</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">// TODO: implement initState
-</span></span></span><span class="line"><span class="cl">    <span class="k">super</span><span class="p">.</span><span class="n">initState</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="n">Ticker</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="n">elapsed</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">print</span><span class="p">(</span><span class="n">elapsed</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl">    <span class="p">).</span><span class="n">start</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">  <span class="p">}</span></span></span></code></pre></div></div>
-<p><code>Ticker</code> 애니메이션 프레임당 1번씩 호출됨</p>
-<p><code>with SingleTickerProviderStateMixin </code> -&gt; 사용자 화면에 떠 있을 경우만 호출.</p>
-<p><code>animationController</code> 는 0 -&gt; 1로 움직인다.</p>]]></description>
-</item>
-<item>
     <title>Flutter Functions</title>
-    <link>http://localhost:1313/flutter-functions/</link>
+    <link>https://i-loveu.github.io/flutter-functions/</link>
     <pubDate>Thu, 09 Mar 2023 11:44:23 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/flutter-functions/</guid>
+    <guid>https://i-loveu.github.io/flutter-functions/</guid>
     <description><![CDATA[<h2 id="link">link</h2>
 <p><code>Navigator.of(context).push()</code> 유저가 이전 화면으로 돌아갈 수 있다.</p>
 <p><code>Navigator.of(context).pushAndRemoveUntil()</code> <code>(route)</code> 부분을 <code>false</code> return 하면 Route 히스토리가 사라진다. 그래서 이전 페이지로 가지 못한다.</p>
@@ -196,39 +121,11 @@ nginx.conf 편집</p>]]></description>
 </span></span><span class="line"><span class="cl"><span class="p">});</span></span></span></code></pre></div></div>]]></description>
 </item>
 <item>
-    <title>Nomad Study Tictok Clone</title>
-    <link>http://localhost:1313/nomad-study-tictok-clone/</link>
-    <pubDate>Thu, 16 Feb 2023 13:10:42 &#43;0900</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:1313/nomad-study-tictok-clone/</guid>
-    <description><![CDATA[<h2 id="project-setup">PROJECT SETUP</h2>
-<h3 id="30-initialization">3.0 Initialization</h3>
-<p><code>flutter create tictok_clone</code></p>
-<h2 id="4-authentication">4. AUTHENTICATION</h2>
-<h3 id="40-sign-up-screen">4.0 Sign Up Screen</h3>
-<p><code>SafeArea</code> 그 안에 있는 모든 것은 특정 공간에 있을 것이라고 보장</p>
-<p>이것을 쓰면 화면의 정보창 아래에서 시작</p>
-<h3 id="41-login-screen">4.1 Login Screen</h3>
-<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-dart">
-        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
-        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl">  <span class="kt">void</span> <span class="n">onLoginTap</span><span class="p">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="n">Navigator</span><span class="p">.</span><span class="n">of</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">      <span class="n">context</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="p">).</span><span class="n">push</span><span class="p">(</span><span class="n">MaterialPageRoute</span><span class="p">(</span><span class="nl">builder:</span> <span class="p">(</span><span class="n">context</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">LoginScreen</span><span class="p">()));</span>
-</span></span><span class="line"><span class="cl">  <span class="p">}</span></span></span></code></pre></div></div>
-<p><code>push</code>는 화면을 쌓아올리고 <code>pop</code>은 밀어내서 없앤다.</p>
-<h3 id="43-sign-up-form">4.3 Sign Up Form</h3>
-<p>Private 메소드 만드는 방법 <code>_</code> 언더바를 쓴다.</p>]]></description>
-</item>
-<item>
     <title>플루터 CSS같은 효과주는 코드</title>
-    <link>http://localhost:1313/flutter-css-effect/</link>
+    <link>https://i-loveu.github.io/flutter-css-effect/</link>
     <pubDate>Mon, 30 Jan 2023 12:49:26 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/flutter-css-effect/</guid>
+    <guid>https://i-loveu.github.io/flutter-css-effect/</guid>
     <description><![CDATA[<h2 id="overflow-hidden">Overflow: hidden</h2>
 <p><code>clipBehavior: Clip.hardEdge</code></p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
@@ -264,36 +161,131 @@ nginx.conf 편집</p>]]></description>
 <p><code>body</code>를 <code>SingleChildScrollView</code>로 감싸줍니다.</p>]]></description>
 </item>
 <item>
-    <title>Nomad Study Flutter for Beginners</title>
-    <link>http://localhost:1313/nomad-study-flutter-for-beginners/</link>
-    <pubDate>Thu, 12 Jan 2023 13:22:48 &#43;0900</pubDate>
+    <title>Javascript Push Replace 차이</title>
+    <link>https://i-loveu.github.io/javascript-push-replace/</link>
+    <pubDate>Mon, 11 Jul 2022 12:15:38 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/nomad-study-flutter-for-beginners/</guid>
-    <description><![CDATA[<h2 id="hello-flutter">HELLO FLUTTER</h2>
-<h3 id="installation">installation</h3>
-<p><a href="https://docs.flutter.dev/get-started/install/macos" target="_blank" rel="noopener noreffer ">https://docs.flutter.dev/get-started/install/macos</a> 참고</p>
-<h3 id="running-flutter">Running Flutter</h3>
-<ol>
-<li>extension 설치하기</li>
-</ol>
-<h2 id="ui-challenge">UI CHALLENGE</h2>
-<h3 id="33-vscode-settings">3.3 VSCode Settings</h3>
-<p><code>shift + command + p</code> 를 누르고 <code>open user settings(JSON)</code>을 선택</p>
+    <guid>https://i-loveu.github.io/javascript-push-replace/</guid>
+    <description><![CDATA[<h2 id="push">Push</h2>
+<p>브라우저의 히스토리를 남길 때 사용</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-Json">
+    <div class="code-header language-javascript">
         <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
         <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
         <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Json" data-lang="Json"><span class="line"><span class="cl">  <span class="s2">&#34;dart.previewFlutterUiGuides&#34;</span><span class="err">:</span> <span class="kc">true</span>
-</span></span><span class="line"><span class="cl">  <span class="s2">&#34;editor.codeActionsOnSave&#34;</span><span class="err">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;source.fixAll&#34;</span><span class="p">:</span> <span class="kc">true</span>
-</span></span><span class="line"><span class="cl">  <span class="p">}</span><span class="err">,</span></span></span></code></pre></div></div>
-<p><code>&quot;editor.codeActionsOnSave&quot;</code> 코드를 필요한 const를 추가하는 등 자동 수정
-<code>&quot;dart.previewFlutterUiGuides&quot;: true</code> 부모 라인을 보여준다</p>
-<h3 id="37-icons-and-transforms">3.7 Icons and Transforms</h3>
-<p><code>Icon(Icons.euro_rounded, color: Colors.white, size: 98)</code></p>
-<h4 id="overflow-hidden-과-같은-효과">overflow: hidden 과 같은 효과</h4>
-<p><code>clipBehavior: Clip.hardEdge</code></p>]]></description>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">router</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">&#34;/login&#34;</span><span class="p">);</span></span></span></code></pre></div></div>
+<h2 id="replace">Replace</h2>
+<p>히스토리를 남기자 않을 때 사용</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-javascript">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">router</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s2">&#34;/login&#34;</span><span class="p">);</span></span></span></code></pre></div></div>]]></description>
+</item>
+<item>
+    <title>코딩 패턴</title>
+    <link>https://i-loveu.github.io/coding-pattern/</link>
+    <pubDate>Sat, 14 May 2022 05:18:16 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>https://i-loveu.github.io/coding-pattern/</guid>
+    <description><![CDATA[<h2 id="패턴">패턴</h2>
+<h3 id="전략-패턴">전략 패턴</h3>
+<p>바뀔 수 있는 행똥을 캡슐화하고 어떤 행동을 적용할지 위임해서 결정합니다.</p>
+<p>바꿔 쓸 수 있는 행동을 캡슐화 한 다음, 실제 행동은 다른 객체에 위임합니다.</p>
+<h3 id="어댑터-패턴">어댑터 패턴</h3>
+<p>하나 이상의 클래스의 인터페이스를 변환합니다.</p>
+<p>다른 객체를 감싸서 다른 인터페이스를 제공합니다.</p>
+<h3 id="반복자-패턴">반복자 패턴</h3>
+<p>컬렉션의 구현을 드러내지 안ㅇㅎ으면서도 컬렉션에 있는 모든 객체를 대상으로 반복작업을 할 수 있습니다.</p>
+<h3 id="퍼사드-패턴">퍼사드 패턴</h3>
+<p>클래스의 인터페이스를 단순화합니다.</p>
+<p>여러 객체를 감싸서 인터페이스를 단순하게 만듭니다.</p>
+<h3 id="컴포지트-패턴">컴포지트 패턴</h3>
+<p>클라이언트에서 객체 컬렉션과 개별 객체를 똑같은 식으로 처리할 수 있습니다.</p>]]></description>
+</item>
+<item>
+    <title>객체지향 원칙</title>
+    <link>https://i-loveu.github.io/principle-oop/</link>
+    <pubDate>Sun, 08 May 2022 05:36:31 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>https://i-loveu.github.io/principle-oop/</guid>
+    <description><![CDATA[<h2 id="객체지향-기초">객체지향 기초</h2>
+<ul>
+<li>추상화</li>
+<li>캡슐화</li>
+<li>다형성</li>
+<li>상속</li>
+</ul>
+<h2 id="객체지향-원칙">객체지향 원칙</h2>
+<ul>
+<li>바뀌는 부분은 캡슐화 한다</li>
+<li>상속보다는 구성을 활용한다</li>
+<li>구현보다는 인터페이스에 맞춰서 프로그래밍한다</li>
+<li>상호작용하는 객체 사이에서는 가능하면 느슨한 결합을 사용해야 한다</li>
+<li>클래스는 확장에는 열려 있어야 하지만 변경에는 닫혀 있어야 한다(ocp)</li>
+<li>추상화된 것에 의존하게 만들고 구상 클래스에 의존하지 않게 만든다</li>
+</ul>
+<h2 id="객체지향-패턴">객체지향 패턴</h2>
+<h3 id="어댑터-패턴">어댑터 패턴</h3>
+<p>특정 클래스 인터페이스를 클라이언트에서 요구하는 다른 인터페이스로 변환합니다. 인터페이스가 호환되지 않아 같이 쓸 수 없었던 클래스를 사용할 수 있게 도와줍니다.</p>
+<h3 id="퍼사드-패턴">퍼사드 패턴</h3>
+<p>서브시스템에 있는 일련의 인터페이스를 통합 인터페이스로 묶어 줍니다. 또한 고수준 인터페이스도 정의하므로 서브시스템을 더 편리하게 사용할 수 있습니다.</p>]]></description>
+</item>
+<item>
+    <title>Svg Font Not Working on Safari</title>
+    <link>https://i-loveu.github.io/svg-font-not-working-on-safari/</link>
+    <pubDate>Wed, 13 Apr 2022 12:27:24 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>https://i-loveu.github.io/svg-font-not-working-on-safari/</guid>
+    <description><![CDATA[<h2 id="svg-폰트가-사파리에서-안될-때">SVG 폰트가 사파리에서 안될 때!!</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-html">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">text</span>
+</span></span><span class="line"><span class="cl">  <span class="na">data-name</span><span class="o">=</span><span class="s">&#34;Noto Sans&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">transform</span><span class="o">=</span><span class="s">&#34;translate(520 348)&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">style</span><span class="o">=</span><span class="s">&#34;fill:#00c8b4;font-family:NotoSansKR-Bold,Noto Sans KR;font-weight:700;font-size:20px&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&gt;&lt;</span><span class="nt">tspan</span> <span class="na">x</span><span class="o">=</span><span class="s">&#34;-60.44&#34;</span> <span class="na">y</span><span class="o">=</span><span class="s">&#34;0&#34;</span><span class="p">&gt;</span>Noto Sans<span class="p">&lt;/</span><span class="nt">tspan</span><span class="p">&gt;&lt;/</span><span class="nt">text</span>
+</span></span><span class="line"><span class="cl"><span class="p">&gt;</span></span></span></code></pre></div></div>
+<p>대략 위와 같은 NotoSansKR폰트가 사파리에서는 그냐 sarif 폰트로 나온다면!</p>
+<p>아래와 같이 바꿔준다.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-html">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">text</span>
+</span></span><span class="line"><span class="cl">  <span class="na">data-name</span><span class="o">=</span><span class="s">&#34;Noto Sans&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">transform</span><span class="o">=</span><span class="s">&#34;translate(520 348)&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">font-family</span><span class="o">=</span><span class="s">&#34;NotoSansKR, sans-serif&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">style</span><span class="o">=</span><span class="s">&#34;fill:#00c8b4;font-weight:700;font-size:20px&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&gt;&lt;</span><span class="nt">tspan</span> <span class="na">x</span><span class="o">=</span><span class="s">&#34;-60.44&#34;</span> <span class="na">y</span><span class="o">=</span><span class="s">&#34;0&#34;</span><span class="p">&gt;</span>Noto Sans<span class="p">&lt;/</span><span class="nt">tspan</span><span class="p">&gt;&lt;/</span><span class="nt">text</span>
+</span></span><span class="line"><span class="cl"><span class="p">&gt;</span></span></span></code></pre></div></div>
+<p><code>font-family=&quot;NotoSansKR, sans-serif&quot;</code>이 부분으로 <code>style=&quot;font-family:NotoSansKR-Bold,Noto Sans KR;&quot;</code>에서 꺼내준다.
+이렇게 하면 적용 완료!</p>]]></description>
+</item>
+<item>
+    <title>Picture Tag</title>
+    <link>https://i-loveu.github.io/picture-tag/</link>
+    <pubDate>Tue, 12 Apr 2022 13:21:37 &#43;0900</pubDate>
+    <author>xxxx</author>
+    <guid>https://i-loveu.github.io/picture-tag/</guid>
+    <description><![CDATA[<h2 id="picture-tag">Picture Tag</h2>
+<p>백그라운드 이미지는 css에서 처리하지만, img태그는 처리하기 어려웠다. 그런데 img태그도 html상에서 미디어 쿼리를 적용할 수 있는 태그가 있다.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-html">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">picture</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;images/logo-sone.svg&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;(min-width:768px)&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;images/logo-sone-m.svg&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;(max-width:767px)&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;images/logo-sone.svg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;에스원&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">picture</span><span class="p">&gt;</span></span></span></code></pre></div></div>
+<p><code>&lt;picture&gt;&lt;/picture&gt;</code> 태그로 묶고 그 안에 소스로 미디어쿼리 처리를 한다. 그리고 위 설정이 먹히지 않는 곳은 img 태그가 보이게 된다.</p>]]></description>
 </item>
 </channel>
 </rss>

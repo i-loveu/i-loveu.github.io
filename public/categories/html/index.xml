@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Html - Category - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/categories/html/</link>
+        <link>https://i-loveu.github.io/categories/html/</link>
         <description>Html - Category - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 19 Feb 2021 16:31:47 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/html/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 19 Feb 2021 16:31:47 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/categories/html/" rel="self" type="application/rss+xml" /><item>
     <title>기본 html에 대한 설명</title>
-    <link>http://localhost:1313/bolierplate-html-base/</link>
+    <link>https://i-loveu.github.io/bolierplate-html-base/</link>
     <pubDate>Fri, 19 Feb 2021 16:31:47 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/bolierplate-html-base/</guid>
+    <guid>https://i-loveu.github.io/bolierplate-html-base/</guid>
     <description><![CDATA[<h2 id="doctype-html">!DOCTYPE html</h2>
 <p>html 문서 버전중 html5에 해당한다는 정의입니다.</p>
 <h2 id="html-langko">html lang=&ldquo;ko&rdquo;</h2>

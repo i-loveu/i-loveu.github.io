@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Yarn - Tag - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/tags/yarn/</link>
+        <link>https://i-loveu.github.io/tags/yarn/</link>
         <description>Yarn - Tag - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 13 Mar 2021 18:24:24 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/yarn/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 13 Mar 2021 18:24:24 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/tags/yarn/" rel="self" type="application/rss+xml" /><item>
     <title>Yarn Basic</title>
-    <link>http://localhost:1313/yarn-basic/</link>
+    <link>https://i-loveu.github.io/yarn-basic/</link>
     <pubDate>Sat, 13 Mar 2021 18:24:24 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/yarn-basic/</guid>
+    <guid>https://i-loveu.github.io/yarn-basic/</guid>
     <description><![CDATA[<h1 id="yarn은-무엇인가">Yarn은 무엇인가?</h1>
 <p>npm과 비슷하지만 더 빠르고 안전한 javascript package manager</p>]]></description>
 </item>

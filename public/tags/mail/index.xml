@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Mail - Tag - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/tags/mail/</link>
+        <link>https://i-loveu.github.io/tags/mail/</link>
         <description>Mail - Tag - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 22 Dec 2020 12:06:26 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/mail/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 22 Dec 2020 12:06:26 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/tags/mail/" rel="self" type="application/rss+xml" /><item>
     <title>레일즈 메일, 로컬 테스트를 위한 Gem : Letter_opener_web</title>
-    <link>http://localhost:1313/rails-local-mail-test-gem-letter_opener_web/</link>
+    <link>https://i-loveu.github.io/rails-local-mail-test-gem-letter_opener_web/</link>
     <pubDate>Tue, 22 Dec 2020 12:06:26 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/rails-local-mail-test-gem-letter_opener_web/</guid>
+    <guid>https://i-loveu.github.io/rails-local-mail-test-gem-letter_opener_web/</guid>
     <description><![CDATA[<h2 id="gem-file-추가">Gem file 추가</h2>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-">

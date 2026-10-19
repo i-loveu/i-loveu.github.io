@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Wordpress - Tag - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/tags/wordpress/</link>
+        <link>https://i-loveu.github.io/tags/wordpress/</link>
         <description>Wordpress - Tag - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 16 Feb 2021 17:49:02 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/wordpress/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 16 Feb 2021 17:49:02 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/tags/wordpress/" rel="self" type="application/rss+xml" /><item>
     <title>워드프레스 password로 입력하는 댓글 만들기</title>
-    <link>http://localhost:1313/wordpress-add-password-comment/</link>
+    <link>https://i-loveu.github.io/wordpress-add-password-comment/</link>
     <pubDate>Tue, 16 Feb 2021 17:49:02 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/wordpress-add-password-comment/</guid>
+    <guid>https://i-loveu.github.io/wordpress-add-password-comment/</guid>
     <description><![CDATA[<h2 id="wp-admin--설정--토론--댓글-글쓴이는-이름과-이메일을-채워야만-합니다-해제">wp-admin &gt; 설정 &gt; 토론 &gt; &lsquo;댓글 글쓴이는 이름과 이메일을 채워야만 합니다&rsquo; 해제</h2>
 <figure>
 </figure>
@@ -228,10 +228,10 @@
 </item>
 <item>
     <title>워드프레스 관리자 에디터 커스텀 css 추가하기</title>
-    <link>http://localhost:1313/wordpress-admin-editor-add-custom-css/</link>
+    <link>https://i-loveu.github.io/wordpress-admin-editor-add-custom-css/</link>
     <pubDate>Thu, 14 Jan 2021 14:08:18 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/wordpress-admin-editor-add-custom-css/</guid>
+    <guid>https://i-loveu.github.io/wordpress-admin-editor-add-custom-css/</guid>
     <description><![CDATA[<h2 id="admin-editor-stylescss-만들기">admin-editor-styles.css 만들기</h2>
 <p>theme/css/admin-editor-styles.css 위치에 파일 생성</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">

@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Npx - Tag - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/tags/npx/</link>
+        <link>https://i-loveu.github.io/tags/npx/</link>
         <description>Npx - Tag - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 13 Mar 2021 18:27:17 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/npx/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 13 Mar 2021 18:27:17 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/tags/npx/" rel="self" type="application/rss+xml" /><item>
     <title>What Is Npx</title>
-    <link>http://localhost:1313/what-is-npx/</link>
+    <link>https://i-loveu.github.io/what-is-npx/</link>
     <pubDate>Sat, 13 Mar 2021 18:27:17 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/what-is-npx/</guid>
+    <guid>https://i-loveu.github.io/what-is-npx/</guid>
     <description><![CDATA[<h2 id="npx란-무엇인가">npx란 무엇인가</h2>
 <p>최신버전의 javascript 라이브러리를 다운받아 실행하고 끝나면 삭제</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">

@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Vanillajs - Tag - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/tags/vanillajs/</link>
+        <link>https://i-loveu.github.io/tags/vanillajs/</link>
         <description>Vanillajs - Tag - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 01 Mar 2021 17:31:16 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/vanillajs/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 01 Mar 2021 17:31:16 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/tags/vanillajs/" rel="self" type="application/rss+xml" /><item>
     <title>자주 사용하는 Jquery를 Vanillajs로 변경하기</title>
-    <link>http://localhost:1313/jquery-to-vanillajs/</link>
+    <link>https://i-loveu.github.io/jquery-to-vanillajs/</link>
     <pubDate>Mon, 01 Mar 2021 17:31:16 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/jquery-to-vanillajs/</guid>
+    <guid>https://i-loveu.github.io/jquery-to-vanillajs/</guid>
     <description><![CDATA[<h3 id="hasclass">hasClass</h3>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-javascript">

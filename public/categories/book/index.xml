@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Book - Category - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/categories/book/</link>
+        <link>https://i-loveu.github.io/categories/book/</link>
         <description>Book - Category - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 08 May 2022 05:36:31 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/book/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 08 May 2022 05:36:31 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/categories/book/" rel="self" type="application/rss+xml" /><item>
     <title>객체지향 원칙</title>
-    <link>http://localhost:1313/principle-oop/</link>
+    <link>https://i-loveu.github.io/principle-oop/</link>
     <pubDate>Sun, 08 May 2022 05:36:31 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/principle-oop/</guid>
+    <guid>https://i-loveu.github.io/principle-oop/</guid>
     <description><![CDATA[<h2 id="객체지향-기초">객체지향 기초</h2>
 <ul>
 <li>추상화</li>

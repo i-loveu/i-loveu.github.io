@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Design - Category - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/categories/design/</link>
+        <link>https://i-loveu.github.io/categories/design/</link>
         <description>Design - Category - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 25 Jan 2021 06:18:15 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/design/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 25 Jan 2021 06:18:15 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/categories/design/" rel="self" type="application/rss+xml" /><item>
     <title>간단히 스케치 사용해본 느낌</title>
-    <link>http://localhost:1313/how-about-sketch/</link>
+    <link>https://i-loveu.github.io/how-about-sketch/</link>
     <pubDate>Mon, 25 Jan 2021 06:18:15 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/how-about-sketch/</guid>
+    <guid>https://i-loveu.github.io/how-about-sketch/</guid>
     <description><![CDATA[<h2 id="생각보다-간단하고-웹에-적합하다">생각보다 간단하고 웹에 적합하다</h2>
 <p>우리는 거의 대부분 웹에 관련된 뭔가를 만들어 내는데, 포토샵은 상당히 많은 작업을 할 수 있도록 열려있다.</p>
 <p>하지만 웹을 위한 것이라면 웹에 적합한 툴을 사용하는게 좋을 것이다.</p>

@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Node - Category - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/categories/node/</link>
+        <link>https://i-loveu.github.io/categories/node/</link>
         <description>Node - Category - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 17 Feb 2021 16:12:01 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/node/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 17 Feb 2021 16:12:01 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/categories/node/" rel="self" type="application/rss+xml" /><item>
     <title>nvm 맥에 설치하기 - homebrew</title>
-    <link>http://localhost:1313/nvm-install-mac/</link>
+    <link>https://i-loveu.github.io/nvm-install-mac/</link>
     <pubDate>Wed, 17 Feb 2021 16:12:01 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/nvm-install-mac/</guid>
+    <guid>https://i-loveu.github.io/nvm-install-mac/</guid>
     <description><![CDATA[<h2 id="homebrew로-nvm-설치">homebrew로 nvm 설치</h2>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-">

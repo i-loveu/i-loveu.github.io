@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Cancan - Tag - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/tags/cancan/</link>
+        <link>https://i-loveu.github.io/tags/cancan/</link>
         <description>Cancan - Tag - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 26 Mar 2021 17:00:51 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/cancan/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 26 Mar 2021 17:00:51 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/tags/cancan/" rel="self" type="application/rss+xml" /><item>
     <title>Rails 로그인이 필요한 페이지 로그인 갔다 돌아오는 방법 by Cancan Gem</title>
-    <link>http://localhost:1313/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/</link>
+    <link>https://i-loveu.github.io/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/</link>
     <pubDate>Fri, 26 Mar 2021 17:00:51 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/</guid>
+    <guid>https://i-loveu.github.io/rails-needs-siginin-redirect-to-sign-in-page-by-cancan/</guid>
     <description><![CDATA[<h2 id="application_controllerrb-코드-추가">application_controller.rb 코드 추가</h2>
 <p>application_controller.rb에 아래 사항 추가</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">

@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Deploy - Tag - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/tags/deploy/</link>
+        <link>https://i-loveu.github.io/tags/deploy/</link>
         <description>Deploy - Tag - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 26 Mar 2021 17:12:49 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/tags/deploy/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 26 Mar 2021 17:12:49 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/tags/deploy/" rel="self" type="application/rss+xml" /><item>
     <title>Rails 최적의 서버 환경</title>
-    <link>http://localhost:1313/rails-best-server-condition/</link>
+    <link>https://i-loveu.github.io/rails-best-server-condition/</link>
     <pubDate>Fri, 26 Mar 2021 17:12:49 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/rails-best-server-condition/</guid>
+    <guid>https://i-loveu.github.io/rails-best-server-condition/</guid>
     <description><![CDATA[<h2 id="레일즈-배포에-최적의-서버-환경">레일즈 배포에 최적의 서버 환경</h2>
 <h3 id="aws-elastic-beanstalk--rds--s3">AWS Elastic Beanstalk + RDS + S3</h3>
 <p>주로 AWS Elastic Beanstalk을 쓰고 있지만, beanstalk 환경이 자주 업데이트 되며 배포시 이전 환경을 찾지 못했다는 등 어려움이 많다.</p>

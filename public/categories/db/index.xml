@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Db - Category - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/categories/db/</link>
+        <link>https://i-loveu.github.io/categories/db/</link>
         <description>Db - Category - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 16 Feb 2021 14:44:22 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/db/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 16 Feb 2021 14:44:22 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/categories/db/" rel="self" type="application/rss+xml" /><item>
     <title>맥에 mariaDB 설치하기</title>
-    <link>http://localhost:1313/setting-mariadb-for-mac/</link>
+    <link>https://i-loveu.github.io/setting-mariadb-for-mac/</link>
     <pubDate>Tue, 16 Feb 2021 14:44:22 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/setting-mariadb-for-mac/</guid>
+    <guid>https://i-loveu.github.io/setting-mariadb-for-mac/</guid>
     <description><![CDATA[<h2 id="brew-install-mariadb">brew install mariadb</h2>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-">

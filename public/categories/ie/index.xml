@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Ie - Category - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/categories/ie/</link>
+        <link>https://i-loveu.github.io/categories/ie/</link>
         <description>Ie - Category - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 27 May 2021 13:41:07 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/ie/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 27 May 2021 13:41:07 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/categories/ie/" rel="self" type="application/rss+xml" /><item>
     <title>Ie ReplaceAll Change This</title>
-    <link>http://localhost:1313/ie-replaceall-change-this/</link>
+    <link>https://i-loveu.github.io/ie-replaceall-change-this/</link>
     <pubDate>Thu, 27 May 2021 13:41:07 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/ie-replaceall-change-this/</guid>
+    <guid>https://i-loveu.github.io/ie-replaceall-change-this/</guid>
     <description><![CDATA[<h2 id="replaceall-대신-replacetargetgi-">replaceAll 대신 replace(/target/gi, &ldquo;&rdquo;)</h2>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-javascript">
@@ -25,10 +25,10 @@
 </item>
 <item>
     <title>Window ScrollY Ie11</title>
-    <link>http://localhost:1313/ie-window-scrolly/</link>
+    <link>https://i-loveu.github.io/ie-window-scrolly/</link>
     <pubDate>Thu, 27 May 2021 13:30:19 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/ie-window-scrolly/</guid>
+    <guid>https://i-loveu.github.io/ie-window-scrolly/</guid>
     <description><![CDATA[<h2 id="windowscrolly-ie-undefined">window.scrollY IE undefined</h2>
 <p>window.pageYOffset 를 사용한다</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">

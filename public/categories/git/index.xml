@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Git - Category - 사랑합니다 기술 블로그</title>
-        <link>http://localhost:1313/categories/git/</link>
+        <link>https://i-loveu.github.io/categories/git/</link>
         <description>Git - Category - 사랑합니다 기술 블로그</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 10 Apr 2021 05:49:21 &#43;0900</lastBuildDate><atom:link href="http://localhost:1313/categories/git/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 10 Apr 2021 05:49:21 &#43;0900</lastBuildDate><atom:link href="https://i-loveu.github.io/categories/git/" rel="self" type="application/rss+xml" /><item>
     <title>좋은 Commit Message</title>
-    <link>http://localhost:1313/commit-message-on-git/</link>
+    <link>https://i-loveu.github.io/commit-message-on-git/</link>
     <pubDate>Sat, 10 Apr 2021 05:49:21 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/commit-message-on-git/</guid>
+    <guid>https://i-loveu.github.io/commit-message-on-git/</guid>
     <description><![CDATA[<h2 id="좋은-commit-message-작성-방법">좋은 Commit Message 작성 방법</h2>
 <p>간결하게 쓴다.</p>
 <p>사람 뿐 아니라 기계도 어떤 작업을 했는지 알 수 있도록 한다.</p>
@@ -24,10 +24,10 @@
 </item>
 <item>
     <title>종종 사용하는 git command</title>
-    <link>http://localhost:1313/usefull-git-command/</link>
+    <link>https://i-loveu.github.io/usefull-git-command/</link>
     <pubDate>Mon, 01 Feb 2021 10:33:24 &#43;0900</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/usefull-git-command/</guid>
+    <guid>https://i-loveu.github.io/usefull-git-command/</guid>
     <description><![CDATA[<h2 id="git-reset-remote">git reset remote</h2>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-">
